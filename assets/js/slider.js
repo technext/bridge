@@ -60,7 +60,7 @@ function slider(id,pause,animationSpeed,obj) {
 	    
 	    // Engage slider auto-scroll
 	    
-	   	console.log('slider started');
+	   	//-console.log('slider started');
         interval = setInterval(function() {
 	        
             $slideContainer.animate({'margin-left': '-='+slide_width}, animationSpeed, function() {
@@ -71,7 +71,7 @@ function slider(id,pause,animationSpeed,obj) {
                     margin = slide_width;
                     $slideContainer.css('margin-left', '-'+margin+'px');
                 }
-                console.log('slide: '+currentSlide);
+                //-console.log('slide: '+currentSlide);
                 
             });
         }, pause);

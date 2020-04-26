@@ -8,6 +8,7 @@ body {
     text-align: left;
     background-color: #fff;
 }
+
 p {
   color: #506690!important;
 }
@@ -18,7 +19,7 @@ h1 {
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: 400;
-  line-height: 1;
+  line-height: 1; 
 }
 .lead {
   font-size: 1.3125rem;
@@ -137,16 +138,27 @@ a{
     -webkit-box-align: center;
     align-items: center;
     padding: 1.625rem 1.75rem;
-    background:  linear-gradient(
-      rgb(2, 87, 213), 
-     rgb(25, 96, 211, 0.6)
-    ),
-    url('/assets/image/photo-3.jpg');
-    /* background: url('/assets/image/photo-3.jpg') no-repeat center center/cover; */
     background-size: cover;
     border-top-left-radius: .375rem;
     border-bottom-left-radius: .375rem;
     z-index: 1000;
+    background:
+    linear-gradient(
+      rgba(2, 87, 213),
+      rgba(25, 96, 211, 0.6)
+    ),
+    url("https://images.unsplash.com/photo-1525296143957-b62256c593bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80") !important;
+    /* background: url('/assets/image/photo-3.jpg') no-repeat center center/cover; */
+    /* background: linear-gradient(rgb(38, 0, 255), rgb(93, 146, 245)) !important; */
+    /* background-image: linear-gradient(to right, rgba(2,87,213), rgba(25,96,211,0.6)); */
+    /* background:  linear-gradient(
+      rgb(2, 87, 213), 
+     rgb(25, 96, 211, 0.6)
+    ), */
+    /* url('/assets/image/photo-3.jpg'); */
+    /* background: url('/assets/image/photo-3.jpg') no-repeat center center/cover; */
+    
+    
     /* background-color: rgba(25, 28, 211, 0.6) !important; */
 }
 
