@@ -8,7 +8,9 @@ body {
     text-align: left;
     background-color: #fff;
 }
-
+.text-500{
+  color: #506690;
+}
 p {
   color: #506690!important;
 }
@@ -20,6 +22,9 @@ h1 {
   margin-bottom: .5rem;
   font-weight: 400;
   line-height: 1; 
+}
+.ml-8 {
+  margin-left: 7rem !important;
 }
 .lead {
   font-size: 1.3125rem;
@@ -93,6 +98,10 @@ a{
 }
 .text-gray-600 {
   color: #869ab8!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #506690;
 }
 .dropdown:hover>.dropdown-menu {
     display: block;
@@ -170,6 +179,12 @@ a{
 .navbar-nav .dropdown-img-left * {
   position: relative;
 }
+/* .dropdown-item {
+  width: auto;
+  min-width: 100%;
+  margin-left: -1.75rem;
+  margin-right: -1.75rem;
+} */
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -190,7 +205,18 @@ a{
     border-radius: .375rem;
     box-shadow: 0 0.5rem 1.5rem rgba(22,28,45,.1);
 }
-
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0 1.75rem;
+  clear: both;
+  font-weight: 400;
+  color: #506690;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
 .dropdown-header {
   display: block;
   padding: 0.5rem 1.5rem;
@@ -224,6 +250,13 @@ a{
   padding-top: 1rem;
   padding-bottom: 1rem;
   color: inherit;
+}
+
+@media (min-width: 992px){
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
 }
 .pt-md-13, .py-md-13 {
   padding-top: 10rem!important;
