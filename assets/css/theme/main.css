@@ -9,13 +9,84 @@ body {
     background-color: #fff;
 }
 .text-500{
-  color: #506690;
+  color: #506690 !important;
 }
 p {
   color: #506690!important;
 }
 h1 {
   line-height: 1.3;
+}
+.display-3 {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 1;
+}
+.lift {
+  -webkit-transition: box-shadow .25s ease,-webkit-transform .25s ease;
+  transition: box-shadow .25s ease,-webkit-transform .25s ease;
+  transition: box-shadow .25s ease,transform .25s ease;
+  transition: box-shadow .25s ease,transform .25s ease,-webkit-transform .25s ease;
+}
+/* Float */
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  /* box-shadow: 0 0 1px rgba(0, 0, 0, 0); */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+  -webkit-transform: translateY(-1px);
+  transform: translateY(-1px);
+  box-shadow: 0.5rem .5rem 1.5rem  rgba(22,28,45,.1)!important;
+}
+.btn {
+  display: inline-block;
+  /* font-weight: 600; */
+  color: #161c2d;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: .8125rem 1.25rem;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  border-radius: .375rem;
+  -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn-sm, .btn-group-sm > .btn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.35rem;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #335eea;
+  border-color: #335eea;
+  box-shadow: none;
+}
+.btn-primary-soft {
+  background-color: rgba(51,94,234,.1);
+  color: #335eea;
+}
+.shadow {
+  box-shadow: 0 .5rem 1.5rem rgba(22,28,45,.1)!important;
+}
+.mr-1, .mx-1 {
+  margin-right: .25rem!important;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -292,4 +363,8 @@ a{
 .shape {
   /* position: absolute; */
   pointer-events: none;
+}
+
+.yourElement {
+  animation-duration: 1s;
 }
