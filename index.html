@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/bootstrap/bootstrap-reboot.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" integrity="sha256-a2tobsqlbgLsWs7ZVUGgP5IvWZsx8bTNQpzsqCSm5mk=" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/theme/main.css">
 	<link rel="stylesheet" href="assets/css/theme/slider.css">		
 </head>
@@ -571,10 +570,10 @@
 	  <!-- BRANDS End -->
 	  <!-- ABOUT
     ================================================== -->
-	  <section class="pt-8 pt-md-11 bg-light">
+	  <section class="pt-8 pt-md-11 bg-light pb-5">
 		<div class="container">
 		  <div class="row align-items-center justify-content-between mb-8 mb-md-11">
-			<div class="col-12 col-md-6 order-md-2 animated slideInRight">
+			<div statdiv class="col-12 col-md-6 order-md-2 animated">
   
 			  <!-- Heading -->
 			  <h2 class="">
@@ -649,10 +648,10 @@
 			  </div> <!-- / .row -->
   
 			</div>
-			<div class="col-12 col-md-6 col-lg-5 order-md-1 aos-init aos-animate" data-aos="fade-right">
+			<div class="col-12 col-md-6 col-lg-5 order-md-1 hvr-grow aos-init aos-animate" data-aos="fade-right">
   
 			  <!-- Card -->
-			  <div class="card shadow-light-lg lift lift-lg">
+			  <div class="card shadow-light-lg lift lift-lg hvr-float-shadow">
   
 				<!-- Image -->
 				<img src="assets/image/photo-2.jpg" alt="..." class="card-img-top">
@@ -705,7 +704,7 @@
 			  </h2>
   
 			  <!-- Text -->
-			  <p class="font-size-lg text-muted mb-6">
+			  <p class="font-size-lg text-muted mb-6 text-gray-700">
 				We've built well over a dozen Bootstrap themes and sold tens of thousands of copies.
 			  </p>
   
@@ -725,7 +724,7 @@
 				  </h4>
   
 				  <!-- Text -->
-				  <p class="text-muted mb-6">
+				  <p class="text-muted mb-6 text-gray-700">
 					We've been developing with Bootstrap since it was publicly released in 2011.
 				  </p>
   
@@ -747,7 +746,7 @@
 				  </h4>
   
 				  <!-- Text -->
-				  <p class="text-muted mb-6 mb-md-0">
+				  <p class="text-muted mb-6 mb-md-0 text-gray-700">
 					We've watched Bootstrap grow up over the years and understand it better than almost anyone.
 				  </p>
   
@@ -769,7 +768,7 @@
 				<div class="img-skewed img-skewed-left">
   
 				  <!-- Image -->
-				  <img src="assets/image//dashkit.jpg" class="screenshot img-fluid img-skewed-item" alt="...">
+				  <img src="assets/image//dashkit.jpg" class="screenshot img-fluid hvr-skew-forward" alt="..." style="max-width: 620px; ">
   
 				</div>
   
@@ -782,7 +781,7 @@
 		<!-- ABOUT END -->
 		<!-- TESTIMONIALS
     ================================================== -->
-		<section class="pt-10 pt-md-12">
+		<section class="pt-10 pt-md-12 bg-white testimonials">
 			<div class="container">
 				<div class="row justify-content-center">
 				<div class="col-12 col-md-10 col-lg-8 text-center">
@@ -797,8 +796,8 @@
 
 				</div>
 				</div> <!-- / .row -->
-				<div class="row">
-					<div class="col-12">
+				<div class="row ">
+					<div class="col-12 ">
 						<div id="wrapper">
 							<!-- <h1 class="text-muted">jQuery Slider</h1> -->
 							<div id="slide-wrap"><!-- slider --></div>	
@@ -807,9 +806,17 @@
 					</div><!-- / .row -->
 				</div> <!-- / .container -->
 			</div>
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F1F4F8" fill-opacity="1" d="M0,256L1440,0L1440,320L0,320Z"></path></svg>	
+				
 		</section>
 	<!-- TESTIMONIALS END -->
+	<!-- SHAPE
+    ================================================== -->
+	<div class="position-relative mt-n5 shape-slider">
+		<div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+			<!-- <svg viewBox="0 0 2880 48" fill="blue" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg> -->
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#F1F4F8" fill-opacity="1" d="M0,256L1440,0L1440,320L0,320Z"></path></svg>	
+		</div>
+	</div>
 	<!-- STATS
     ================================================== -->
 	<section class=" bg-gray-200 section-7">
@@ -818,10 +825,8 @@
 			<div class="col-12 col-md-5 col-lg-6 order-md-2">
 			  <!-- Image -->
 			  <img src="assets/image/illustration-8.png" alt="..." class="img-fluid mb-6 mb-md-0">
-  
 			</div>
 			<div class="col-12 col-md-7 col-lg-6 order-md-1">
-  
 			  <!-- Heading -->
 			  <h2>
 				Stay focused on your business. <br>
@@ -1085,7 +1090,7 @@
 
 					<!-- Badge -->
 					<div class="">
-										<button type="button" class="btn btn-success rounded-circle">?</button>
+						<button type="button" class="btn btn-success rounded-circle">?</button>
 					</div>
 
 					<div class="ml-5">
@@ -1435,11 +1440,8 @@
 					time: 1000
 			});
 	});
-</script>  
-</body>
-</html>
+</script> 
 <script>
-	
 	// Slider JSON
 	var obj = [
 				{
@@ -1459,9 +1461,10 @@
 					
 				},
 			
-			];
-	
+			];	
 	// Generate Slider
-	slider('#slide-wrap',4,1,obj);
-	
-</script>
+	slider('#slide-wrap',4,1,obj);	
+</script> 
+</body>
+</html>
+
