@@ -96,8 +96,8 @@ h1 {
 .hvr-skew-forward {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(200px) translateX(80deg);
-  transform: perspective(200px) translateX(80deg);
+  -webkit-transform: perspective(200px) translateY(80deg);
+  transform: perspective(200px) translateY(80deg);
   box-shadow: 0.5rem .5rem 1.5rem  rgba(61, 91, 189, 0.1)!important;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
@@ -201,6 +201,9 @@ h1 {
 }
 .pt-15, .py-15 {
   padding-top: 16rem!important;
+}
+.mt-n11 {
+  margin-top: -13rem !important;
 }
 a{
   text-decoration: none;
@@ -433,7 +436,41 @@ a{
 .shape-slider{
   z-index: -1;
 }
+/* .slider{
+  z-index: -1;
+} */
 .testimonials{
-  z-index: 5;
+  z-index: 1;
 }
+
+.card-img-custom {
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 50% 3%;
+  border-bottom-right-radius: 50% 3%;
+}
+
+.form-control{
+  width: 350px;
+  /* background: transparent; */
+  border:none;
+  border-radius: 0;
+  color: #869AB8;
+  font-size: 18px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #F1F4F8;
+  -webkit-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+
+}
+.form-control:focus{
+  border-bottom: #869AB8;
+  border: none;
+}
+.form-control:active{
+  border: none;
+}
+
 
