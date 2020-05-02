@@ -132,7 +132,7 @@ h1 {
   -webkit-transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
-.btn-sm, .btn-group-sm > .btn {
+.btn-sm {
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border-radius: 0.35rem;
@@ -182,10 +182,10 @@ h1 {
   padding-bottom: 2rem!important;
 }
 .pt-md-11, .py-md-11 {
-  padding-top: 6rem!important;
+  padding-top: 14rem!important;
 }
 .mt-n15, .my-n15 {
-  margin-top: -20rem!important;
+  margin-top: -22rem!important;
 }
 .py-6{
   padding-top: 2rem;
@@ -415,6 +415,10 @@ a{
 }
 .card-z-index{
   z-index:1;
+}
+.card-btn:last-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 .curved svg{
   display:block;
