@@ -8,11 +8,18 @@ body {
     text-align: left;
     background-color: #fff;
 }
+
+.font-size-lg {
+  font-size: 1.1875rem!important;
+}
+.text-justify {
+  text-align: justify!important;
+}
 .text-500{
   color: #506690 !important;
 }
 p {
-  color: #506690!important;
+  color: #869AB8!important;
 }
 h1 {
   line-height: 1.3;
@@ -43,8 +50,8 @@ h1 {
   transition-timing-function: ease-out;
 }
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
-  -webkit-transform: translateY(-1px);
-  transform: translateY(-1px);
+  -webkit-transform: translateY(-2px);
+  transform: translateY(-2px);
   box-shadow: 0.5rem .5rem 1.5rem  rgba(22,28,45,.1)!important;
 }
 /* Float Shadow */
@@ -182,6 +189,9 @@ h1 {
   padding-bottom: 2rem!important;
 }
 .pt-md-11, .py-md-11 {
+  padding-top: 7rem!important;
+}
+.pt-md-12, .py-md-12 {
   padding-top: 14rem!important;
 }
 .mt-n15, .my-n15 {
@@ -196,8 +206,8 @@ h1 {
   padding-bottom: 3rem;
 }
 .py-8{
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
 }
 .pt-15, .py-15 {
   padding-top: 16rem!important;
