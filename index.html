@@ -29,7 +29,7 @@
 
                     <li class="nav-item dropdown dropdown-menu-xl-li">
 						<a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Landing
+							Landings
 						</a>
 						<div class="dropdown-menu dropdown-menu-xl p-0" style="margin-left: 90px;" aria-labelledby="navbarLandings">
 							<div class="row no-gutters">
@@ -425,7 +425,7 @@
 	<!-- Navbar END -->
 	<!-- WELCOME
     ================================================== -->
-	<section class="pt-md-11 ">
+	<section class="pt-md-11 overflow-hidden"  data-zanim-timeline='{"delay":0}' data-zanim-trigger="scroll">
 		<div class="container animated slideInUp ">
 		  <div class="row align-items-center mt-5">
 			<div class="col-12 col-md-5 col-lg-6 order-md-2">
@@ -435,13 +435,13 @@
 			<div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
   
 			  <!-- Heading -->
-			  <h1 class="display-3 text-center text-md-left">
+			  <h1 class="display-3 text-center text-md-left" data-zanim-xs='{"delay":0.7,"duration":0.7,"ease":"Power2.easeOut","from":{"y":20,"opacity":0},"to":{"y":0,"opacity":1}}'>
 				Welcome to <span class="text-primary">Landkit</span>. <br>
 				Develop anything.
 			  </h1>
   
 			  <!-- Text -->
-			  <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
+			  <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8" data-zanim-xs='{"ease":"Back.easeOut","delay":1.95,"duration":0.4,"from":{"y":0,"opacity":0},"to":{"y":16,"opacity":1}}'>
 				Build a beautiful, modern website with flexible Bootstrap components built from scratch.
 			  </p>
   
@@ -780,7 +780,7 @@
 		<!-- ABOUT END -->
 		<!-- TESTIMONIALS
     ================================================== -->
-		<section class="pt-10 testimonials bg-light">
+		<section class="pt-10 testimonials">
 			<div class="container">
 				<div class="row justify-content-center">
 				<div class="col-12 col-md-10 col-lg-8 text-center">
@@ -1425,7 +1425,8 @@
 <!-- <script src="https://code.jquery.com/jquery-3.4.1.jsa"></script> -->
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>   
-<script src="assets/js/typed.js"></script> 
+<script src="assets/js/typed.js"></script>
+<script src="assets/js/zanimation.js"></script>
 <script src="assets/js/jquery.waypoints.min.js"></script>
 <script src="assets/js/jquery.counterup.min.js"></script> 
 <script src="assets/js/slider.js"></script>  
