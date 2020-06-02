@@ -1,0 +1,117 @@
+extends core/_skeleton
+include _functions
+include mixins/navbars/_navbar
+  
+
+block append variables
+  - var title = 'Create ZiON Template';
+  - var themeName = 'ZiON';
+  - var version = 'v6.1.0';
+  - var theme = `${themeName}-${version}`;
+  - var bootstrapVersion = 4.3;
+  - var ATTRS_MAIN = { id: 'top', class: 'main' };
+  - var colors = ['primary', 'secondary', 'success', 'info', 'warning', 'danger', 'light', 'dark'];
+  - var grays = ['black', 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 'white'];
+  - var colorsAll = colors.concat(grays);
+  -
+    var sitemap = {
+      components: {
+        icon: 'fas fa-puzzle-piece',
+        inners: {
+          alerts: 'alerts',
+          background: 'background',
+          badges: 'badges',
+          breadcrumb: 'breadcrumb',
+          buttons: 'buttons',
+          cards: 'cards',
+          carousel: 'carousel',
+          collapse: 'collapse',
+          dropdowns: 'dropdowns',
+          fancyscroll: 'fancyscroll',
+          forms: 'forms',
+          hoverbox: 'hoverbox',
+          'list-group': 'list-group',
+          modals: 'modals',
+          'media-object': 'media-object',
+          navs: 'navs',
+          navbar: 'navbar',
+          'page-headers': 'page-headers',
+          pagination: 'pagination',
+          popovers: 'popovers',
+          progress: 'progress',
+          scrollspy: 'scrollspy',
+          spinners: 'Spinners',
+          tables: 'tables',
+          tabs: 'tabs',
+          tooltips: 'tooltips',
+          toasts: 'Toasts'
+        }
+      },
+      utilities: {
+        icon: 'fab fa-hotjar',
+        inners: {
+          borders: 'borders',
+          clearfix: 'Clearfix',
+          'close-icon': "Close-icon",
+          colors: 'colors',
+          display: 'display',
+          embed: 'embed',
+          flex: 'flex',
+          figures: 'figures',
+          grid: 'grid',
+          sizing: 'sizing',
+          'stretched-link': 'stretched-link',
+          spacing: 'spacing',
+          typography: 'typography',
+          'vertical-align': 'vertical-Align',
+          visibility: 'visibility'
+          
+        }
+      },
+      plugins: {
+        icon: 'fas fa-plug',
+        inners: {
+          accordion: 'accordion',
+        }
+      },
+      documentation: {
+        icon: 'fas fa-book',
+        inners: {
+          'getting-started': 'getting-started',
+          'file-structure': 'file-structure',
+          customization: 'customization',
+          gulp: 'gulp',
+          RTL: 'RTL',
+          plugins: 'plugins',
+        }
+      },
+      changelog: {
+        icon: 'fas fa-code-branch',
+        link: 'changelog',
+        badge: {
+          text: version,
+          type: 'primary'
+        }
+      }
+    };
+
+
+block scripts
+  script(src=`${CWD}assets/lib/is/is.min.js`)
+  script(src=`${CWD}assets/lib/stickyfilljs/stickyfill.min.js`)
+  script(src=`${CWD}assets/lib/sticky-kit/sticky-kit.min.js`)
+  script(src=`${CWD}assets/lib/gsap/gsap.min.js`)
+  
+  if ENV === 'LIVE'
+    // Global site tag (gtag.js) - Google Analytics
+
+block styles
+  link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7cPoppins:100,200,300,400,500,600,700,800,900' rel='stylesheet')
+  
+
+block mainContent
+  //- +navbar.navbar-expand-md.navbar-dark.bg-dark.sticky-top.font-weight-semi-bold.fs--1
+  block wrapperContent 
+    block beforeContent
+    block content
+    block afterContent

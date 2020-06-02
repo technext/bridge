@@ -1,0 +1,11 @@
+/*-----------------------------------------------
+|   Card spacer
+-----------------------------------------------*/
+.p-card, .px-card {
+  padding-left: $card-spacer-x;
+  padding-right: $card-spacer-x;
+}
+.p-card, .py-card {
+  padding-top: $card-spacer-y;
+  padding-bottom: $card-spacer-y;
+}

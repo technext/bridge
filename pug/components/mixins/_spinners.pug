@@ -1,0 +1,68 @@
+block append variables 
+  -
+    var pageHeader = 
+    {
+    title: 'Spinners',
+    description: 'Indicate the loading state of a component or page with Bootstrap spinners, built entirely with HTML, CSS, and no JavaScript.',
+    url: `https://getbootstrap.com/docs/${bootstrapVersion}/components/spinners/`,
+    linkText: 'Spinners on Bootstrap'
+    }
+
+
+mixin spinnerBasic
+  .spinner-border(role='status')
+    span.sr-only Loading...
+
+
+mixin spinnerWithColor
+  each val in colors
+    .spinner-border(class=`text-${val}` role='status')
+      = '\n'
+      span.sr-only Loading...
+      = '\n'
+      
+mixin spinnerGrowing
+  .spinner-grow(role='status')
+    = '\n'
+    span.sr-only Loading...
+    = '\n'
+    
+    
+mixin spinnerGrowingWithColor
+  each val in colors
+    .spinner-grow(class=`text-${val}` role='status')
+      = '\n'
+      span.sr-only Loading...
+      = '\n'
+      
+mixin spinnerSize
+  .spinner-border.spinner-border-sm(role='status')
+    = '\n'
+    span.sr-only Loading...
+    = '\n'
+  .spinner-border(role='status')
+    = '\n'
+    span.sr-only Loading...
+    = '\n'
+  .spinner-grow.spinner-grow-sm(role='status')
+    = '\n'
+    span.sr-only Loading...
+    = '\n'
+  .spinner-grow(role='status')
+    = '\n'
+    span.sr-only Loading...
+    = '\n'
+    
+mixin spinnerWithButton
+  button.btn.btn-primary.mr-1(type='button', disabled='')
+    = '\n'
+    span.spinner-border.spinner-border-sm(role='status', aria-hidden='true')
+    = '\n'
+    span.sr-only Loading...
+    = '\n'
+  button.btn.btn-primary(type='button', disabled='')
+    = '\n'
+    span.spinner-border.spinner-border-sm(role='status', aria-hidden='true')
+    = '\n'
+    |   Loading...
+    = '\n'

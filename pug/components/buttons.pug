@@ -1,0 +1,108 @@
+extends ../_skeleton-component
+include mixins/_button
+block append variables
+  - var firstParent = 'components'              
+  - var currentPage = 'buttons'
+
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader[0])
+      
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Examples
+    .card-body.bg-light
+      +componentCard
+        +buttonBasic
+        
+        
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Outline buttons
+    .card-body.bg-light
+      +componentCard
+        +buttonOutline
+          
+
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Button sizes
+    .card-body.bg-light
+      +componentCard
+        +buttonSize
+  
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Icon Buttons
+    .card-body.bg-light
+      +componentCard
+        +buttonIcon
+
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Button Capsule
+    .card-body.bg-light
+      +componentCard
+        +buttonCapsule
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader[1])
+    
+
+  .card.shadow-sm.mb-3
+    .card-header
+      h5 Basic Example
+      p.mb-0 Wrap a series of buttons with
+        code .btn
+        |  in
+        code .btn-group
+        | . Add on optional JavaScript radio and checkbox style behavior with
+    .card-body.bg-light
+      +componentCard
+        +buttonGroup
+  .card.shadow-sm.mb-3
+    .card-header
+      h5 Button Toolbar
+      p.mb-0 Combine sets of button groups into button toolbars for more complex components. Use utility classes as needed to space out groups, buttons, and more.
+    .card-body.bg-light
+      +componentCard
+        +buttonToolbar
+  .card.shadow-sm.mb-3
+    .card-header
+      h5 Button toolbar with input group
+      p.mb-0 Feel free to mix input groups with button groups in your toolbars. Similar to the example above, you'll likely need some utilities though to space things properly.
+
+    .card-body.bg-light
+      +componentCard
+        +buttonToolbarWithInputGroup
+  .card.shadow-sm.mb-3
+    .card-header
+      h5 Sizing
+      p.mb-0 Insteam of aplying button sizing classes to every button in a group, just add 
+        code .btn-gorup-*  
+        | to each 
+        code .btn-group
+        | , including each one when nesting multiple groups.
+
+    .card-body.bg-light
+      +componentCard
+        +buttonGroupSize
+
+  .card.shadow-sm.mb-3
+    .card-header
+      h5 Vertical variation
+      p.mb-0 Make a set of buttons appear vertically tacked rather than horizontally. Split button dropdowns ae not supported here.
+    .card-body.bg-light
+      +componentCard
+        +buttonGroupVertical
+        
+  .card.shadow-sm.mb-3
+    .card-header
+      h5 Vertical variation with dropdown
+    .card-body.bg-light
+      +componentCard
+        +buttonGroupVerticalWithDropdown
+
+
+    

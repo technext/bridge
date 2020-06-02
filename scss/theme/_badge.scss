@@ -1,0 +1,80 @@
+/*-----------------------------------------------
+|   Badge
+-----------------------------------------------*/
+@mixin badge-soft-variant($bg, $color) {
+  color: $color;
+  background-color: $bg;
+
+  &[href] {
+    @include hover-focus {
+      text-decoration: none;
+      color: $color;
+      background-color: darken($bg, 10%);
+    }
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .badge-soft-#{$color} {
+    @if $color == 'secondary' {
+      @include badge-soft-variant(theme-color-level($color, -10), theme-color-level($color, -0.8));
+    } @else if $color == 'warning' {
+      @include badge-soft-variant(theme-color-level($color, -10), theme-color-level($color, 2.5));
+    } @else if $color == 'danger' {
+      @include badge-soft-variant(theme-color-level($color, -10), theme-color-level($color, 4.5));
+    } @else {
+      @include badge-soft-variant(theme-color-level($color, -10), theme-color-level($color, 4.5));
+    }
+  }
+}
+
+
+//Custom Css for rounded & large badge 
+.badge-lg {
+  padding: .7em 1.15em
+}
+
+.badge-rounded-circle {
+  height: calc(1em + .5rem);
+  padding-left: .25rem;
+  padding-right: .25rem;
+  border-radius: 10rem
+}
+
+.badge-rounded-circle>* {
+  display: block;
+  width: 1em
+}
+
+.badge-rounded-circle.badge-lg {
+  height: calc(1em + 1.4em);
+  padding-left: .7em;
+  padding-right: .7em
+}
+
+.badge-white-soft {
+  background-color: rgba(255,255,255,.1);
+  color: #fff
+}
+
+a.badge-white-soft:focus,a.badge-white-soft:hover {
+  background-color: rgba(255,255,255,.2);
+  color: #fff
+}
+
+.badge-gray-700-soft {
+  background-color: rgba(80,102,144,.1);
+  color: #506690
+  
+}
+
+a.badge-gray-700-soft:focus,a.badge-gray-700-soft:hover {
+  background-color: rgba(80,102,144,.2);
+  color: #506690
+}
+
+.badge-gray-600 {
+  background-color: #869ab8;
+  color: #fff
+}
+

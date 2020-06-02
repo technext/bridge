@@ -1,0 +1,15 @@
+block append variables
+  -
+    var pageHeader = {
+      title: 'Colors',
+      description: 'Convey meaning through color with a handful of color utility classes. Includes support for styling links with hover states, too.',
+      url: `https://getbootstrap.com/docs/${bootstrapVersion}/utilities/colors/`,
+      linkText: 'Colors on Bootstrap'
+    }
+    
+mixin colorPalette(val, index)
+  .p-3.d-flex.flex-center(class=`bg-${val} ${(val === 'white' || val === 'light' || val === 100 || val === 200) && 'border border-300'}` style='height: 180px')
+    pre
+      code(class=`${(index < 8 && val !== 'light') ? 'text-white' : 'text-black'}`) .text-#{val}
+      br
+      code(class=`${(index < 8 && val !== 'light') ? 'text-white' : 'text-black'}`) .bg-#{val}

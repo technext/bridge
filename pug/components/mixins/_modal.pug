@@ -1,0 +1,27 @@
+block append variables
+  -
+    var pageHeader = {
+      title: 'Modals',
+      description: "List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.",
+      url: `https://getbootstrap.com/docs/${bootstrapVersion}/components/modal/`,
+      linkText: 'Modal on Bootstrap'
+    }
+
+
+
+
+
+
+mixin modal
+  #exampleModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h5#exampleModalLabel.modal-title Modal Title
+          button.close(type='button', data-dismiss='modal', aria-label='Close')
+            span(aria-hidden='true').font-weight-light &times;
+        .modal-body
+          p Woohoo, you're reading this text in a modal!
+        .modal-footer
+          button.btn.btn-secondary.btn-sm(type='button', data-dismiss='modal') Close
+          button.btn.btn-primary.btn-sm(type='button') Save changes

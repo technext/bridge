@@ -1,0 +1,31 @@
+extends ../_skeleton-component
+include mixins/_tabs
+
+block append variables
+  - var firstParent = 'components'              
+  - var currentPage = 'tabs'
+ 
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader)
+   
+
+  .row.no-gutters
+    .col-xl-6.pr-xl-2
+      .card.shadow-sm.mb-3
+        .card-header  
+          h5.mb-0 Basic Example
+        .card-body.bg-light
+    
+          +componentCard
+            +tabsBasic
+    .col-xl-6.pl-xl-2
+        .card.shadow-sm.mb-3
+          .card-header  
+            h5.mb-0 Pills
+          .card-body.bg-light
+            +componentCard
+              +tabsPill
+              
+        

@@ -1,0 +1,34 @@
+extends ../_skeleton-component
+
+block append variables
+  - var firstParent = 'components'              
+  - var currentPage = 'page-headers'
+  -
+    var pageHeader = [
+      {
+      title: 'Page Header',
+      description: 'These modular elements can be readily used and customized in every layout across pages.',
+    },
+    {
+        title: 'Page Title',
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, incidunt pariatur a, exercitationem dignissimos ea veniam laboriosam minima cum rerum blanditiis quod maxime eligendi dolore est laudantium commodi assumenda cupiditate.",
+        url: `https://getbootstrap.com/docs/${bootstrapVersion}/components/#custom-forms/`,
+        linkText: 'Get Started'
+      },
+    ];
+
+
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader[0])
+    
+  
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Example
+    .card-body.bg-light
+      +componentCard
+        .card
+          .card-body  
+            +PageHeader(pageHeader[1])

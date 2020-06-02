@@ -1,0 +1,35 @@
+extends ../_skeleton-component
+include mixins/_navs
+
+block append variables
+  - var firstParent = 'components'              
+  - var currentPage = 'navs'
+
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader)
+    
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Horizontal
+    .card-body.bg-light
+      +navs
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Vertical
+    .card-body.bg-light
+      +componentCard  
+        +navs.flex-column
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Pills
+    .card-body.bg-light
+      +componentCard  
+        +navs.nav-pills
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Fill and Justify
+    .card-body.bg-light
+      +componentCard  
+        +navsFill

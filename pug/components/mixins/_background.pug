@@ -1,0 +1,57 @@
+block append variables
+  - 
+    var pageHeader = {
+      title:'Background',
+      description: 'These modular elements can be readily used and customized in every layout across pages.'
+    }
+  -
+    var YTPlayerPageHeader = {
+      title:'Background',
+      description: 'These modular elements can be readily used and customized in every layout across pages.',
+      url : 'https://github.com/pupunzi/jquery.mb.YTPlayer/wiki',
+      linkText : 'See the documentation'
+    }
+mixin backgroundPageHeader
+  p.mt-2.mb-0 These modular elements can be readily used and
+    br.d-none.d-sm-block
+    |  customized in every layout across pages.
+
+mixin backgroundImage
+  .position-relative.py-6.py-lg-8
+    +background({image: `${CWD}assets/img/gallery/2.jpg`, className: 'rounded-soft overlay overlay-0'})
+    .position-relative.text-center
+      h4.text-white Image Background
+
+mixin backgroundVideo
+  .position-relative
+    +background({
+      image: `${CWD}assets/video/beach.jpg`,
+      video: {
+        mp4: `${CWD}assets/video/beach`,
+        webm: `${CWD}assets/video/beach`
+      },
+      className: 'rounded-soft'
+    })
+    .position-relative.vh-75.d-flex.flex-center
+      h4.text-white Video Background
+      
+mixin backgroundYoutube
+  .position-relative.py-6.py-lg-8
+    +background({
+      image: `${CWD}assets/img/generic/5.jpg`,
+      youtube: {
+        videoURL: "https://www.youtube.com/watch?v=KCMSWlTPxNc",
+        mute: true,
+        showYTLogo: false
+      },
+      className: 'rounded'
+    })
+    .position-relative.text-center
+      h4.text-white Youtube Video Backgrounds
+      
+mixin backgroundYTPlayerPageHeader
+  h5 Youtube Video Background
+  p.mb-0 An HTML5 Background player for YouTube videos    
+  a(href='https://github.com/pupunzi/jquery.mb.YTPlayer/wiki' target='_blank').btn.btn-link.pl-0.btn-sm See the documentation
+    span.fas.fa-chevron-right.ml-1.fs--2
+      

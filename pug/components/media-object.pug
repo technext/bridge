@@ -1,0 +1,47 @@
+extends ../_skeleton-component
+include mixins/_media
+
+block append variables
+  - var firstParent = 'components'              
+  - var currentPage = 'media-object'
+
+block component
+  .card.shadow-sm.mb-3
+    .card-header
+      +PageHeader(pageHeader)
+    
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Example
+  .card.shadow-sm.mb-3
+    .card-body.bg-light
+      +componentCard
+        +media('Media Heading')
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Alignment
+    
+  .card.shadow-sm.mb-3
+    .card-body.bg-light
+      +componentCard
+        +media('media top').align-self-start
+    +componentCard
+      .card-body.bg-light
+        +media('media center').align-self-center
+    +componentCard
+      .card-body.bg-light
+        +media('media end').align-self-end
+
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Media List
+    .card-body.bg-light
+      +componentCard
+        +mediaList
+
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Nesting
+    .card-body.bg-light
+      +componentCard
+        +listNesting

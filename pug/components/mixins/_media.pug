@@ -1,0 +1,53 @@
+block append variables
+  -
+    var pageHeader = {
+      title: 'Media Object',
+      description: "Documentation and examples for Falcon's' media object to construct highly repetitive components like blog comments, tweets, and the like",
+      url: `https://getbootstrap.com/docs/${bootstrapVersion}/components/media-object/`,
+      linkText: 'Media-object on Bootstrap'
+    }
+
+mixin media(config)
+  .media
+    img.mr-3&attributes(attributes)(src=`${CWD}assets/img/gallery/2.jpg`, alt='...' width='40')
+    .media-body
+      h5.mt-0=config
+      |     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      |
+      br
+      br
+
+      |Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+mixin mediaList
+  ul.list-unstyled
+    li.media
+      = '\n' 
+      img.mr-3.rounded(src=`${CWD}assets/img/gallery/4.jpg`, alt='Generic placeholder image' width="70")
+      .media-body
+        h5.mt-0.mb-1 List-based media object
+        p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    li.media.my-4
+      img.mr-3.rounded(src=`${CWD}assets/img/gallery/5.jpg`, alt='Generic placeholder image' width="70")
+      .media-body
+        h5.mt-0.mb-1 List-based media object
+        p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    li.media
+      img.mr-3.rounded(src=`${CWD}assets/img/gallery/6.jpg`, alt='Generic placeholder image' width="70")
+      .media-body
+        h5.mt-0.mb-1 List-based media object
+        p Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+
+mixin listNesting
+  .media
+    img.mr-3(src=`${CWD}assets/img/gallery/6.jpg`, alt='...', width="35")
+    .media-body
+      h5.mt-0 Media heading
+      |     Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+      .media.mt-3
+        a.mr-3(href='#')
+          img.mr-3(src=`${CWD}assets/img/gallery/5.jpg`, alt='...' ,width="40")
+        .media-body
+          h5.mt-0 Media heading
+          |         Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+

@@ -1,0 +1,32 @@
+block append variables
+  -
+    var pageHeader = {
+      title: 'Badges',
+      description: 'Documentation and examples for badges, our small count and labeling component.',
+      url: `https://getbootstrap.com/docs/${bootstrapVersion}/components/badge/`,
+      linkText: 'Badges on Bootstrap'
+    }
+
+mixin badgeSolid
+  each value in colors
+    span.badge(class=`badge-${value}`)
+      +cleanText(value)
+    = '\n'
+    
+mixin badgePill
+  each value in colors
+    span.badge.badge-pill(class=`badge-${value}`)
+      +cleanText(value)
+    = '\n'
+
+mixin badgeSoft
+  each value in colors
+    span.badge(class=`badge-soft-${value}`)
+      +cleanText(value)
+    = '\n'
+    
+mixin badgeSoftPill
+  each value in colors
+    span.badge.badge-pill(class=`badge-soft-${value}`)
+      +cleanText(value)
+    = '\n'

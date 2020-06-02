@@ -1,0 +1,41 @@
+extends ../_skeleton-component
+
+block append variables
+  - var firstParent = 'documentation'              
+  - var currentPage = 'file-structure'
+  -
+    var pageHeader = {
+      title: 'File structure',
+      description: 'Within your theme, you’ll find the following directories and files, common grouping resources and providing both compiled, transpired and minified distribution files, as well as raw source files.',
+    }
+
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader)
+      
+  +componentCardLib.
+    #{version}/
+      ├── js/
+      |   ├── bootstrap/
+      |   ├── theme/
+      |   └── plugins/
+      ├── pages/
+      |   ├── assets/
+      |   ├── components/
+      |   ├── documentation/
+      |   ├── plugins/
+      |   ├── utilities/
+      |   ├── index.html
+      |   └── *.html
+      ├── scss/
+      |   ├── bootstrap/
+      |   ├── theme/
+      |   ├── _user.scss
+      |   ├── _user-variables.scss
+      |   └── theme.scss
+      ├── .eslintrc.json
+      ├── .gitignore
+      ├── gulpfile.js
+      ├── package.json
+      └── README.md

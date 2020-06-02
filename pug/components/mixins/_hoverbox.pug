@@ -1,0 +1,18 @@
+mixin hoverboxBasic
+  .hoverbox.rounded-soft.text-center
+    = '\n'
+    img(src=`${CWD}assets/img/generic/3.jpg` alt="").img-fluid
+    .hoverbox-content.bg-dark.p-5.self-center
+      div
+        p.lead.text-white Style your card with different design using theme Hoverbox
+        = '\n'
+        a(href='#!').btn.btn-light.btn-sm.mt-1 Learn more
+
+mixin hoverboxImageChange
+  a.color-white(href='#!')
+    .hoverbox.rounded-soft
+      = '\n'
+      img.img-fluid(src=`${CWD}assets/img/generic/1.jpg` alt="")
+      .hoverbox-content
+        = '\n'
+        img.img-fluid(src=`${CWD}assets/img/generic/2.jpg` alt="")

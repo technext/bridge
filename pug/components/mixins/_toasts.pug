@@ -1,0 +1,70 @@
+block append variables 
+  -
+    var pageHeader =
+    {
+    title: 'Toasts',
+    description: 'Push notifications to your visitors with a toast, a lightweight and easily customizable alert message.',
+    url: `https://getbootstrap.com/docs/${bootstrapVersion}/components/toasts/`,
+    linkText: 'Toasts on Bootstrap'
+    }
+
+    
+mixin toastBasic
+  .toast.show(role='alert', aria-live='assertive', aria-atomic='true')
+    .toast-header
+      = '\n'
+      strong.mr-auto Bootstrap
+      = '\n'
+      small 11 mins ago
+      = '\n'
+      button.ml-2.mb-1.close(type='button', data-dismiss='toast', aria-label='Close')
+        = '\n'
+        span(aria-hidden='true') ×
+        = '\n'
+    .toast-body
+      | Hello, world! This is a toast message.
+      
+mixin toastStacking
+  .toast.show(role='alert', aria-live='assertive', aria-atomic='true')
+    .toast-header
+      = '\n'
+      strong.mr-auto Bootstrap
+      = '\n'
+      small.text-muted just now
+        = '\n'
+      button.ml-2.mb-1.close(type='button', data-dismiss='toast', aria-label='Close')
+        = '\n'
+        span(aria-hidden='true') ×
+      = '\n'
+    .toast-body
+      | See? Just like this.
+  .toast.show(role='alert', aria-live='assertive', aria-atomic='true')
+    .toast-header
+      strong.mr-auto Bootstrap
+      small.text-muted 2 seconds ago
+      button.ml-2.mb-1.close(type='button', data-dismiss='toast', aria-label='Close')
+        span(aria-hidden='true') ×
+    .toast-body
+      | Heads up, toasts will stack automatically
+      
+mixin toastRightPlace
+  .position-relative(aria-live='polite', aria-atomic='true', style='min-height: 90px;')
+    .toast.show.position-absolute.t-0.r-0
+      .toast-header
+        strong.mr-auto Bootstrap
+        small 11 mins ago
+        button.ml-2.mb-1.close(type='button', data-dismiss='toast', aria-label='Close')
+          span(aria-hidden='true') ×
+      .toast-body
+        | Hello, world! This is a toast message.
+
+mixin toastMiddlePlace
+  .d-flex.justify-content-center.align-items-center(aria-live='polite', aria-atomic='true', style='min-height: 300px;')
+    .toast.show(role='alert', aria-live='assertive', aria-atomic='true')
+      .toast-header
+        strong.mr-auto Bootstrap
+        small 11 mins ago
+        button.ml-2.mb-1.close(type='button', data-dismiss='toast', aria-label='Close')
+          span(aria-hidden='true') ×
+      .toast-body
+        | Hello, world! This is a toast message.

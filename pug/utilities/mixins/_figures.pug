@@ -1,0 +1,33 @@
+block append variables
+  -
+    var pageHeader = {
+      title: 'Figures',
+      description: 'Documentation and examples for displaying related images and text with the figure component in Bootstrap.',
+      url: `https://getbootstrap.com/docs/${bootstrapVersion}/content/figures/`,
+      linkText: 'Figures on Bootstrap'
+    }
+
+mixin figuresDoc
+  p Anytime you need to display a piece of content—like an image with an optional caption, consider using a 
+    code &lt;figure&gt;
+  p Use the included 
+    code .figure
+    | , 
+    code .figure-img 
+    | and 
+    code .figure-caption 
+    | classes to provide some baseline styles for the HTML5 
+    code &lt;figure&gt; 
+    | and 
+    code &lt;figcaption&gt;
+    |  elements. Images in figures have no explicit size, so be sure to add the .img-fluid class to your 
+    code &lt;img&gt; 
+    | to make it responsive.
+  
+mixin figures
+  figure.figure(style="max-width: 25rem;")
+    = '\n'
+    img.figure-img.img-fluid.rounded(src=`${CWD}assets/img/generic/3.jpg`, alt='...')
+    = '\n'
+    figcaption.figure-caption A caption for the above image.
+    = '\n'

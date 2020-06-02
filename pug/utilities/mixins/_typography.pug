@@ -1,0 +1,163 @@
+block append variables
+  -
+    var pageHeader = {
+      title: 'Typography',
+      description: `Documentation and examples for ${theme} typography, including global settings, headings, body text, lists, and special typographic element.`,
+      url: `https://getbootstrap.com/docs/${bootstrapVersion}/content/typography`,
+      linkText: 'Typography on Bootstrap'
+    }
+
+mixin typoFont
+  .text-sans-serif Poppins
+  = '\n'
+  .text-base Open Sans
+  = '\n'
+  code.text-monospace Monospace
+
+mixin typoHeadingDoc
+  p.mb-0
+    strong theme
+    |  has all the html headings, 
+    code #{'<h1>'}
+    |  through 
+    code #{'<h6>'}
+    | , styled for you. Also you can use 
+    code .h1
+    |   through 
+    code .h6
+    |   classes when you want to match the font styling of a heading but still want your text to be displayed inline.
+
+mixin typoHeading
+  h1 Heading 1
+  h2 Heading 2
+  h3 Heading 3
+  h4 Heading 4
+  h5 Heading 5
+  h6 Heading 6
+
+mixin typoFontWeight
+  .font-weight-thin {font-weight: 100 !important;}
+  .font-weight-extra-light {font-weight: 200 !important;}
+  .font-weight-light {font-weight: 300 !important;}
+  .font-weight-normal {font-weight: 400 !important;}
+  .font-weight-medium {font-weight: 500 !important;}
+  .font-weight-semi-bold {font-weight: 600 !important;}
+  .font-weight-bold {font-weight: 700 !important;}
+  .font-weight-extra-bold {font-weight: 800 !important;}
+  .font-weight-black {font-weight: 900 !important;}
+
+mixin typoColor
+  h5.text-primary .text-primary
+  h5.text-info .text-info
+  h5.text-success .text-success
+  h5.text-warning .text-warning
+  h5.text-danger .text-danger
+  h5.text-black .text-black
+  h5.text-dark .text-dark
+  h5.text-1000 .text-1000
+  h5.text-900 .text-900
+  h5.text-800 .text-800
+  h5.text-700 .text-700
+  h5.text-600 .text-600
+  h5.text-500 .text-500
+  h5.text-400 .text-400
+  h5.text-300
+    span.bg-black .text-300
+  h5.text-200
+    span.bg-dark .text-200
+  h5.text-light
+    span.bg-1000 .text-light
+  h5.text-white
+    span.bg-900 .text-white
+
+mixin typoFontSize
+  h6.fs--2 .fs--2
+  h6.fs--1 .fs--1
+  h6.fs-0 .fs-0
+  h6.fs-1 .fs-1
+  h6.fs-2 .fs-2
+  h6.fs-4 .fs-4
+  h6.fs-5 .fs-5
+  h6.fs-6 .fs-6
+  h6.fs-7 .fs-7
+  h6.fs-8 .fs-8
+  
+mixin typoLeadDropcapDoc
+  p.mb-0
+    | Make a paragraph stand out by adding 
+    code .lead
+    |  and for drop cap, use 
+    code .dropcap
+    |  class.
+
+mixin typoParagraph
+  p&attributes(attributes) Following text are dummy copy text. Mellentesque cursus placerat hendrerit. Donec sed erat nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce vitae consequat erat. Quisque faucibus felis et fringilla imperdiet. Etiam at porttitor elit, quis convallis massa. Ut id risus sapien.
+  
+mixin typoTransformation
+  .text-lowercase Lowercased text
+  .text-uppercase Uppercased text
+  .text-capitalize Capitalized text
+    
+mixin typoInlineStyleDoc
+  p.mb-0 Use these tags for inline styling. Feel free to use 
+    code #{'<b>'}
+    |  and 
+    code #{'<em>'}
+    |  tags insted of 
+    code #{'<strong>'}
+    |  and 
+    code #{'<i>'}
+    |  tags.
+  
+mixin typoInlineStyle
+  p
+    = '\n'
+    mark Highlight text
+    = '\n'
+  p
+    = '\n'
+    del Deleted text
+    = '\n'
+  p
+    = '\n'
+    u Underlined text
+    = '\n'
+  p
+    = '\n'
+    small Small text
+    = '\n'
+  p
+    = '\n'
+    strong Bold text
+    = '\n'
+  p
+    = '\n'
+    i Italic text
+    = '\n'
+
+mixin typoBlockquote
+  blockquote.blockquote.my-3
+    p.fs-2.text-800.font-italic Racing is life, everything before or after is just waiting.”
+    footer.blockquote-footer Frank Zappa
+
+mixin typoList
+  ul&attributes(attributes)
+    li Lorem ipsum dolor sit amet
+    li Consectetur adipiscing elit
+    li Nulla volutpat aliquam velit
+      = '\n'
+      ul
+        li Phasellus iaculis neque
+        li Purus sodales ultricies
+    li Faucibus porta lacus fringilla vel
+
+mixin typoListOrdered
+  ol
+    li Lorem ipsum dolor sit amet
+    li Consectetur adipiscing elit
+    li Nulla volutpat aliquam velit
+      = '\n'
+      ol
+        li Phasellus iaculis neque
+        li Purus sodales ultricies
+    li Faucibus porta lacus fringilla vel

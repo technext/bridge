@@ -1,0 +1,148 @@
+block append variables 
+  -
+    var pageHeader = {
+      title: 'Card',
+      description: 'Falcon’s cards provide a flexible and extensible content container with multiple variants and options.',
+      url: `https://getbootstrap.com/docs/${bootstrapVersion}/components/card/`,
+      linkText: 'Card on Bootstrap'
+    }
+
+mixin CardUserPreferences
+  .bg-white.rounded-soft.py-2&attributes(attributes)
+    = '\n'
+    a(href='#!').dropdown-item.font-weight-bold.text-warning
+      span.fas.fa-crown.mr-1
+      span Go Pro
+    = '\n'
+    .dropdown-divider
+    = '\n'
+    a(href='#!').dropdown-item Set status
+    = '\n'
+    a(href=`${CWD}pages/profile.html`).dropdown-item Profile &amp; account
+    = '\n'
+    a(href='#!').dropdown-item Feedback
+    = '\n'
+    .dropdown-divider
+    = '\n'
+    a(href=`${CWD}pages/settings.html`).dropdown-item Settings
+    = '\n'
+    a(href=`${CWD}authentication/log-out.html`).dropdown-item Logout
+
+//- mixin Notification(config)
+//-   - var config = Object.assign({ body: 'Notification commonly shows activity related to an account.', time: '7m'}, config)
+//-   = '\n' 
+//-   a(href=`${config.link ? `${CWD}${config.link}` : '#!'}` class=config.className).notification&attributes(attributes)
+//-     if config.avatar
+//-       .notification-avatar
+//-         +Avatar(config.avatar && Object.assign({size: '3xl'}, config.avatar)).mr-3
+//-     .notification-body
+//-       p.mb-1!=config.body
+//-       = '\n' 
+//-       span.notification-time
+//-         if config.emoji
+//-           span.mr-1(role='img' aria-label='Emoji')!=config.emoji
+//-         if config.icon
+//-           span.mr-1(class=config.icon)
+//-         =config.time
+//-       = '\n' 
+//-   = '\n' 
+
+
+
+mixin CardOverlay(config)
+  .card.bg-dark.text-white&attributes(config.attrs)
+    .card-img-top
+      img.img-fluid(src=`${CWD}assets/img/${config.img}`, alt='Card image')
+    .card-img-overlay.d-flex.align-items-end
+      div
+        h5.card-title.text-white!=config.title
+        p.card-text!=config.body
+
+mixin cardBasic
+  .card(style='width: 20rem;')
+    .card-img-top
+      img.img-fluid(src=`${CWD}assets/img/generic/1.jpg`, alt='Card image cap')
+    .card-body
+      h5.card-title Card title
+      p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+      a.btn.btn-primary.btn-sm(href='#!') Go somewhere
+
+mixin cardWithImage
+  .card(style='width: 20rem;')
+    .card-img-top
+      img.img-fluid(src=`${CWD}assets/img/generic/3.jpg`, alt='Card image cap')
+    .card-body
+      h5.card-title Card title
+      p.card-text Some quick example text to build on the card title and make up the bulk of the card's content.
+    ul.list-group.list-group-flush
+      li.list-group-item Cras justo odio
+      li.list-group-item Dapibus ac facilisis in
+      li.list-group-item Vestibulum at eros
+    .card-body
+      a.card-link(href='#!') Card link
+      a.card-link(href='#!') Another link
+  
+mixin cardGroup
+  .card-group
+    .card
+      .card-img-top
+        img.img-fluid(src=`${CWD}assets/img/generic/10.jpg`, alt='Card image cap')
+      .card-body
+        h5.card-title First card title
+        p.card-text
+          | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        p.card-text
+          small.text-muted Last updated 45 mins ago
+    .card
+      .card-img-top
+        img.img-fluid(src=`${CWD}assets/img/generic/11.jpg`, alt='Card image cap')
+      .card-body
+        h5.card-title Second card title
+        p.card-text This card has supporting text below as a natural lead-in to additional content.
+        p.card-text
+          small.text-muted Last updated an hour ago
+    .card
+      .card-img-top
+        img.img-fluid(src=`${CWD}assets/img/generic/12.jpg`, alt='Card image cap')
+      .card-body
+        h5.card-title Yet another card title
+        p.card-text
+          | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+        p.card-text
+          small.text-muted Last updated yesterday
+
+mixin cardDeck
+  .card-deck
+    .card
+      .card-img-top
+        img.img-fluid(src=`${CWD}assets/img/generic/6.jpg`, alt='Card image cap')
+      .card-body
+        h5.card-title Awesome card title
+        p.card-text
+          | This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+        p.card-text
+          small.text-muted Last updated 22 mins ago
+    .card
+      .card-img-top
+        img.img-fluid(src=`${CWD}assets/img/generic/7.jpg`, alt='Card image cap')
+      .card-body
+        h5.card-title Beautiful card title
+        p.card-text This card has supporting text below as a natural lead-in to additional content.
+        p.card-text
+          small.text-muted Last updated 3 hours ago
+    .card
+      .card-img-top
+        img.img-fluid(src=`${CWD}assets/img/generic/8.jpg`, alt='Card image cap')
+      .card-body
+        h5.card-title Gorgeous card title
+        p.card-text
+          | This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+        p.card-text
+          small.text-muted Last updated on Monday
+
+mixin cardStyle
+  .card&attributes(attributes)
+    .card-body
+      .card-title Primary card title
+      p.card-text
+        | Some quick example text to build on the card title and make up the bulk of the card's content.

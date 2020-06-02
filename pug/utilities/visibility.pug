@@ -1,0 +1,19 @@
+extends ../_skeleton-component
+include mixins/_visibility
+
+block append variables
+  - var CWD = '../';
+  - var firstParent = 'utilities'
+  - var currentPage = 'visibility'
+
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader)
+    
+  .card.shadow-sm.mb-3
+    .card-body
+      +visivilityDoc
+
+      +componentCardLib
+        +visivility

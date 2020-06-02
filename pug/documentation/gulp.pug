@@ -1,0 +1,235 @@
+extends ../_skeleton-component
+
+block append variables
+  - var firstParent = 'documentation'              
+  - var currentPage = 'gulp'
+  -
+    var pageHeader = {
+      title: 'Gulp',
+    }
+
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      h3.mb-0=pageHeader.title
+  
+  .card.shadow-sm.mb-3
+    .card-header
+      h5#gulp-start.mb-0.contains-anchor To start your project run:
+        a(href='#gulp-start' data-fancyscroll data-offset=96) #
+    .card-body.bg-light
+      code.fs-2.border.rounded.py-2.px-3.d-block.border-300.bg-white gulp
+      p.mt-4 The 
+        code gulp
+        |  command will build, serve and watch the project with the following gulp tasks:
+      .table-responsive
+        table.table.table-bordered
+          thead.thead-light.text-center.text-sans-serif
+            tr
+              th.text-nowrap Task
+              th Action
+          tbody
+            tr
+              td.text-nowrap
+                code clean
+              td Delete the following directories:
+                pre
+                  code.lang-html.
+                    js/bootstrap
+                    scss/bootstrap
+                    pages/assets/css
+                    pages/assets/js
+                    pages/assets/lib
+            tr
+              td.text-nowrap
+                code scss
+              td Compiles 
+                code scss/theme.scss
+                |  and generates 
+                code theme.css
+                |  and 
+                code theme.map
+                |  to the 
+                code pages/assets/css/ 
+                |  directory.
+            tr
+              td.text-nowrap
+                code scss:min
+              td Compiles 
+                code scss/theme.scss
+                |  and generates 
+                code theme.min.css
+                | , 
+                |  and 
+                code theme.min.map
+                |  to the 
+                code pages/assets/css/ 
+                |  directory.
+            tr
+              td.text-nowrap
+                code scss:rtl
+              td Compiles 
+                code scss/theme.scss
+                |  and generates 
+                code theme-rtl.css
+                | , 
+                |  and 
+                code theme-rtl.map
+                |  to the 
+                code pages/assets/css/ 
+                |  directory.
+            tr
+              td.text-nowrap
+                code scss:rtl:min
+              td Compiles 
+                code scss/theme.scss
+                |  and generates 
+                code theme-rtl.min.css
+                | , 
+                |  and 
+                code theme-rtl.min.map
+                |  to the 
+                code pages/assets/css/ 
+                |  directory.
+            tr
+              td.text-nowrap
+                code js:bootstrap
+              td Concat the 
+                code js
+                |  files from 
+                code js/bootstrap/
+                |  and transpiles with babel to 
+                code bootstrap.js
+                | , 
+                code bootstrap.min.js
+                |  to the 
+                code pages/assets/js/
+                |  directory.
+            tr
+              td.text-nowrap
+                code js:theme
+              td Concat the 
+                code js
+                |  files from 
+                code js/theme/
+                |  and transpiles with babel to 
+                code theme.js
+                | , 
+                code theme.min.js
+                |  to the 
+                code pages/assets/js/
+                |  directory.
+            tr
+              td.text-nowrap
+                code js:plugins
+              td Concat the 
+                code js
+                |  files according to the  
+                code Paths.JS.PLUGINS
+                |  array declared in 
+                code gulpfile.js
+                |  and transpiles with babel to 
+                code plugins.js
+                |  and  
+                code plugins.min.js
+                |  to the 
+                code pages/assets/js/
+                |  directory.
+            tr
+              td.text-nowrap
+                code js
+              td Run the following tasks parallelly:
+                ul
+                  li
+                    code js:bootstrap
+                  li
+                    code js:theme
+                  li
+                    code js:plugins
+            tr
+              td.text-nowrap
+                code copy:dependency
+              td Copies the dependencies from 
+                code node_modules/
+                |  directory to 
+                code pages/assets/
+                |  directory according to the 
+                code Paths.DEPENDENCIES
+                |  object declared in 
+                code gulpfile.js
+                | .
+            tr
+              td.text-nowrap
+                code watch
+              td All of the following folders are monitored for changes, which will tell the browser to reload automatically after any changes are made:
+                pre
+                  code.lang-html.
+                    pages/*.html
+                    pages/assets/fonts/
+                    pages/assets/video/
+                    pages/assets/img/
+                    scss/ 
+                    js/
+            tr
+              td.text-nowrap
+                code serve
+              td Starts a 
+                code Browsersync
+                |  instance on port 
+                code 3000
+                |  served from 
+                code pages
+                | , defaults to 
+                code index.html
+                | .
+  //-.card.mb-3          
+    .card-header
+      h5#other-tasks.mb-0.contains-anchor Other available gulp tasks
+        a(href='#other-tasks' data-fancyscroll data-offset=96) #
+    .card-body.bg-light
+      .table-responsive
+        table.table.table-bordered
+          thead.thead-light.text-center.text-sans-serif
+            tr
+              th.text-nowrap Task
+              th Action
+          tbody
+            tr
+              td.text-nowrap
+                code scss:min
+              td Compiles 
+                code scss/theme.scss
+                |  and generates 
+                code theme.min.css
+                | , 
+                |  and 
+                code theme.min.map
+                |  to the 
+                code pages/assets/css/ 
+                |  directory.
+            tr
+              td.text-nowrap
+                code scss:rtl
+              td Compiles 
+                code scss/theme.scss
+                |  and generates 
+                code theme-rtl.css
+                | , 
+                |  and 
+                code theme-rtl.map
+                |  to the 
+                code pages/assets/css/ 
+                |  directory.
+            tr
+              td.text-nowrap
+                code scss:rtl:min
+              td Compiles 
+                code scss/theme.scss
+                |  and generates 
+                code theme-rtl.min.css
+                | , 
+                |  and 
+                code theme-rtl.min.map
+                |  to the 
+                code pages/assets/css/ 
+                |  directory.

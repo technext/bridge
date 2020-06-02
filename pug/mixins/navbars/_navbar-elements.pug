@@ -1,0 +1,11 @@
+mixin navbarElements
+  - var sidenavBar = ['documentation', 'components', 'utilities', 'plugins']
+  ul.nav.flex-column.sticky-kit.mt-6.accordion.font-weight-semi-bold#sidebar-nav
+    each value in sidenavBar
+      li.nav-item
+        a.nav-link(class=`${firstParent === value ? 'text-info' : 'text-600 collapsed'}` data-toggle="collapse" href=`#${value}` role="button" aria-expanded=`${firstParent === value}` aria-controls=value)
+          +cleanText(value)
+        .nav.collapse.pl-3(class=`${firstParent === value ? 'show' : ''}` id=value data-parent="#sidebar-nav")
+          each key in Object.keys(sitemap[value].inners)
+            a.nav-link.w-100.py-0(class=`${currentPage === key ? 'text-info' : 'text-600'}` href=`${CWD}${value}/${key}.html`)
+              +cleanText(key)

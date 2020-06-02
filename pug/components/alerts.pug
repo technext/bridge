@@ -1,0 +1,32 @@
+extends ../_skeleton-component
+include mixins/_alerts
+ 
+block append variables
+  - var firstParent = 'components'
+  - var currentPage = 'alerts'
+
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader)
+      
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Examples
+    .card-body.bg-light
+      +componentCard
+        +alertBasic
+
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Additional Content
+    .card-body.bg-light
+      +componentCard
+        +alertAditionalContent
+
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Dismissing
+    .card-body.bg-light
+      +componentCard
+        +alertDismissing

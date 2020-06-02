@@ -1,0 +1,22 @@
+@include media-breakpoint-up(md) {
+  .navbar-dropdown-col-4 {
+    min-width: 35rem;
+  }
+}
+.navbar {
+  .dropdown-item {
+    font-weight: $font-weight-medium;
+  }
+}
+// custom css
+.dropdown-menu-xl-li {
+	position: static;
+}
+
+.dropdown-menu-xl {
+	position: inherit;
+	width: 65%;
+	left: 0;
+	right: 0;
+	/* padding: 15px; */
+}

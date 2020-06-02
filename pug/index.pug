@@ -1,0 +1,939 @@
+extends _skeleton-theme
+block append scripts
+  script(src=`${CWD}assets/lib/typed/typed.js`)
+  script(src=`${CWD}assets/lib/counterup/jquery.counterup.min.js`)
+  script(src=`${CWD}assets/lib/waypoints-counterup/jquery.waypoints.min.js`)
+  script(src=`${CWD}assets/lib/slider/slider.js`)
+
+
+block append content
+  //- +section.py-0
+  //-   .row.flex-center.min-vh-100
+  //-     .col
+  //-       h1 Get started!
+  //-       p.lead Good things happen to those who wait 🤠
+  
+  //- NAVBAR
+  section
+    .container
+      nav.navbar.navbar-expand-lg.navbar-light.bg-white.pt-4
+        a.navbar-brand(href='#')
+          img(src=`${CWD}assets/img/gallery/brand.svg` width='' height='' alt='')
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.dropdown.dropdown-menu-xl-li
+              a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | Landings
+              .dropdown-menu.dropdown-menu-xl.p-0(style='margin-left: 90px;' aria-labelledby='navbarLandings')
+                .row.no-gutters
+                  .col-12.col-lg-6.px-0
+                    .dropdown-img-left.text-center.align-items-center.pt-5
+                      +background({ image:`${CWD}assets/img/gallery/photo-3.jpg`, className: 'overlay overlay-gradient-info rounded-left' }).border.border-light.rounded  
+                      //- Heading
+                      h4.font-weight-bold.text-white.mb-0.mt-5
+                        | Want to see an overview?
+                      //- Text
+                      p.font-size-sm.text-white
+                        | See all the pages at once.
+                      //- Button
+                      a.btn.btn-sm.text-primary.bg-light.font-size-sm(href='#')
+                        | View all pages
+                  .col-12.col-lg-6.px-0
+                    .dropdown-body
+                      .row.no-gutters
+                        .col-6
+                          //- Heading
+                          span.dropdown-header
+                            | Services
+                          //- List
+                          a.dropdown-item(href='#')
+                            | Coworking
+                          a.dropdown-item(href='#')
+                            | Rental
+                          a.dropdown-item.mb-2(href='#')
+                            | Job Listing
+                          //- Heading
+                          span.dropdown-header
+                            | Apps
+                          //- List
+                          a.dropdown-item(href='#')
+                            | Desktop
+                          a.dropdown-item(href='#')
+                            | Mobile
+                        .col-6
+                          //-Heading
+                          span.dropdown-header
+                            | Web
+                          //- List
+                          a.dropdown-item(href='#')
+                            | Basic
+                          a.dropdown-item(href='#')
+                            | Enterprise
+                          a.dropdown-item(href='#')
+                            | Service
+                          a.dropdown-item(href='#')
+                            | Cloud Hosting
+                          a.dropdown-item(href='#')
+                            | Agency 
+                            span.text-uppercase.text-primary (new)
+                      //- / .row
+                //- / .row
+            //- Landing
+            li.nav-item.dropdown.dropdown-menu-xl-li
+              a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | Pages
+              .dropdown-menu.dropdown-menu-xl.p-0(style='margin-left: 200px;' aria-labelledby='navbarPages')
+                .row.no-gutters.mx-0.my-4
+                  .col-6
+                    .row.no-gutters
+                      .col-12.col-lg-6
+                        //- Heading
+                        span.dropdown-header
+                          | Career
+                        //-List
+                        a.dropdown-item(href='#')
+                          | Listing
+                        a.dropdown-item(href='#')
+                          | Opening
+                        //- Heading
+                        span.dropdown-header
+                          | Company
+                        //- List
+                        a.dropdown-item(href='#')
+                          | About
+                        a.dropdown-item(href='#')
+                          | Pricing
+                        a.dropdown-item.mb-lg-0(href='#')
+                          | Terms
+                      .col-12.col-lg-6
+                        //- Heading
+                        span.dropdown-header
+                          | Help center
+                        //- List
+                        a.dropdown-item(href='#')
+                          | Overview
+                        a.dropdown-item(href='#')
+                          | Article
+                        //- Heading
+                        span.dropdown-header
+                          | Contact
+                        //- List
+                        a.dropdown-item(href='#')
+                          | Basic
+                        a.dropdown-item(href='#')
+                          | Cover
+                  .col-6
+                    .row.no-gutters.mx-0
+                      .col-12.col-lg-6
+                        //- Heading
+                        span.dropdown-header
+                          | Blog
+                        //-List
+                        a.dropdown-item(href='#')
+                          | Rich View
+                        a.dropdown-item(href='#')
+                          | Article
+                        a.dropdown-item(href='#')
+                          | Showcase
+                        a.dropdown-item.mb-lg-0(href='#')
+                          | Search
+                      .col-12.col-lg-6
+                        //-Heading
+                        span.dropdown-header
+                          | Portfolio 
+                          span.text-uppercase.text-primary (new)
+                        //- List
+                        a.dropdown-item(href='#')
+                          | Masonry
+                        a.dropdown-item(href='#')
+                          | Grid Rows
+                        a.dropdown-item(href='#')
+                          | Parallax
+                        a.dropdown-item(href='#')
+                          | Case Study
+                        a.dropdown-item(href='#')
+                          | Sidebar
+                        a.dropdown-item(href='#')
+                          | Sidebar: Fluid
+                        a.dropdown-item(href='#')
+                          | Basic Grid
+            li.nav-item.dropdown.dropdown-menu-xl-li
+              a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | Account
+              ul.dropdown-menu.dropdown-menu-lg(style='margin-left: 450px;' aria-labelledby='navbarAccount')
+                li.dropdown-item.dropdown.dropdown-menu-xl-li.dropright
+                  a.dropdown-link.text-decoration-none.text-500.d-flex.justify.justify-content-between.py-2(data-toggle='dropdown' href='#' aria-expanded='true')
+                    span.font-weight-normal Sign In
+                    span
+                      i.fas.fa-chevron-right
+                  .dropdown-menu.dropdown-menu-lg
+                    a.dropdown-item.py-1(href='#')
+                      | Side Cover
+                    a.dropdown-item.py-1(href='#')
+                      | Illustration
+                    a.dropdown-item.py-1(href='#')
+                      | Basic
+                    a.dropdown-item.py-1(data-toggle='modal' href='#')
+                      | Modal Horizontal
+                    a.dropdown-item.py-1(data-toggle='modal' href='#')
+                      | Modal Vertical
+                li.dropdown-item.dropdown.dropdown-menu-xl-li.dropright
+                  a.dropdown-link.text-decoration-none.text-500.d-flex.justify-content-between.py-1(data-toggle='dropdown' href='#' aria-expanded='true')
+                    span.font-weight-normal Sign Up
+                    span
+                      i.fas.fa-chevron-right
+                  .dropdown-menu.dropdown-menu-lg
+                    a.dropdown-item.py-1(href='#')
+                      | Side Cover
+                    a.dropdown-item.py-1(href='#')
+                      | Illustration
+                    a.dropdown-item.py-1(href='#')
+                      | Basic
+                    a.dropdown-item.py-1(data-toggle='modal' href='#')
+                      | Modal Horizontal
+                    a.dropdown-item.py-1(data-toggle='modal' href='#')
+                      | Modal Vertical
+                li.dropdown-item.dropright.dropdown.dropdown-menu-xl-li
+                  a.dropdown-link.text-decoration-none.text-500.d-flex.justify-content-between.py-1(data-toggle='dropdown' href='#')
+                    span.font-weight-normal Password Reset
+                    span
+                      i.fas.fa-chevron-right
+                  .dropdown-menu
+                    a.dropdown-item(href='#')
+                      | Side Cover
+                    a.dropdown-item(href='#')
+                      | Illustration
+                    a.dropdown-item(href='#')
+                      | Basic
+                li.dropdown-item.dropright.dropdown.dropdown-menu-xl-li
+                  a.dropdown-link.text-decoration-none.text-500.d-flex.justify-content-between.py-1(data-toggle='dropdown' href='#')
+                    span.font-weight-normal Error 
+                    span
+                      i.fas.fa-chevron-right
+                  .dropdown-menu
+                    a.dropdown-item.py-1(href='#')
+                      | Side Cover
+                    a.dropdown-item.py-1(href='#')
+                      | Illustration
+                    a.dropdown-item.py-1(href='#')
+                      | Basic
+            li.nav-item.dropdown.dropdown-menu-xl-li
+              a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | Documentation
+              .dropdown-menu.dropdown-menu-md(style='margin-left:550px;' aria-labelledby='navbarDocumentation')
+                .list-group.list-group-flush
+                  a.list-group-item(href='#')
+                    //- Icon
+                    .icon.icon-sm.text-primary
+                      svg(width='40' height='40' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                        g(fill='none' fill-rule='evenodd')
+                          path(d='M0 0h24v24H0z')
+                          path(d='M8 3v.5A1.5 1.5 0 009.5 5h5A1.5 1.5 0 0016 3.5V3h2a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h2z' fill='#335EEA' opacity='.3')
+                          path(d='M11 2a1 1 0 012 0h1.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11z' fill='#335EEA')
+                          rect(fill='#335EEA' opacity='.3' x='7' y='10' width='5' height='2' rx='1')
+                          rect(fill='#335EEA' opacity='.3' x='7' y='14' width='9' height='2' rx='1')
+                    //- Content
+                    .ml-3
+                      //-Heading
+                      span.font-weight-bold.text-uppercase.text-primary.mb-0
+                        | Documentation
+                      //- Text
+                      p.font-size-sm.text-secondary.mb-0
+                        | Customizing and building
+                  a.list-group-item(href='#')
+                    //- Icon
+                    .icon.icon-sm.text-primary
+                      svg(width='40' height='40' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                        g(fill='none' fill-rule='evenodd')
+                          path(d='M0 0h24v24H0z')
+                          rect(fill='#335EEA' x='4' y='4' width='7' height='7' rx='1.5')
+                          path(d='M5.5 13h4a1.5 1.5 0 011.5 1.5v4A1.5 1.5 0 019.5 20h-4A1.5 1.5 0 014 18.5v-4A1.5 1.5 0 015.5 13zm9-9h4A1.5 1.5 0 0120 5.5v4a1.5 1.5 0 01-1.5 1.5h-4A1.5 1.5 0 0113 9.5v-4A1.5 1.5 0 0114.5 4zm0 9h4a1.5 1.5 0 011.5 1.5v4a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-4a1.5 1.5 0 011.5-1.5z' fill='#335EEA' opacity='.3')
+                    //- Content
+                    .ml-3
+                      //- Heading
+                      span.font-weight-bold.text-uppercase.text-primary.mb-0
+                        | Components
+                      //-Text
+                      p.font-size-sm.text-gray-700.mb-0
+                        | Full list of components
+                  a.list-group-item(href='#')
+                    //- Icon
+                    .icon.icon-sm.text-primary
+                      svg(width='40' height='40' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                        g(fill='none' fill-rule='evenodd')
+                          path(d='M0 0h24v24H0z')
+                          path(d='M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z' fill='#335EEA' opacity='.3')
+                          rect(fill='#335EEA' x='6' y='11' width='9' height='2' rx='1')
+                          rect(fill='#335EEA' x='6' y='15' width='5' height='2' rx='1')
+                    //-Content
+                    .ml-3
+                      //- Heading
+                      span.font-weight-bold.text-uppercase.text-primary.mb-0
+                        | Changelog 
+                        span.badge.badge-secondary.bg-light.text-primary 1.1.3
+                      //- Text
+                      p.font-size-sm.text-gray-700.mb-0
+                        | Keep track of changes
+                    //- Badge
+                    span.badge.badge-pill.badge-primary.ml-auto
+                      | 1.1.3
+          a.navbar-btn.btn.btn-sm.btn-primary.lift.ml-auto.hvr-float(href='!#' target='_blank') Buy now
+  //- Navbar END
+  //-
+    WELCOME
+    ==================================================
+  section.welcome.pt-md-8.overflow-hidden(data-zanim-timeline='{"delay":0}' data-zanim-trigger='scroll')
+    .container
+      .row.align-items-center.mt-5
+        .illustration.col-12.col-md-5.col-lg-6.order-md-2
+          //- Image
+          img.img-fluid.mw-md-150.mw-lg-130.mb-6.mb-md-0(src=`${CWD}assets/img/gallery/illustration-2.png` alt='...' data-aos='fade-up' data-aos-delay='100' data-zanim-xs='{"delay":0.7,"duration":0.7,"ease":"Power2.easeOut","from":{"y":20,"opacity":0},"to":{"y":0,"opacity":1}}')
+        .col-12.col-md-7.col-lg-6.order-md-1.aos-animate(data-aos='fade-up' data-zanim-lg='{"delay":1.2,"duration":0.7,"ease":"Power2.easeOut","from":{"y":-20,"opacity":0},"to":{"y":0,"opacity":1}}')
+          //- Heading
+          h1.display-5.text-center.text-md-left
+            | Welcome to 
+            span.text-primary Landkit
+            | . 
+            br
+            | &#x9;&#x9;&#x9;&#x9;Develop anything.
+          //-Text
+          p.lead.text-center.text-md-left.text-muted.mb-6.mb-lg-8
+            | Build a beautiful, modern website with flexible Bootstrap components built from scratch.
+          //-Buttons
+          .text-center.text-md-left.pt-4
+            a.btn.btn-primary.shadow.lift.mr-1.hvr-float(href='#')
+              | View all pages 
+              i.fas.fa-arrow-right.d-none.d-md-inline.ml-2
+              //- <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+            a.btn.btn-light.text-primary.lift.hvr-float(href='#')
+              | Documentation
+      //- / .row
+    //-/ .container
+  //- Section Welcome End
+  //-
+    FEATURES
+    ==================================================
+  section.py-8.border-bottom.overflow-hidden(data-zanim-timeline='{"delay":0}' data-zanim-trigger='scroll')
+    .container
+      .row.features(data-aos='fade-up' data-aos-delay='100' data-zanim-xs='{"delay":0.7,"duration":0.7,"ease":"Power2.easeOut","from":{"y":20,"opacity":0},"to":{"y":0,"opacity":1}}')
+        .col-12.col-md-4
+          //- Icon
+          .icon.text-primary.mb-3
+            svg(width='50' height='50' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+              g(fill='none' fill-rule='evenodd')
+                path(d='M0 0h24v24H0z')
+                path(d='M7 3h10a4 4 0 110 8H7a4 4 0 110-8zm0 6a2 2 0 100-4 2 2 0 000 4z' fill='#335EEA')
+                path(d='M7 13h10a4 4 0 110 8H7a4 4 0 110-8zm10 6a2 2 0 100-4 2 2 0 000 4z' fill='#335EEA' opacity='.3')
+          //- Heading
+          h3(style='font-size: 1.3125rem;')
+            | Built for developers
+          //- Text
+          p.text-muted.mb-6.mb-md-0
+            | Landkit is built to make your life easier. Variables, build tooling, documentation, and reusable components.
+        .col-12.col-md-4.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='50')
+          //- Icon
+          .icon.text-primary.mb-3
+            svg(width='50' height='50' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+              g(fill='none' fill-rule='evenodd')
+                path(d='M0 0h24v24H0z')
+                path(d='M5.5 4h4A1.5 1.5 0 0111 5.5v1A1.5 1.5 0 019.5 8h-4A1.5 1.5 0 014 6.5v-1A1.5 1.5 0 015.5 4zm9 12h4a1.5 1.5 0 011.5 1.5v1a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-1a1.5 1.5 0 011.5-1.5z' fill='#335EEA')
+                path(d='M5.5 10h4a1.5 1.5 0 011.5 1.5v7A1.5 1.5 0 019.5 20h-4A1.5 1.5 0 014 18.5v-7A1.5 1.5 0 015.5 10zm9-6h4A1.5 1.5 0 0120 5.5v7a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-7A1.5 1.5 0 0114.5 4z' fill='#335EEA' opacity='.3')
+          //- Heading
+          h3(style='font-size: 1.3125rem;')
+            | Designed to be modern
+          //- Text
+          p.text-muted.mb-6.mb-md-0
+            | Designed with the latest design trends in mind. Landkit feels modern, minimal, and beautiful.
+        .col-12.col-md-4.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='100')
+          //- Icon
+          .icon.text-primary.mb-3
+            svg(width='50' height='50' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+              g(fill='none' fill-rule='evenodd')
+                path(d='M0 0h24v24H0z')
+                path(d='M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z' fill='#335EEA')
+                rect(fill='#335EEA' opacity='.3' transform='rotate(15 12 12)' x='11' y='4' width='2' height='16' rx='1')
+          //- Heading
+          h3(style='font-size: 1.3125rem;')
+            | Documentation for everything
+          //- Text
+          p.text-muted.mb-0
+            | We&apos;ve written extensive documentation for components and tools, so you never have to reverse engineer anything.
+      //- / .row
+    //- / .container
+  //- FEATURES End
+  //-
+    BRANDS
+    ==================================================
+  section.py-5.border-bottom
+    .container.p-0
+      .row.align-items-center.justify-content-center
+        .col-6.col-sm-4.col-md-2.mb-4.mb-md-0
+          //- Brand
+          .img-fluid.text-gray-600.mb-2.mb-md-0.svg-shim
+            img(src=`${CWD}assets/img/gallery/brand-1.png` alt='...')
+        .col-6.col-sm-4.col-md-2.mb-4.mb-md-0
+          //-Brand
+          .img-fluid.text-gray-600.mb-2.mb-md-0.svg-shim
+            img(src=`${CWD}assets/img/gallery/brand-2.png` alt='...')
+        .col-6.col-sm-4.col-md-2.mb-4.mb-md-0
+          //-Brand
+          .img-fluid.text-gray-600.mb-2.mb-md-0.svg-shim
+            img(src=`${CWD}assets/img/gallery/brand-3.png` alt='...')
+        .col-6.col-sm-4.col-md-2.mb-4.mb-md-0
+          //-Brand
+          .img-fluid.text-gray-600.mb-2.mb-md-0.svg-shim
+            img(src=`${CWD}assets/img/gallery/brand-4.png` alt='...')
+        .col-6.col-sm-4.col-md-2.mb-4.mb-md-0
+          //-Brand
+          .img-fluid.text-gray-600.mb-2.mb-md-0.svg-shim
+            img(src=`${CWD}assets/img/gallery/brand-5.png` alt='...')
+        .col-6.col-sm-4.col-md-2.mb-4.mb-md-0
+          //- Brand
+          .img-fluid.text-gray-600.mb-2.mb-md-0.svg-shim
+            img(src=`${CWD}assets/img/gallery/brand-6.png` alt='...')
+      //- / .row
+    //- / .container
+  //- BRANDS End
+  //-
+    ABOUT
+    ==================================================
+  section.pt-8.pt-md-11.bg-light.pb-5
+    .container
+      .row.align-items-center.justify-content-between
+        .about.col-12.col-md-6.order-md-2.animated(statdiv='')
+          //-- Heading
+          h2
+            | The most useful resource
+          h2
+            span.text-success.pr-1 ever created for 
+            span.text-success.element.typed-cursor
+          //- Text
+          p.font-size-lg.text-muted.mb-6
+            | Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier.
+          //-List
+          .row
+            .col-12.col-lg-6
+              //- Item
+              .d-flex
+                //- Check
+                span.badge.badge-rounded-circle.badge-success-soft.mt-1.mr-1
+                  i.far.fa-check-circle.text-success.fa-lg
+                //- Text
+                p.text-success
+                  | Lifetime updates
+              //- Item
+              .d-flex
+                //- Check
+                span.badge.badge-rounded-circle.badge-success-soft.mt-1.mr-1
+                  i.far.fa-check-circle.text-success.fa-lg
+                //- Text
+                p.text-success
+                  | Tons of assets
+            .col-12.col-lg-6.mb-6.mb-md-0
+              //- Item
+              .d-flex
+                //- Check
+                span.badge.badge-rounded-circle.badge-success-soft.mt-1.mr-1
+                  i.far.fa-check-circle.text-success.fa-lg
+                //- Text
+                p.text-success
+                  | Tech support
+              //- Item
+              .d-flex
+                //- Check
+                span.badge.badge-rounded-circle.badge-success-soft.mt-1.mr-1
+                  i.far.fa-check-circle.text-success.fa-lg
+                //- Text
+                p.text-success
+                  | Integration ready
+          //- .row
+        .card-form.col-12.col-md-6.col-lg-5.order-md-1
+          //- Card
+          .card.shadow-light-lg.lift.lift-lg.hvr-float-shadow(style='width: 24.375rem;')
+            //- Image
+            img.card-img-top.card-img-custom(src=`${CWD}assets/img/gallery/photo-2.jpg` alt='...')
+            //- Shape
+            //-
+              <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+              <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
+              </div>
+              </div>
+            //- Body
+            .card-body
+              //- Form
+              form
+                .form-group
+                  input#cardName.form-control(type='text' placeholder='Name')
+                  label(for='cardName')
+                .form-group
+                  input#cardEmail.form-control(type='email' placeholder='Email')
+                  label(for='cardEmail')
+                .form-group
+                  //-<input type="password" class="form-control form-control-flush" id="cardPassword" placeholder="Password" style="background-image: url(data:image/png;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+                  input#cardPassword.form-control(type='password' placeholder='Password')
+                  label(for='cardPassword')
+                .mt-6
+                  button.btn.btn-block.btn-success.lift(type='submit')
+                    | Download a sample
+      //-.row
+      .row.experience.align-items-center.py-8
+        .col-12.col-md-7.col-lg-6.aos-init.aos-animate(data-aos='fade-right')
+          //- Heading
+          h2
+            | We have lots of experience 
+            br
+            span.text-primary building Bootstrap themes
+            | .
+          //-Text
+          p.font-size-lg.text-muted.mb-6.text-gray-700
+            | We&apos;ve built well over a dozen Bootstrap themes and sold tens of thousands of copies.
+          //-List
+          .d-flex
+            //- Icon
+            .icon.text-primary
+              svg(width='50' height='50' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                g(fill='none' fill-rule='evenodd')
+                  path(d='M0 0h24v24H0z')
+                  path(d='M12 8H8a4 4 0 00-4 4v1a3 3 0 003 3v2a5 5 0 01-5-5v-1a6 6 0 016-6h4V4.728a.5.5 0 01.8-.4l2.856 2.133a.5.5 0 01-.001.802l-2.857 2.121A.5.5 0 0112 8.983V8z' fill='#335EEA')
+                  path(d='M12.058 16H16a4 4 0 004-4v-1a3 3 0 00-3-3V6a5 5 0 015 5v1a6 6 0 01-6 6h-3.942v.983a.5.5 0 01-.798.401l-2.857-2.12a.5.5 0 010-.803l2.856-2.134a.5.5 0 01.8.401V16z' fill='#335EEA' opacity='.3')
+            .ml-5
+              //- Heading
+              h4.mb-1
+                | Bootstrap users since the beginning
+              //- Text
+              p.text-muted.mb-6.text-gray-700
+                | We&apos;ve been developing with Bootstrap since it was publicly released in 2011.
+          .d-flex
+            //- Icon
+            .icon.text-primary
+              svg(width='50' height='50' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+                g(fill='none' fill-rule='evenodd')
+                  path(d='M0 0h24v24H0z')
+                  path(d='M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z' fill='#335EEA')
+                  rect(fill='#335EEA' opacity='.3' transform='rotate(15 12 12)' x='11' y='4' width='2' height='16' rx='1')
+            .ml-5
+              //- Heading
+              h4.mb-1
+                | Deep understanding of Bootstrap
+              //- Text
+              p.text-muted.mb-6.mb-md-0.text-gray-700
+                | We&apos;ve watched Bootstrap grow up over the years and understand it better than almost anyone.
+        .col-12.col-md-5.col-lg-6
+          .w-md-150.w-lg-130.position-relative.aos-init.aos-animate(data-aos='fade-left')
+            //- Shape
+            //-
+              <div class="shape shape-fluid-y shape-blur-4 svg-shim text-gray-200">
+              " fill="currentColor"></path></svg>
+              </div>
+            //- Image
+            .hvr-skew-forward
+              //- Image
+              img.screenshot.img-fluid(src=`${CWD}assets/img/gallery/dashkit.jpg` alt='...' style='max-width: 620px; ')
+      //-.row
+    //-.container
+  //- ABOUT END
+  //-
+    TESTIMONIALS
+    ==================================================
+  section.pt-10.testimonials
+    .container
+      .row.justify-content-center
+        .col-12.col-md-10.col-lg-8.text-center
+          //- Heading
+          h2
+            | Our customers are our biggest fans.
+          //-Text
+          p.font-size-lg.text-muted.text-justify.mb-7.mb-md-9
+            | We dont&apos; like to brag, but we don&apos;t mind letting our customers do it for us. Here are a few nice things folks have said about our themes over the years.
+      //-.row
+      .row
+        .col-12
+          #wrapper
+            //- <h1 class="text-muted">jQuery Slider</h1>
+            #slide-wrap
+              //- slider
+          //-.col
+        //-.row
+      //-.container
+  //- TESTIMONIALS END
+  //-
+    SHAPE
+    ==================================================
+  .position-relative.mt-n11.shape-slider
+    .shape.shape-bottom.shape-fluid-x.svg-shim.text-dark
+      //-<svg viewBox="0 0 2880 48" fill="blue" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
+      svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1440 320')
+        path(fill='#F1F4F8' fill-opacity='1' d='M0,256L1440,0L1440,320L0,320Z')
+  //-
+    STATS
+    ==================================================
+  section.bg-gray-200.section-7
+    .container
+      .row.align-items-center
+        .col-12.col-md-5.col-lg-6.order-md-2
+          //- Image
+          img.img-fluid.mb-6.mb-md-0(src=`${CWD}assets/img/gallery/illustration-8.png` alt='...')
+        .col-12.col-md-7.col-lg-6.order-md-1
+          //- Heading
+          h2
+            | Stay focused on your business. 
+            br
+            span.text-primary Let us handle the design
+            | .
+          //-Text
+          p.font-size-lg.text-gray-700.mb-6
+            | You have a business to run. Stop worring about cross-browser bugs, designing new pages, keeping your components up to date. Let us do that for you.
+          //- Stats
+          .d-flex
+            .pr-5
+              h3.mb-0
+                span.counter 100
+                | %
+              p.text-gray-700.mb-0
+                | Satisfaction
+            .border-left.border-gray-300
+            .px-5
+              h3.mb-0
+                span.counter 24
+                | /
+                span.counter 7
+              p.text-gray-700.mb-0
+                | Support
+            .border-left.border-gray-300
+            .pl-5
+              h3.mb-0
+                span.counter 100
+                | k+
+              p.text-gray-700.mb-0
+                | Sales
+      //-.row
+    //-.container
+  //- STATS END
+  //-
+    PRICING
+    ==================================================
+  section.pt-9.pt-md-12.bg-gray-200
+    .container
+      .row.justify-content-center
+        .col-12.col-md-10.col-lg-8.text-center
+          //-Heading
+          h1
+            | Fair, simple pricing for all.
+          //- Text
+          p.lead.text-gray-700
+            | All types of businesses need access to development resources, so we give you the option to decide how much you need to use.
+          //-Form
+          form.d-flex.align-items-center.justify-content-center.mb-7.mb-md-9
+            //- Label
+            span.text-muted
+              | Annual
+            //- Switch
+            //-
+              <div class="custom-control custom-switch mx-3">
+              <input type="checkbox" class="custom-control-input" id="billingSwitch" data-toggle="price" data-target=".price">
+              <label class="custom-control-label" for="billingSwitch"></label>
+              </div>
+            .custom-control.custom-switch
+              input#customSwitch1.custom-control-input(type='checkbox')
+              label.custom-control-label(for='customSwitch1')
+            //- Label
+            span.text-muted
+              | Monthly
+      //- .row
+      //- Card
+      .row.align-items-center.no-gutters
+        .col-12.col-md-6
+          //- Card
+          .card.rounded-lg.shadow-lg.mb-6.mb-md-0.aos-init.aos-animate(style='z-index: 1;' data-aos='fade-up')
+            //- Body
+            .card-body.py-8.py-md-8
+              .row.justify-content-center
+                .col-12.col-xl-9
+                  //-Badge
+                  .text-center.mb-5
+                    span
+                      button.btn-sm.btn-light.text-primary.rounded-pill(type='button') Standard
+                  //- Price
+                  .d-flex.justify-content-center
+                    span.h2.mb-0.mt-2 $
+                    span.price.display-2.mb-0(data-annual='29' data-monthly='49') 29
+                    span.h2.align-self-end.mb-1 /mo
+                  //- Text
+                  p.text-center.text-muted.mb-6.mb-md-8
+                    | per seat
+                    
+                  //- Features
+                  .d-flex.text-center
+                    //- Check
+                    .badge.badge-rounded-circle.badge-success-soft.mt-1
+                      i.far.fa-check-circle.text-success.fa-lg
+                    //- Text
+                    p.text-center
+                      | Rich, responsive landing pages
+                  .d-flex
+                    //- Check
+                    .badge.badge-rounded-circle.badge-success-soft.mt-1
+                      i.far.fa-check-circle.text-success.fa-lg
+                    //- Text
+                    p
+                      | 100+ styled components
+                  .d-flex
+                    //- Check
+                    .badge.badge-rounded-circle.badge-success-soft.mt-1
+                      i.far.fa-check-circle.text-success.fa-lg
+                    //- Text
+                    p
+                      | Flexible, simple license
+                  .d-flex
+                    //- Check
+                    .badge.badge-rounded-circle.badge-success-soft.mt-1
+                      i.far.fa-check-circle.text-success.fa-lg
+                    //- Text
+                    p
+                      | Speedy build tooling
+                  .d-flex
+                    //- Check
+                    .badge.badge-rounded-circle.badge-success-soft.mt-1
+                      i.far.fa-check-circle.text-success.fa-lg
+                    //- Text
+                    p.mb-0
+                      | 6 months free support included
+              //-.row
+            //- Button
+            a.card-btn.btn.btn-block.btn-lg.btn-primary(href='#!')
+              | Get it now
+        //- Enterprise Card
+        .col-12.col-md-6.ml-md-n4.card-z-index
+          //- Card
+          .card.rounded-lg.shadow-lg.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='200' style='width: 32rem;')
+            //- Body
+            .card-body.py-8.py-md-11
+              .row.justify-content-center
+                .col-12.col-xl-10
+                  //- Badge
+                  p.text-center.mb-8.mb-md-11
+                    span
+                      button.btn-sm.btn-light.text-primary.rounded-pill(type='button') Enterprise
+                  //- Text
+                  p.lead.text-center.text-muted.mb-0.mb-md-10.bg-white
+                    | We offer variable pricing with discounts for larger organizations. Get in touch with us and we&rsquo;ll figure out something that works for everyone.
+              //-.row
+            //- Button
+            a.card-btn.btn.btn-block.btn-lg.btn-light.bg-gray-300.text-gray-700(href='#!')
+              | Contact us
+        //- Enterprise Card End
+      //-.row
+    //- .container
+  //- PRICING END
+  //-
+    SHAPE
+    ==================================================
+  .position-relative.mt-n15
+    .shape.shape-bottom.shape-fluid-x.svg-shim.text-dark
+      //- <svg viewBox="0 0 2880 48" fill="blue" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
+      svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1440 220')
+        path(fill='#1b2a4e' fill-opacity='1' d='M0,128L120,133.3C240,139,480,149,720,144C960,139,1200,117,1320,106.7L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z')
+  //-
+    FAQ
+    ==================================================
+  section.pt-5.bg-dark
+    .container.pt-8.pt-md-12
+      .row
+        .col-12.col-md-6
+          //- Item
+          .d-flex
+            //- Badge
+            div.badge.badge-lg.badge-rounded-circle.badge-success
+              span ?
+            .ml-5
+              //- Heading
+              h4.text-white
+                | Can I use Landkit for my clients?
+              //-Text
+              p.text-muted.mb-6.mb-md-8
+                | Absolutely. The Bootstrap Themes license allows you to build a websites for personal use or for a client.
+          //- Item
+          .d-flex
+            //- Badge
+            div.badge.badge-lg.badge-rounded-circle.badge-success
+              span ?
+            .ml-5
+              //- Heading
+              h4.text-white
+                | Do I get free updates?
+              //- Text
+              p.text-muted.mb-6.mb-md-0
+                | Yes. We update all of our themes with each Bootstrap update, plus are constantly adding new components, pages, and features to our themes.
+        .col-12.col-md-6
+          //- Item
+          .d-flex
+            //- Badge
+            div.badge.badge-lg.badge-rounded-circle.badge-success
+              span ?
+            .ml-5
+              //- Heading
+              h4.text-white
+                | Is there a money back guarantee?
+              //- Text
+              p.text-muted.mb-6.mb-md-8
+                | Yup! Bootstrap Themes come with a satisfaction guarantee. Submit a return and get your money back.
+          //- Item
+          .d-flex
+            //- Badge
+            div.badge.badge-lg.badge-rounded-circle.badge-success
+              span ?
+            .ml-5
+              //- Heading
+              h4.text-white
+                | Does it work with Rails? React? Laravel?
+              //- Text
+              p.text-muted.mb-6.mb-md-0
+                | Yes. Landkit has basic CSS/JS files you can include. If you want to enable deeper customization, you can integrate it into your assets pipeline or build processes.
+      //- .row
+    //- .container
+  //- FAQ END
+  //-
+    CTA
+    ==================================================
+  section.pt-5.bg-dark
+    .container
+      .row.justify-content-center
+        .col-12.col-md-10.col-lg-8.text-center.mt-5
+          //- Badge
+          span.badge.badge-pill.badge-gray-700-soft.mb-4
+            span.h6.font-weight-bold.text-uppercase Get started
+          //- Heading
+          h1.display-4.text-white
+            | Get Landkit and save your time.
+          //- Text
+          p.font-size-lg.text-muted.mb-6.mb-md-8
+            | Stop wasting time trying to do it the &quot;right way&quot; and build a site from scratch. Landkit is faster, easier, and you still have complete control.
+          //- Button
+          a.btn.btn-success.lift.hvr-float(href='https://themes.getbootstrap.com/product/landkit/' target='_blank')
+            | Buy it now 
+            i.fas.fa-arrow-right.d-none.d-md-inline.ml-2
+      //- .row
+    //- .container
+  //- CTA END
+  //-
+    FAQ
+    ==================================================
+  //-
+    SHAPE
+    ==================================================
+  .position-relative.curved.mb-n14
+    .shape.shape-bottom.shape-fluid-x.svg-shim.text-gray-200
+      svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1440 320')
+        path(fill='#1B2A4E' fill-opacity='1' d='M0,224L120,229.3C240,235,480,245,720,245.3C960,245,1200,235,1320,229.3L1440,224L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z')
+  //-
+    FOOTER
+    ==================================================
+  footer.py-8.py-md-12.bg-gray-200
+    .container
+      .row
+        .col-12.col-md-4.col-lg-3
+          //- Brand
+          img.footer-brand.img-fluid.mb-2(src=`${CWD}assets/img/gallery/brand.svg` alt='...')
+          //- Text
+          p.text-gray-700.mb-2
+            | A better way to build.
+          //- Social
+          ul.list-unstyled.list-inline.list-social.mb-6.mb-md-0
+            li.list-inline-item.list-social-item.mr-3
+              a.text-decoration-none(href='#!')
+                img.list-social-icon(src=`${CWD}assets/img/gallery/instagram.svg` alt='...')
+            li.list-inline-item.list-social-item.mr-3
+              a.text-decoration-none(href='#!')
+                img.list-social-icon(src=`${CWD}assets/img/gallery/facebook.svg` alt='...')
+            li.list-inline-item.list-social-item.mr-3
+              a.text-decoration-none(href='#!')
+                img.list-social-icon(src=`${CWD}assets/img/gallery/twitter.svg` alt='...')
+            li.list-inline-item.list-social-item
+              a.text-decoration-none(href='#!')
+                img.list-social-icon(src=`${CWD}assets/img/gallery/pinterest.svg` alt='...')
+        .col-6.col-md-4.col-lg-2
+          //- Heading
+          h6.font-weight-bold.text-uppercase.text-gray-700(style='font-size: .75rem; line-height: 1.55;')
+            | Products
+          //- List
+          ul.list-unstyled.text-muted.mb-6.mb-md-8.mb-lg-0
+            li.mb-3
+              a.text-reset(href='#!')
+                | Page Builder
+            li.mb-3
+              a.text-reset(href='#!')
+                | UI Kit
+            li.mb-3
+              a.text-reset(href='#!')
+                | Styleguide
+            li.mb-3
+              a.text-reset(href='#!')
+                | Documentation
+            li
+              a.text-reset(href='#!')
+                | Changelog
+        .col-6.col-md-4.col-lg-2
+          //- Heading
+          h6.font-weight-bold.text-uppercase.text-gray-700(style='font-size: .75rem; line-height: 1.55;')
+            | Services
+          //- List
+          ul.list-unstyled.text-muted.mb-6.mb-md-8.mb-lg-0
+            li.mb-3
+              a.text-reset(href='#!')
+                | Documentation
+            li.mb-3
+              a.text-reset(href='#!')
+                | Changelog
+            li.mb-3
+              a.text-reset(href='#!')
+                | Pagebuilder
+            li
+              a.text-reset(href='#!')
+                | UI Kit
+        .col-6.col-md-4.offset-md-4.col-lg-2.offset-lg-0
+          //- Heading
+          h6.font-weight-bold.text-uppercase.text-gray-700(style='font-size: .75rem; line-height: 1.55;')
+            | Connect
+          //- List
+          ul.list-unstyled.text-muted.mb-0
+            li.mb-3
+              a.text-reset(href='#!')
+                | Page Builder
+            li.mb-3
+              a.text-reset(href='#!')
+                | UI Kit
+            li.mb-3
+              a.text-reset(href='#!')
+                | Styleguide
+            li.mb-3
+              a.text-reset(href='#!')
+                | Documentation
+            li.mb-3
+              a.text-reset(href='#!')
+                | Changelog
+            li.mb-3
+              a.text-reset(href='#!')
+                | Documentation
+            li
+              a.text-reset(href='#!')
+                | Changelog
+        .col-6.col-md-4.col-lg-2
+          //- Heading
+          h6.font-weight-bold.text-uppercase.text-gray-700(style='font-size: .75rem; line-height: 1.55;')
+            | Legal
+          //- List
+          ul.list-unstyled.text-muted.mb-0
+            li.mb-3
+              a.text-reset(href='#!')
+                | Documentation
+            li.mb-3
+              a.text-reset(href='#!')
+                | Changelog
+            li
+              a.text-reset(href='#!')
+                | Pagebuilder
+    //- .row
+  //- .container

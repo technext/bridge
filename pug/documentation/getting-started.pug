@@ -1,0 +1,92 @@
+extends ../_skeleton-component
+
+block append variables
+  - var firstParent = 'documentation'              
+  - var currentPage = 'getting-started'
+
+block component
+  +PageHeader('Getting started')
+  .card.shadow-sm.mb-3
+    .card-header
+      h5#quick-start.mb-0.contains-anchor Quick start
+        a(href='#quick-start' data-fancyscroll data-offset=96) #
+    .card-body.bg-light
+      p.mb-0 Looking to start your project quickly? Just unzip the 
+        code #{version}.zip
+        | . We have precompiled and packaged everything in the 
+        code pages
+        |  directory for you. Start editing the 
+        code pages/page-starter.html
+        |  with a text or code editor, save it, and open the file in your favourite browser to see the changes.
+    
+  .card.shadow-sm.mb-3
+    .card-header
+      h5#setting-up-build-system.mb-0.contains-anchor Setting up Build system
+        a(href='#setting-up-build-system' data-fancyscroll data-offset=96) #
+    .card-body.bg-light
+      p Unzip the 
+        code #{version}.zip
+        |  to any folder and open a command line or terminal at that location.
+        | theme's dev tools require 
+        a(href='https://nodejs.org/en/' target='_blank') Node
+        |  and 
+        a(href='https://git-scm.com/' target='_blank') Git
+        |  . If you do not have them in your machine, please install their latest stable version from their corresponding website. As you have 
+        span.font-weight-black.text-black Node and Git installed and accessible from your terminal or command line
+        | , install 
+        a(href="https://gulpjs.com/" target='_blank') Gulp CLI
+        |  package 
+        |  globally with the following command:
+      pre
+        code.lang-html.
+          npm i gulp-cli -g
+      
+      p.mt-4 When you’re done, install the rest of the theme’s dependencies with:
+      pre
+        code.lang-html.
+          npm i
+      
+      p.mt-4 Now run:
+      pre
+        code.lang-html.
+          gulp
+      
+      p.mt-4 Running gulp will compile the SCSS, transpile the javascript, copy all required libraries form 
+        code node_modules
+        |  to the corresponding 
+        code pages/assets/ 
+        |  directory and will open a browser window to 
+        code pages/index.html
+      p All of the following folders are monitored for changes, which will tell the browser to reload automatically after any changes are made:
+      pre
+        code.lang-html.
+          pages/*.html
+          pages/assets/fonts/
+          pages/assets/video/
+          pages/assets/img/
+          scss/ 
+          js/
+      
+      p.mt-4 Now you can edit any html file from 
+        code pages
+        | , change SCSS variable with 
+        code _user-variables.scss
+        | , or write your own SCSS code in 
+        code scss/_user.scss
+    
+      .alert.alert-warning Running the 
+        code gulp
+        |  command will discard and regenerate all the files in following directories:
+      pre
+        code.lang-html.
+          js/bootstrap/
+          scss/bootstrap/
+          pages/assets/css/
+          pages/assets/js/
+          pages/assets/lib/
+      
+      p.mt-4 Hit 
+        code Ctrl+C
+        |  or just close the command line window to stop the server.
+      
+      p Happy editing!

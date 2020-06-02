@@ -1,0 +1,70 @@
+extends ../_skeleton-component
+include mixins/_borders
+
+block append variables
+  - var firstParent = 'utilities'
+  - var currentPage = 'borders'
+
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader)
+  .row
+    .col-12
+      .card.shadow-sm.mb-3
+        .card-header
+          h5.mb-0 Border
+        .card-body.bg-light
+          +borderDoc
+
+  .row.no-gutters.border-component
+    .col-xl-6.pr-xl-2
+      .card.shadow-sm.mb-3
+        .card-header
+          h5.mb-0 Additive
+        .card-body.bg-light
+          +componentCard.p-4
+            +borderAdditive
+        = '\n'
+    .col-xl-6.pl-xl-2
+      .card.shadow-sm.mb-3
+        .card-header
+          h5.mb-0 Subtractive
+        .card-body.bg-light
+          +componentCard.p-4
+            +borderSubtractive
+    .col-xl-6.pr-xl-2
+      .card.shadow-sm.mb-3
+        .card-header
+          h5.mb-1 Border Color
+          p.mb-0 Change the border color using utilities built on our theme colors
+        .card-body.bg-light
+          +componentCard
+            +borderColor
+    .col-xl-6.pl-xl-2
+      .card.shadow-sm.mb-3
+        .card-header
+          h5.mb-1 Border Radius
+          p.mb-0 Add classes to an element to easily round its corners.
+        .card-body.bg-light
+          +componentCard
+            +borderRadius
+          = '\n'
+  .row.border-component
+    .col-12
+      .card.shadow-sm.mb-3
+        .card-header
+          h5.mb-1 Border Style
+          +borderStyleDoc
+        .card-body.bg-light
+          +componentCard
+            +borderStyle
+    .col-12
+      .card
+        .card-header
+          h4 Border color and width
+          +borderColorWidthDoc
+          
+        .card-body.bg-light
+          +componentCard
+            +borderColorWidth

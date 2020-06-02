@@ -1,0 +1,35 @@
+extends ../_skeleton-component
+
+block append variables
+  - var firstParent = 'utilities'
+  - var currentPage = 'close-icon'
+  -
+    var pageHeader = {
+      title: 'Close icon',
+      description: 'Use a generic close icon for dismissing content like modals and alerts.',
+      url: `https://getbootstrap.com/docs/${bootstrapVersion}/utilities/close-icon/`,
+      linkText: 'Close-icon on Bootstrap'
+    }
+
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader)
+    
+  .row
+    .col-12
+      .card.shadow-sm.mb-3
+        .card-header 
+          h5.mb-0 Example
+          p.mb-0
+            strong Be sure to include text for screen readers
+            | , as we’ve done with 
+            code aria-label.
+        .card-body.bg-light
+          +componentCard
+            button.close.float-none(type='button', aria-label='Close')
+              = '\n'
+              span(aria-hidden='true') ×
+              = '\n'
+
+

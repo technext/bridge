@@ -1,0 +1,20 @@
+extends _skeleton-theme
+include mixins/navbars/_navbar-elements
+include mixins/widgets/_widgets
+
+block append styles
+  link(href=`${CWD}assets/lib/prismjs/prism-okaidia.css`, rel='stylesheet')
+
+block append scripts
+  script(src=`${CWD}assets/lib/prismjs/prism.js`)
+    
+block append variables
+  - var CWD = '../';
+block append content
+  .container
+    .row.mt-3
+      .col-lg-9.col-xxl-10
+        block component
+
+      .col.d-none.d-lg-block
+        +navbarElements

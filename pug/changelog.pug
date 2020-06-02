@@ -1,0 +1,28 @@
+extends _skeleton-component
+
+block append variables
+  - var CWD = '';
+  - var currentPage = 'changelog';
+  
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader({
+        title: 'Changelog'
+      })
+      
+  .card.shadow-sm.mb-3
+    .card-body
+      .alert.alert-warning.p-4.mb-0(role='alert')
+        .media
+          span.fab.fa-intentionally-kept.fs-3
+          .media-body.ml-3
+            h4.alert-heading Before you update!
+            p.mb-0 Backup your files and read the changelog before updating Falcon on your project. If you come across with any problems with Falcon template during the update, feel free to contact us at 
+              a(href='mailto:info@themewagon.com') info@themewagon.com
+              | .
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 6.1.0 - initial release
+    .card-body.bg-light
+      p.mb-0 Nothing to see here!

@@ -1,0 +1,34 @@
+extends ../_skeleton-component
+include mixins/_sizing
+
+block append variables
+  - var firstParent = 'utilities'              
+  - var currentPage = 'sizing'
+ 
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader)
+        +sizingDoc
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Width (relative to parent)
+    .card-body.bg-light
+      +componentCard
+        +sizingWidth
+
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Height (relative to parent)
+    .card-body.bg-light
+      +componentCard
+        +sizingHeight
+
+  .card
+    .card-header
+      h5.mb-1 Special classes (relative to viewport)
+      p.mb-0 Responsive variations also exist for sizing classes relative to the 
+        code viewport
+        | . Here are all the support classes:
+    .card-body.bg-light
+      +sizingSpecial

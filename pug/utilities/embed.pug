@@ -1,0 +1,20 @@
+extends ../_skeleton-component
+include mixins/_embed
+block append variables
+  - var firstParent = 'utilities'
+  - var currentPage = 'embed'
+
+block component
+  .card.shadow-sm.mb-3
+    .card-header
+      +PageHeader(pageHeader)
+    
+  .card.shadow-sm.mb-3
+    .card-header
+      +embedDoc
+    .card-body.bg-light
+      +componentCard
+        +embed
+
+
+

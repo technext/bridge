@@ -1,0 +1,158 @@
+extends ../_skeleton-component
+include mixins/_typography
+  
+block append variables
+  - var firstParent = 'utilities'              
+  - var currentPage = 'typography'
+ 
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader)
+  .card.shadow-sm.mb-3
+    .card-header
+      h5 Font Family
+      p.mb-0 You have three 
+        code font-family 
+        |  helper classes available to use.
+    .card-body.bg-light
+      +componentCard
+        +typoFont
+  .card.shadow-sm.mb-3
+    .card-header
+      h5 Headings
+      +typoHeadingDoc
+    .card-body.bg-light
+      +componentCard
+        +typoHeading
+  .card.shadow-sm.mb-3
+    .card-header
+      h5 Paragraphs
+      +typoParagraph.mb-0
+    .card-body.bg-light
+      +componentCard
+        p Your paragraph text goes here.
+  
+  .card.shadow-sm.mb-3
+    .card-header
+      h5 Lead Paragraph and Drop cap
+      +typoLeadDropcapDoc
+    .card-body.bg-light
+      +componentCard
+        +typoParagraph.dropcap.lead
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Font Weights
+    .card-body.bg-light
+        +componentCardLib
+          +typoFontWeight
+  .card.shadow-sm.mb-3
+    .card-header
+      h5 Colors
+      p.mb-0 Use the following colors to change the text color
+    .card-body.bg-light
+      +componentCard
+        +typoColor
+  .card.shadow-sm.mb-3
+    .card-header
+      h5 Sizes
+      p.mb-0 If you want different sizes of fonts, you may use the following classes.
+    .card-body.bg-light
+      +componentCard
+        +typoFontSize
+  
+  .row 
+    .col-sm-6
+      .card.shadow-sm.mb-3
+        .card-header
+          h5.mb-0 Left Alignment
+        .card-body.bg-light
+          +componentCard
+            +typoParagraph.text-left
+
+    .col-sm-6
+      .card.shadow-sm.mb-3
+        .card-header
+          h5.mb-0 Right Alignment
+        .card-body.bg-light
+          +componentCard
+            +typoParagraph.text-right
+
+    .col-sm-6
+      .card.shadow-sm.mb-3
+        .card-header
+          h5.mb-0 Center Aligned
+        .card-body.bg-light
+          +componentCard
+            +typoParagraph.text-center
+    .col-sm-6
+      .card.shadow-sm.mb-3
+        .card-header
+          h5.mb-0 Justified
+        .card-body.bg-light
+          +componentCard
+            +typoParagraph.text-justify
+      
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Transformation
+    .card-body.bg-light
+      +componentCard
+        +typoTransformation
+  .card.shadow-sm.mb-3
+    .card-header
+      h5 Inline styles
+      +typoInlineStyleDoc
+    .card-body.bg-light
+      +componentCard
+        +typoInlineStyle
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Blockquotes
+    .card-body.bg-light
+      +componentCard
+        +typoBlockquote
+  
+  .row
+    .col-lg-6
+      .card.shadow-sm.mb-3
+        .card-header
+          h5.mb-0 Unordered List
+          p.mb-0 A list of items in which the order does not explicitly matter.
+        .card-body.bg-light
+          +componentCard
+            +typoList
+    .col-lg-6
+      .card.shadow-sm.mb-3
+        .card-header
+          h5 Ordered List
+          p.mb-0 A list of items in which the order does explicitly matter.
+        .card-body.bg-light
+          +componentCard
+            +typoListOrdered
+    .col-lg-6
+      .card.shadow-sm.mb-3
+        .card-header
+          h5 Unstyled List
+          p.mb-0 Adding 
+            code list-unstyled
+            |  class to  
+            code ul
+            |  element will produce the following list style:
+        .card-body.bg-light
+          +componentCard
+            +typoList.list-unstyled
+    .col-lg-6
+      .card.shadow-sm.mb-3
+        .card-header
+          h5 Checkmarked List
+          p.mb-0 Adding 
+            code style-check
+            |  class to  
+            code ul
+            |  element will produce the following list style:
+
+        .card-body.bg-light
+          +componentCard
+            +typoList.style-check
+    

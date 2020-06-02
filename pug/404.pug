@@ -1,0 +1,19 @@
+extends _skeleton-theme
+
+block append variables
+  - var CWD = './'
+
+block mainContent
+  .row.flex-center.text-center.min-vh-100
+    .col-sm-11.col-md-9.col-lg-7.col-xl-6.col-xxl-5
+      .card.shadow-sm
+        .card-body.p-5
+          .display-1.text-200.fs-error 404
+          h4.fs-2.fs-ls-3.mt-4 The page you're looking for is not found.
+          hr
+          p.fs-md-1 Make sure the address is correct and that the page hasn't moved. If you think this is a mistake, 
+            a(href='mailto:info@exmaple.com') contact us
+            | .
+          a(href=`${CWD}index.html`).btn.btn-primary.btn-sm.mt-3
+            span.fas.fa-home.mr-2
+            | Take me home

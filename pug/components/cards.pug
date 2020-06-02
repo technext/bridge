@@ -1,0 +1,105 @@
+extends ../_skeleton-component
+include mixins/_card
+
+
+block append variables
+  - var firstParent = 'components'              
+  - var currentPage = 'cards'
+
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader)
+    
+
+  .row.no-gutters
+    .col-xl-6.pr-xl-2
+      .card.shadow-sm.mb-3
+        .card-header
+          h5.mb-0 Basic Example
+        .card-body.bg-light.overflow-hidden
+          +componentCard
+            +cardBasic
+    .col-xl-6.pl-xl-2
+      .card.shadow-sm.mb-3
+        .card-header
+          h5.mb-0 Card with list
+        .card-body.bg-light
+          +componentCard
+            +CardUserPreferences
+
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Card with image
+    .card-body.bg-light.overflow-hidden
+      +componentCard
+        +cardWithImage
+
+  //- .card.shadow-sm.mb-3
+  //-   .card-header
+  //-     h5.mb-0 Notification
+  //-   .card-body.bg-light.overflow-hidden
+  //-     +componentCard
+  //-       .fs--1(style="max-width: 25rem;")
+  //-         +Notification({
+  //-           avatar: {size: '2xl', img: 'team/1.jpg'},
+  //-           body: '<strong>Emma Watson</strong> replied to your comment : "Nice Dashboard 😍"',
+  //-           time: 'Just now',
+  //-           emoji: '💬',
+  //-         })
+  //- .card.shadow-sm.mb-3
+  //-   .card-header
+  //-     h5.mb-0 Notification Group
+  //-   .card-body.bg-light.overflow-hidden
+  //-     +componentCard
+  //-       +CardNotification
+
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Background
+    .card-body.bg-light.overflow-hidden
+      +componentCard
+        +CardOverlay({
+          title: 'Card title', 
+          body: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.', 
+          img: 'generic/3.jpg',
+          attrs: {
+            style: 'max-width: 30rem',
+          }
+        }).align-items-end.d-flex
+  
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Card Groups
+    .card-body.bg-light.overflow-hidden
+      +componentCard
+        +cardGroup
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Card Decks
+    .card-body.bg-light.overflow-hidden
+      +componentCard
+        +cardDeck
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-0 Card styles
+    .card-body
+      +componentCard
+        .row
+          .col-sm-6.col-lg-4.mb-4
+            +cardStyle.text-white.bg-primary
+          .col-sm-6.col-lg-4.mb-4
+            +cardStyle.text-white.bg-secondary 
+          .col-sm-6.col-lg-4.mb-4
+            +cardStyle.text-white.bg-success
+          .col-sm-6.col-lg-4.mb-4
+            +cardStyle.text-white.bg-danger
+          .col-sm-6.col-lg-4.mb-4
+            +cardStyle.text-white.bg-warning
+          .col-sm-6.col-lg-4.mb-4
+            +cardStyle.text-white.bg-info
+          .col-sm-6.col-lg-4.mb-4
+            +cardStyle.bg-light
+          .col-sm-6.col-lg-4.mb-4
+            +cardStyle.text-white.bg-dark
+                

@@ -1,0 +1,77 @@
+extends ../_skeleton-component
+
+block append variables
+  - var firstParent = 'documentation'              
+  - var currentPage = 'RTL'
+  -
+    var pageHeader = {
+      title: 'RTL',
+    }
+
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      h3.mb-0=pageHeader.title
+  .card.shadow-sm.mb-3
+    .card-header
+      h5#setting-up-html.mb-0.contains-anchor Setting up HTML
+        a(href='#setting-up-html' data-fancyscroll data-offset=96) #
+    .card-body.bg-light
+      p Your theme comes with a built-in automated rlt feature. 
+        a(href=`${CWD}index-rtl.html`) Here
+        |  is the example. To use rtl, set the 
+        code dir='rtl'
+        |  in your html like:
+      pre
+        code.lang-html.
+          #{'<html dir=\'rtl\'>...</html>'}
+      p.mt-4 And use the rtl stylesheet instead of 
+        code theme.css
+        | :
+      pre
+        code.lang-html.
+          #{'<link href="assets/css/theme-rtl.css" rel="stylesheet">'}
+  .card.shadow-sm.mb-3
+    .card-header
+      h5#setting-up-buil-tools.mb-0.contains-anchor Setting up build tools
+        a(href='#setting-up-buil-tools' data-fancyscroll data-offset=96) #
+    .card-body.bg-light
+      p To compile 
+        code theme-rtl.css
+        |  directly with the built tools run:
+      pre
+        code.language-javascript.
+          #{'product scss:rtl'}
+        
+      p.mt-4 To set your build tool in 
+        code rtl
+        |  mode, change the following code located at the last line of your 
+        code gulpfile.js
+      h5 From:
+      pre
+        code.language-javascript.
+          #{'gulp.task(\'default\', product.series(\'copy:dependency\', \'scss\', \'js\', product.parallel(\'watch\', \'serve\')));'}
+      h5 to:
+      pre
+        code.language-javascript.
+          #{'gulp.task(\'default\', product.series(\'copy:dependency\', \'scss:rtl\', \'js\', product.parallel(\'watch\', \'serve\')));'}
+     
+      p.mt-4 And Also update the 
+        code gulp watch
+        |  to call the 
+        code scss:rtl
+        |  task by updating the following code at 
+        code line 401
+        |  in your 
+        code gulpfile.js
+        | : 
+      h5 From:
+      pre
+        code.language-javascript.
+          #{'gulp.watch(Paths.SCSS.ALL, product.series(\'scss\'));'}
+      h5 to:
+      pre
+        code.language-javascript.
+          #{'gulp.watch(Paths.SCSS.ALL, product.series(\'scss:rtl\'));'}
+  
+  

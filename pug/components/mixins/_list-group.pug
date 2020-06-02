@@ -1,0 +1,80 @@
+block append variables
+  -
+    var pageHeader = {
+      title: 'List Group',
+      description: "List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.",
+      url: `https://getbootstrap.com/docs/${bootstrapVersion}/components/list-group/`,
+      linkText: 'List on Bootstrap'
+    }
+
+mixin listBasic
+  ul.list-group
+    li.list-group-item Cras justo odio
+    li.list-group-item Dapibus ac facilisis in
+    li.list-group-item Morbi leo risus
+    li.list-group-item Porta ac consectetur ac
+    li.list-group-item Vestibulum at eros
+
+mixin listWithActive
+  .list-group
+    a.list-group-item.list-group-item-action.active(href='#') Cras justo odio
+    = '\n'
+    a.list-group-item.list-group-item-action(href='#') Dapibus ac facilisis in
+    = '\n'
+    a.list-group-item.list-group-item-action(href='#') Morbi leo risus
+    = '\n'
+    a.list-group-item.list-group-item-action(href='#') Porta ac consectetur ac
+    = '\n'
+    a.list-group-item.list-group-item-action.disabled(href='#') Vestibulum at eros
+    = '\n'
+
+mixin listGroupFlush
+  ul.list-group.list-group-flush
+    li.list-group-item Cras justo odio
+    li.list-group-item Dapibus ac facilisis in
+    li.list-group-item Morbi leo risus
+    li.list-group-item Porta ac consectetur ac
+
+mixin listWithBadge
+  ul.list-group
+    li.list-group-item.d-flex.justify-content-between.align-items-center Cras justo odio
+      span.badge.badge-soft-primary.badge-pill 14
+    li.list-group-item.d-flex.justify-content-between.align-items-center Dapibus ac facilisis in
+      span.badge.badge-soft-primary.badge-pill 2
+    li.list-group-item.d-flex.justify-content-between.align-items-center Morbi leo risus
+      span.badge.badge-soft-primary.badge-pill 1
+    li.list-group-item.d-flex.justify-content-between.align-items-center Dapibus ac facilisis in
+      span.badge.badge-soft-primary.badge-pill 9
+
+mixin listWithBackground
+  ul.list-group
+    li.list-group-item Dapibus ac facilisis in
+    li.list-group-item.list-group-item-primary A simple primary list group item
+    li.list-group-item.list-group-item-secondary A simple secondary list group item
+    li.list-group-item.list-group-item-success A simple success list group item
+    li.list-group-item.list-group-item-danger A simple danger list group item
+    li.list-group-item.list-group-item-warning A simple warning list group item
+    li.list-group-item.list-group-item-info A simple info list group item
+    li.list-group-item.list-group-item-light A simple light list group item
+    li.list-group-item.list-group-item-dark A simple dark list group item
+
+mixin listWithLink
+  .list-group
+    a.list-group-item.list-group-item-action.flex-column.align-items-start.active(href='#')
+      .d-flex.w-100.justify-content-between
+        h5.mb-1.text-white List group item heading
+        small 3 days ago
+      p.mb-1 Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+      small Donec id elit non mi porta.
+    a.list-group-item.list-group-item-action.flex-column.align-items-start(href='#')
+      .d-flex.w-100.justify-content-between
+        h5.mb-1 List group item heading
+        small.text-muted 3 days ago
+      p.mb-1 Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+      small.text-muted Donec id elit non mi porta.
+    a.list-group-item.list-group-item-action.flex-column.align-items-start(href='#')
+      .d-flex.w-100.justify-content-between
+        h5.mb-1 List group item heading
+        small.text-muted 3 days ago
+      p.mb-1 Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.
+      small.text-muted Donec id elit non mi porta.

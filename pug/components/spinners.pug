@@ -1,0 +1,72 @@
+extends ../_skeleton-component
+include mixins/_spinners
+block append variables
+  - var firstParent = 'components'              
+  - var currentPage = 'spinners'
+ 
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader)
+    
+
+  .card.shadow-sm.mb-3
+    .card-header  
+      h5.mb-0 Basic Example
+    .card-body.bg-light
+      +componentCard
+        +spinnerBasic
+
+
+
+  .card.shadow-sm.mb-3
+    .card-header  
+      h5.mb-1 Colors
+      p.mb-0 The border spinner uses 
+        code currentColor 
+        | for its 
+        code border-color
+        |, meaning you can customize the color with text color utilities. You can use any of our text color utilities on the standard spinner.
+    .card-body.bg-light
+      +componentCard
+        +spinnerWithColor
+
+  .card.shadow-sm.mb-3
+    .card-header  
+      h5.mb-1 Growing spinner
+      p.mb-0 Place toasts with the helper classes as you need them. The top right is often used for notifications, as is the top middle. If you’re only ever going to show one toast at a time, put the positioning styles right on the 
+        code .toast
+        |.
+    .card-body.bg-light
+      +componentCard
+        +spinnerGrowing
+
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-1 Growing colors
+    .card-body
+      +componentCard
+        +spinnerGrowingWithColor
+
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-1 Size
+      p.mb-0 Add 
+        code .spinner-border-sm 
+        | and 
+        code .spinner-grow-sm 
+        | to make a smaller spinner that can quickly be used within other components.
+    .card-body.bg-light
+      +componentCard
+        +spinnerSize
+  .card.shadow-sm.mb-3
+    .card-header
+      h5.mb-1 Buttons
+    .card-body.bg-light
+      +componentCard
+        +spinnerWithButton
+
+      
+
+
+

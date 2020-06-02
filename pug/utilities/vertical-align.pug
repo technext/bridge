@@ -1,0 +1,24 @@
+extends ../_skeleton-component
+include mixins/_vertical-align
+
+block append variables
+  - var CWD = '../';
+  - var firstParent = 'utilities'
+  - var currentPage = 'vertical-align'
+
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader)
+
+  .card.shadow-sm.mb-3
+    .card-header
+      +verticalAlignDoc
+    .card-body.bg-light
+      +componentCard
+       +verticalAlign
+    
+      p.mt-4 With table cells:
+      +componentCard
+        +verticalAlignTable
+

@@ -1,0 +1,69 @@
+mixin navbar
+  nav.navbar&attributes(attributes)
+    .container
+      a(href=`${CWD}index.html`).navbar-brand
+        img(src=`${CWD}assets/img/logo.png` alt='logo' width=40)
+      button.navbar-toggler.collapsed(type='button', data-toggle='collapse', data-target='#navbarStandard', aria-controls='navbarStandard', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      
+      #navbarStandard.collapse.navbar-collapse
+        ul.navbar-nav
+          li.nav-item.dropdown
+            a#navbarDropdownDocumentation.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Documentation
+            .dropdown-menu(aria-labelledby='navbarDropdownDocumentation')
+              - var documentation = Object.keys(sitemap.documentation.inners)
+              each value in documentation
+                a.dropdown-item(href=`${CWD}documentation/${value}.html`)
+                  +cleanText(value)
+                
+          li.nav-item.dropdown
+            a#navbarDropdownComponents.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Components
+            .dropdown-menu.dropdown-menu-card(aria-labelledby='navbarDropdownComponents')
+              .card.navbar-dropdown-col-4
+                .card-body.py-0
+                  - var components = Object.keys(sitemap.components.inners)
+                  .row
+                    .col-6.col-sm-auto
+                      ul.nav.flex-column
+                        each value, index in components
+                          if index < components.length / 4
+                            li.nav-item
+                              a.nav-link.py-1.text-700.font-weight-medium(href=`${CWD}components/${value}.html`)
+                                +cleanText(value)
+                    .col-6.col-sm-auto
+                      ul.nav.flex-column
+                        each value, index in components
+                          if (index >= components.length / 4 && index < components.length / 2)
+                            li.nav-item
+                              a.nav-link.py-1.text-700.font-weight-medium(href=`${CWD}components/${value}.html`)
+                                +cleanText(value)
+                    .col-6.col-sm-auto
+                      ul.nav.flex-column
+                        each value, index in components
+                          if (index >= components.length / 2 && index < 3 * components.length / 4)
+                            li.nav-item
+                              a.nav-link.py-1.text-700.font-weight-medium(href=`${CWD}components/${value}.html`)
+                                +cleanText(value)
+                    .col-6.col-sm-auto
+                      ul.nav.flex-column
+                        each value, index in components
+                          if index >= 3 * components.length / 4
+                            li.nav-item
+                              a.nav-link.py-1.text-700.font-weight-medium(href=`${CWD}components/${value}.html`)
+                                +cleanText(value)
+          
+          li.nav-item.dropdown
+            a#navbarDropdownUtilities.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Utilities
+            .dropdown-menu(aria-labelledby='navbarDropdownUtilities')
+              - var utilities = Object.keys(sitemap.utilities.inners)
+              each value in utilities
+                a.dropdown-item(href=`${CWD}utilities/${value}.html`)
+                  +cleanText(value)
+                
+          li.nav-item.dropdown
+            a#navbarDropdownPlugins.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Plugins
+            .dropdown-menu(aria-labelledby='navbarDropdownPlugins')
+              - var plugins = Object.keys(sitemap.plugins.inners)
+              each value in plugins
+                a.dropdown-item(href=`${CWD}plugins/${value}.html`)
+                  +cleanText(value)

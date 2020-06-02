@@ -1,0 +1,100 @@
+block append variables
+  -
+    var pageHeader = {
+      title: 'Carousel',
+      description: 'A slideshow component for cycling through elements—images or slides of text—like a carousel.',
+      url: `https://getbootstrap.com/docs/${bootstrapVersion}/components/carousel/`,
+      linkText: 'Carousel on Bootstrap'
+    }
+
+
+
+
+mixin cardBasic
+  #carouselExampleControls.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#carouselExampleControls', data-slide-to='0')
+      li(data-target='#carouselExampleControls', data-slide-to='1')
+      li(data-target='#carouselExampleControls', data-slide-to='2')
+    .carousel-inner.rounded
+      .carousel-item.active
+        img.d-block.w-100(src=`${CWD}assets/img/generic/6.jpg`, alt='First slide')
+      .carousel-item
+        img.d-block.w-100(src=`${CWD}assets/img/generic/7.jpg`, alt='Second slide')
+      .carousel-item
+        img.d-block.w-100(src=`${CWD}assets/img/generic/8.jpg`, alt='Third slide')
+    = '\n'
+    a.carousel-control-prev(href='#carouselExampleControls', role='button', data-slide='prev')
+      = '\n'
+      span.carousel-control-prev-icon(aria-hidden='true')
+      = '\n'
+      span.sr-only Previous
+      = '\n'
+    = '\n'
+    a.carousel-control-next(href='#carouselExampleControls', role='button', data-slide='next')
+      = '\n'
+      span.carousel-control-next-icon(aria-hidden='true')
+      = '\n'
+      span.sr-only Next
+      = '\n'
+
+mixin carouselWithCaption
+  #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#carouselExampleCaptions', data-slide-to='0')
+      li(data-target='#carouselExampleCaptions', data-slide-to='1')
+      li(data-target='#carouselExampleCaptions', data-slide-to='2')
+    .carousel-inner.rounded
+      .carousel-item.active
+        img.d-block.w-100(src=`${CWD}assets/img/generic/10.jpg`, alt='First slide')
+        .carousel-caption.d-none.d-md-block
+          h5.text-white First Slide Heading
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      .carousel-item
+        img.d-block.w-100(src=`${CWD}assets/img/generic/11.jpg`, alt='Second slide')
+        .carousel-caption.d-none.d-md-block
+          h5.text-white First Slide Heading
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      .carousel-item
+        img.d-block.w-100(src=`${CWD}assets/img/generic/12.jpg`, alt='Third slide')
+        .carousel-caption.d-none.d-md-block
+          h5.text-white First Slide Heading
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    = '\n'
+    a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
+      = '\n'
+      span.carousel-control-prev-icon(aria-hidden='true')
+      = '\n'
+      span.sr-only Previous
+      = '\n'
+    = '\n'
+    a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
+      = '\n'
+      span.carousel-control-next-icon(aria-hidden='true')
+      = '\n'
+      span.sr-only Next
+      = '\n'
+
+mixin cardWithFade
+  #carouselExampleFade.carousel.slide.carousel-fade(data-ride='carousel')
+    .carousel-inner.rounded
+      .carousel-item.active
+        img.d-block.w-100(src=`${CWD}assets/img/generic/8.jpg`, alt='First slide')
+      .carousel-item
+        img.d-block.w-100(src=`${CWD}assets/img/generic/7.jpg`, alt='Second slide')
+      .carousel-item
+        img.d-block.w-100(src=`${CWD}assets/img/generic/6.jpg`, alt='Third slide')
+    = '\n'
+    a.carousel-control-prev(href='#carouselExampleFade', role='button', data-slide='prev')
+      = '\n'
+      span.carousel-control-prev-icon(aria-hidden='true')
+      = '\n'
+      span.sr-only Previous
+      = '\n'
+    = '\n'
+    a.carousel-control-next(href='#carouselExampleFade', role='button', data-slide='next')
+      = '\n'
+      span.carousel-control-next-icon(aria-hidden='true')
+      = '\n'
+      span.sr-only Next
+      = '\n'

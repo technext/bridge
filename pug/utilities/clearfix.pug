@@ -1,0 +1,24 @@
+extends ../_skeleton-component
+include mixins/_clearfix
+
+block append variables
+  - var firstParent = 'utilities'
+  - var currentPage = 'clearfix'
+
+block component
+  .card.shadow-sm.mb-3
+    .card-body
+      +PageHeader(pageHeader)
+   
+  .row
+    .col-12
+      .card.shadow-sm.mb-3
+        .card-body
+          p Easily clear floats by adding .clearfix to the parent element. Can also be used as a mixin.
+          +componentCardLib
+            .clearfix ...
+          p.mt-4 The following example shows how the clearfix can be used. Without the clearfix the wrapping div would not span around the buttons which would cause a broken layout.
+
+          +componentCard
+            +clearfix
+

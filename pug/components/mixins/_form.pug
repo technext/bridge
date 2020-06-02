@@ -1,0 +1,270 @@
+block append variables
+  -
+    var pageHeader = [
+      {
+      title: 'Form',
+      description: 'Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.',
+      url: `https://getbootstrap.com/docs/${bootstrapVersion}/components/forms/`,
+      linkText: 'Forms on Bootstrap'
+    },
+    {
+        title: 'Custom Forms',
+        description: "For even more customization and cross-browser consistency, use Bootstrap's completely custom form elements to replace the browser defaults.",
+        url: `https://getbootstrap.com/docs/${bootstrapVersion}/components/#custom-forms/`,
+        linkText: 'Custom-Forms on Bootstrap'
+      },
+    ];
+
+mixin formBasic
+  form
+    .form-group
+      = '\n'
+      label(for="name") Name
+      = '\n'
+      input.form-control#name(type="text" placeholder="Name")
+      = '\n'
+    .form-group
+      = '\n'
+      label(for="readonly") Read Only
+      = '\n'
+      input.form-control#readonly(type='text', placeholder='Readonly input here…', readonly='')
+      = '\n'
+    .form-group
+      = '\n'
+      label Read only plain text
+      = '\n'
+      input#staticEmail.form-control-plaintext(type='text', readonly='', value='email@example.com')
+      = '\n'
+
+    .form-group
+      = '\n'
+      label(for="email1") Email
+      = '\n'
+      input.form-control#email1(type="email" placeholder="Email")
+      = '\n'
+    .form-group
+      = '\n'
+      label(for="password") Password
+      = '\n'
+      input.form-control#password(type="password" placeholder="Password")
+      = '\n'
+    .form-group.form-check
+      = '\n'
+      input.form-check-input#defaultcheckbox1(type="checkbox")
+      = '\n'
+      label.form-check-label(for="defaultcheckbox1") Cehckbox
+      = '\n'
+    .form-group.form-check
+      = '\n'
+      input#defaultCheck2.form-check-input(type='checkbox', value='', disabled='')
+      = '\n'
+      label.form-check-label(for='defaultCheck2') Disabled checkbox
+      = '\n'
+    .form-group.form-check
+      = '\n'
+      input#exampleRadios2.form-check-input(type='radio', name='exampleRadios', value='option2')
+      = '\n'
+      label.form-check-label(for='exampleRadios2') Default radio
+      = '\n'
+    .form-group.form-check
+      = '\n'
+      input#exampleRadios3.form-check-input(type='radio', name='exampleRadios', value='option3', disabled='')
+      = '\n'
+      label.form-check-label(for='exampleRadios3') Disabled radio
+      = '\n'
+    .form-group
+      = '\n'
+      label(for='exampleFormControlFile1') Example file input
+      = '\n'
+      input#exampleFormControlFile1.form-control-file(type='file')
+      = '\n'
+    .form-group
+      = '\n'
+      label(for='exampleFormControlSelect1') Example select
+      = '\n'
+      select#exampleFormControlSelect1.form-control
+        option 1
+        option 2
+        option 3
+        option 4
+        option 5
+      = '\n'
+    .form-group
+      = '\n'
+      label(for='exampleFormControlSelect2') Example multiple select
+      = '\n'
+      select#exampleFormControlSelect2.form-control(multiple='')
+        option 1
+        option 2
+        option 3
+        option 4
+        option 5
+      = '\n'
+    .form-group
+      = '\n'
+      label(for='exampleFormControlTextarea1') Example textarea
+      = '\n'
+      textarea#exampleFormControlTextarea1.form-control(rows='3')
+      = '\n'
+
+    .form-group
+      = '\n'
+      label(for='formControlRange') Example Range input
+      = '\n'
+      input#formControlRange.form-control-range(type='range')
+      = '\n'
+
+  button.btn.btn-primary.mb-3(type="submit") Save
+
+
+mixin formInputGroup
+  .input-group.mb-3
+    .input-group-prepend
+      span#basic-addon1.input-group-text @
+    input.form-control(type='text', placeholder='Username', aria-label='Username', aria-describedby='basic-addon1')
+  .input-group.mb-3
+    input.form-control(type='text', placeholder="Recipient's username", aria-label="Recipient's username", aria-describedby='basic-addon2')
+    .input-group-append
+      span#basic-addon2.input-group-text @example.com
+  label(for='basic-url') Your vanity URL
+  .input-group.mb-3
+    .input-group-prepend
+      span#basic-addon3.input-group-text https:example.com/users/
+    input#basic-url.form-control(type='text', aria-describedby='basic-addon3')
+  .input-group.mb-3
+    .input-group-prepend
+      span.input-group-text $
+    input.form-control(type='text', aria-label='Amount (to the nearest dollar)')
+    .input-group-append
+      span.input-group-text .00
+  .input-group.mb-3
+    .input-group-prepend
+      span.input-group-text With textarea
+    textarea.form-control(aria-label='With textarea')
+  .input-group.mb-3
+    .input-group-prepend
+      .input-group-text
+        input(type='checkbox', aria-label='Checkbox for following text input')
+    input.form-control(type='text', aria-label='Text input with checkbox')
+  .input-group.mb-3
+    .input-group-prepend
+      .input-group-text
+        input(type='radio', aria-label='Radio button for following text input')
+    input.form-control(type='text', aria-label='Text input with radio button')
+  .input-group.mb-3
+    .input-group-prepend
+      span.input-group-text First and last name
+    input.form-control(type='text', aria-label='First name')
+    input.form-control(type='text', aria-label='Last name')
+  .input-group.mb-3
+    .input-group-prepend
+      span.input-group-text $
+      span.input-group-text 0.00
+    input.form-control(type='text', aria-label='Dollar amount (with dot and two decimal places)')
+  .input-group.mb-3
+    input.form-control(type='text', aria-label='Dollar amount (with dot and two decimal places)')
+    .input-group-append
+      span.input-group-text $
+      span.input-group-text 0.00
+  .input-group.mb-3
+    .input-group-prepend
+      button.btn.btn-primary.dropdown-toggle.shadow-none(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Dropdown
+      .dropdown-menu
+        a.dropdown-item(href='#') Action
+        a.dropdown-item(href='#') Another action
+        a.dropdown-item(href='#') Something else here
+        .dropdown-divider(role='separator')
+        a.dropdown-item(href='#') Separated link
+    input.form-control(type='text', aria-label='Text input with dropdown button')
+  .input-group
+    input.form-control(type='text', aria-label='Text input with dropdown button')
+    .input-group-append
+      button.btn.btn-primary.dropdown-toggle.shadow-none(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Dropdown
+      .dropdown-menu.dropdown-menu-right
+        a.dropdown-item(href='#') Action
+        a.dropdown-item(href='#') Another action
+        a.dropdown-item(href='#') Something else here
+        .dropdown-divider(role='separator')
+        a.dropdown-item(href='#') Separated link
+
+mixin formCheckbox
+  .custom-control.custom-checkbox
+    = '\n'
+    input#customCheck1.custom-control-input(type='checkbox')
+    = '\n'
+    label.custom-control-label(for='customCheck1') Check this custom checkbox
+    = '\n'
+  .custom-control.custom-checkbox
+    = '\n'
+    input#customCheck2.custom-control-input(type='checkbox')
+    = '\n'
+    label.custom-control-label(for='customCheck2') Check another custom checkbox
+    = '\n'
+
+mixin formRadio
+  .custom-control.custom-radio
+    = '\n'
+    input#customRadio1.custom-control-input(type='radio', name='customRadio')
+    = '\n'
+    label.custom-control-label(for='customRadio1') Toggle this custom radio
+    = '\n'
+  .custom-control.custom-radio
+    = '\n'
+    input#customRadio2.custom-control-input(type='radio', name='customRadio')
+    = '\n'
+    label.custom-control-label(for='customRadio2') Or toggle this other custom radio
+    = '\n'
+
+mixin formInlineRadio
+  .custom-control.pl-0
+    label.mb-0 Select one option
+  .custom-control.custom-radio.custom-control-inline
+    = '\n'
+    input#customRadioInline1.custom-control-input(type='radio', name='customRadioInline1')
+    = '\n'
+    label.custom-control-label(for='customRadioInline1') Toggle
+    = '\n'
+  .custom-control.custom-radio.custom-control-inline
+    = '\n'
+    input#customRadioInline2.custom-control-input(type='radio', name='customRadioInline1')
+    = '\n'
+    label.custom-control-label(for='customRadioInline2') Or toggle this
+    = '\n'
+
+mixin formDisableCheckbox
+  .custom-control.custom-checkbox
+    = '\n'
+    input#customCheckDisabled1.custom-control-input(type='checkbox', disabled='')
+    = '\n'
+    label.custom-control-label(for='customCheckDisabled1') Check this custom checkbox
+    = '\n'
+  .custom-control.custom-radio
+    = '\n'
+    input#customRadioDisabled2.custom-control-input(type='radio', name='radioDisabled', disabled='')
+    = '\n'
+    label.custom-control-label(for='customRadioDisabled2') Toggle this custom radio
+    = '\n'
+  
+mixin formSwithc
+  .custom-control.custom-switch
+    = '\n'
+    input#customSwitch1.custom-control-input(type='checkbox')
+    = '\n'
+    label.custom-control-label(for='customSwitch1') Toggle this switch element
+    = '\n'
+
+mixin formSwithcDisable
+  .custom-control.custom-switch
+    = '\n'
+    input#customSwitch2.custom-control-input(type='checkbox', disabled='')
+    = '\n'
+    label.custom-control-label(for='customSwitch2') Disabled switch element
+    = '\n'
+
+mixin formCustomSelect
+  select.custom-select.mb-3&attributes(attributes)
+    option(selected='') Open this select menu
+    option(value='1') One
+    option(value='2') Two
+    option(value='3') Three
+  = '\n'

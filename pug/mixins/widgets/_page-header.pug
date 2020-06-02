@@ -1,0 +1,10 @@
+mixin PageHeader(config)
+  if config.title
+    h3!=config.title
+  if config.description
+    p.mb-0!=config.description
+  block
+  if config.url
+    a(href=config.url target='_blank').btn.btn-link.btn-sm.pl-0.mt-2=config.linkText
+      span.fas.fa-chevron-right.ml-1.fs--2
+  
