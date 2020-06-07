@@ -1,0 +1,27 @@
+mixin welcome
+	.container
+		.row.align-items-center.mt-5
+			.illustration.col-12.col-md-5.col-lg-6.order-md-2
+				//- Image
+				img.img-fluid.mw-md-150.mw-lg-130.mb-6.mb-md-0(src=`${CWD}assets/img/gallery/illustration-2.png` alt='...' data-aos='fade-up' data-aos-delay='100' data-zanim-xs='{"delay":0.7,"duration":0.7,"ease":"Power2.easeOut","from":{"y":20,"opacity":0},"to":{"y":0,"opacity":1}}')
+			.col-12.col-md-7.col-lg-6.order-md-1.aos-animate(data-aos='fade-up' data-zanim-lg='{"delay":1.2,"duration":0.7,"ease":"Power2.easeOut","from":{"y":-20,"opacity":0},"to":{"y":0,"opacity":1}}')
+				//- Heading
+				h1.display-5.text-center.text-md-left
+					| Welcome to 
+					span.text-primary Landkit
+					| . 
+					br
+					| &#x9;&#x9;&#x9;&#x9;Develop anything.
+				//-Text
+				p.lead.text-center.text-md-left.text-muted.mb-6.mb-lg-8
+					| Build a beautiful, modern website with flexible Bootstrap components built from scratch.
+				//-Buttons
+				.text-center.text-md-left.pt-4
+					a.btn.btn-primary.shadow.lift.mr-1.hvr-float(href='#')
+						| View all pages 
+						i.fas.fa-arrow-right.d-none.d-md-inline.ml-2
+						//- <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+					a.btn.btn-light.text-primary.lift.hvr-float(href='#')
+						| Documentation
+		//- / .row
+	//-/ .container
