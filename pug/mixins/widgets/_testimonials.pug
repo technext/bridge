@@ -1,0 +1,24 @@
+mixin testimonials
+	.container
+		.row.justify-content-center
+			.col-12.col-md-10.col-lg-8.text-center
+				//- Heading
+				h2
+					| Our customers are our biggest fans.
+				//-Text
+				p.font-size-lg.text-muted.text-justify.mb-7.mb-md-9
+					| We dont&apos; like to brag, but we don&apos;t mind letting our customers do it for us. Here are a few nice things folks have said about our themes over the years.
+		//-.row
+		.row
+			.col-12
+				#wrapper
+					//- <h1 class="text-muted">jQuery Slider</h1>
+					#slide-wrap
+	//-
+		SHAPE
+		==================================================
+	.position-relative.mt-n11.shape-slider
+		.shape.shape-bottom.shape-fluid-x.svg-shim.text-dark
+			//-<svg viewBox="0 0 2880 48" fill="blue" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>
+			svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1440 320')
+				path(fill='#F1F4F8' fill-opacity='1' d='M0,256L1440,0L1440,320L0,320Z')

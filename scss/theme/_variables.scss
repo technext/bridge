@@ -25,7 +25,7 @@ $grid-breakpoints: (
 //-----------------------------------------------*/
 $white: #fff !default;
 $gray-100: #f9fafd !default;
-$gray-200: #edf2f9 !default;
+$gray-200: #EAEFFD !default;
 $gray-300: #d8e2ef !default;
 $gray-400: #A4B3CA !default;
 $gray-500: #8191AF !default;
@@ -33,7 +33,7 @@ $gray-600: #748194 !default;
 $gray-700: #5e6e82 !default;
 $gray-800: #4d5969 !default;
 $gray-900: #344050 !default;
-$gray-1000: #232e3c !default;
+$gray-1000: #203055 !default;
 $gray-1100: #1b2a4e !default;
 $black: #161C2D !default;
 
@@ -146,6 +146,8 @@ $spacers: map-merge($spacers, (
   9 : ($spacer * 10.0),
   10 : ($spacer * 12.5),
   11 : ($spacer * 15.0),
+  12 : ($spacer * 18.0),
+  13 : ($spacer * 21.0),
 ));
 
 

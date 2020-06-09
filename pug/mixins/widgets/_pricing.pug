@@ -1,0 +1,105 @@
+mixin pricingCard
+  .container
+    .row.justify-content-center
+      .col-12.text-center
+        //-Heading
+        h1
+          | Fair, simple pricing for all.
+        //- Text
+        p.lead.text-700
+          | All types of businesses need access to development resources, so we give you the option to decide how much you need to use.
+        //-Form
+        form.d-flex.align-items-center.justify-content-center.mb-7.mb-md-9
+          //- Label
+          span.text-muted#filt-hourly
+            | Annual
+          .custom-control.custom-switch.toggler.toggler--is-active
+            input#customSwitch1.custom-control-input(type='checkbox')
+            label.custom-control-label(for='customSwitch1')
+          //- Label
+          span.text-muted#filt-monthly
+            | Monthly
+    //- .row
+    //- Card
+    .row.align-items-center.no-gutters.mb-n13
+      .col-12.col-md-6
+        //- Card
+
+        .card#monthly.rounded-lg.shadow-lg.mb-6.mb-md-0.aos-init.aos-animate(style='z-index: 1;', data-aos='fade-up')
+          //- Body
+          .card-body.py-8.py-md-8
+            .row.justify-content-center
+              .col-12.col-xl-9
+                //-Badge
+                .text-center.mb-5
+                  span.badge.badge-light.bg-200.font-weight-normal.text-uppercase.text-primary Standard
+                //- Price
+                .d-flex.justify-content-center
+                  span.h2.mb-0.mt-2 $
+                  span.price.display-3.mb-0.font-weight-normal(data-annual='29' data-monthly='49') 29
+                  span.h2.align-self-end.mb-1 /mo
+                //- Text
+                p.text-center.text-muted.mb-2.mb-md-4
+                  | per seat
+                  
+                //- Features
+                .d-flex.text-center
+                  //- Check
+                  .badge.badge-rounded-circle.badge-success-soft.mt-1
+                    i.far.fa-check-circle.text-success.fa-lg
+                  //- Text
+                  p.text-center
+                    | Rich, responsive landing pages
+                .d-flex
+                  //- Check
+                  .badge.badge-rounded-circle.badge-success-soft.mt-1
+                    i.far.fa-check-circle.text-success.fa-lg
+                  //- Text
+                  p
+                    | 100+ styled components
+                .d-flex
+                  //- Check
+                  .badge.badge-rounded-circle.badge-success-soft.mt-1
+                    i.far.fa-check-circle.text-success.fa-lg
+                  //- Text
+                  p
+                    | Flexible, simple license
+                .d-flex
+                  //- Check
+                  .badge.badge-rounded-circle.badge-success-soft.mt-1
+                    i.far.fa-check-circle.text-success.fa-lg
+                  //- Text
+                  p
+                    | Speedy build tooling
+                .d-flex
+                  //- Check
+                  .badge.badge-rounded-circle.badge-success-soft.mt-1
+                    i.far.fa-check-circle.text-success.fa-lg
+                  //- Text
+                  p.mb-0
+                    | 6 months free support included
+            //-.row
+          //- Button
+          a.card-btn.btn.btn-block.btn-lg.btn-primary(href='#!')
+            | Get it now
+      //- Enterprise Card
+      .col-12.col-md-6(style='z-index:1;')
+        //- Card
+        .card.rounded-lg.shadow-lg
+          //- Body
+          .card-body.py-8
+            .row.justify-content-center
+              .col-12.col-xl-10
+                //- Badge
+                p.text-center.my-4
+                  span.badge.badge-light.bg-200.font-weight-normal.text-uppercase.text-primary Enterprise
+                //- Text
+                p.lead.text-center.text-muted.bg-white
+                  | We offer variable pricing with discounts for larger organizations. Get in touch with us and we&rsquo;ll figure out something that works for everyone.
+            //-.row
+          //- Button
+          a.card-btn.btn.btn-block.btn-lg.bg-300.text-500(href='#!')
+            | Contact us
+      //- Enterprise Card End
+    //-.row
+  //- .container

@@ -1,0 +1,136 @@
+mixin aboutSection
+	.container(
+          data-zanim-xs!={
+            delay: 0,
+            ease: 'Sine.easeInOut',
+            duration: 1,
+            from: {
+              scale: 1.05,
+          		alpha: 1
+            },
+            to: {
+              scale: 1,
+          		alpha: 1
+            }
+          }
+        )
+		.row.align-items-center.justify-content-between
+			.about.col-12.col-md-6.order-md-2.animated(statdiv='')
+				//-- Heading
+				h2
+					| The most useful resource
+				h2
+					span.text-success.pr-1 ever created for 
+					span.text-success.element.typed-cursor
+				//- Text
+				p.font-size-lg.text-muted.mb-6
+					| Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier.
+				//-List
+				.row
+					.col-12.col-lg-6
+						//- Item
+						.d-flex
+							//- Check
+							span.badge.badge-rounded-circle.badge-success-soft.mt-1.mr-1
+								i.far.fa-check-circle.text-success.fa-lg
+							//- Text
+							p.text-success
+								| Lifetime updates
+						//- Item
+						.d-flex
+							//- Check
+							span.badge.badge-rounded-circle.badge-success-soft.mt-1.mr-1
+								i.far.fa-check-circle.text-success.fa-lg
+							//- Text
+							p.text-success
+								| Tons of assets
+					.col-12.col-lg-6.mb-6.mb-md-0
+						//- Item
+						.d-flex
+							//- Check
+							span.badge.badge-rounded-circle.badge-success-soft.mt-1.mr-1
+								i.far.fa-check-circle.text-success.fa-lg
+							//- Text
+							p.text-success
+								| Tech support
+						//- Item
+						.d-flex
+							//- Check
+							span.badge.badge-rounded-circle.badge-success-soft.mt-1.mr-1
+								i.far.fa-check-circle.text-success.fa-lg
+							//- Text
+							p.text-success
+								| Integration ready
+				//- .row
+			.card-form.col-12.col-md-6.col-lg-5.order-md-1
+				//- Card
+				.card.shadow-light-lg.lift.lift-lg.hvr-float-shadow(style='width: 24.375rem;')
+					//- Image
+					img.card-img-top.card-img-custom(src=`${CWD}assets/img/gallery/photo-2.jpg` alt='...')
+					.card-body
+						//- Form
+						form
+							.form-group
+								input#cardName.form-control(type='text' placeholder='Name')
+								label(for='cardName')
+							.form-group
+								input#cardEmail.form-control(type='email' placeholder='Email')
+								label(for='cardEmail')
+							.form-group
+								//-<input type="password" class="form-control form-control-flush" id="cardPassword" placeholder="Password" style="background-image: url(data:image/png;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%;">
+								input#cardPassword.form-control(type='password' placeholder='Password')
+								label(for='cardPassword')
+							.mt-6
+								button.btn.btn-block.btn-success.lift(type='submit')
+									| Download a sample
+		//-.row
+		.row.experience.align-items-center.py-8
+			.col-12.col-md-7.col-lg-6.aos-init.aos-animate(data-aos='fade-right')
+				//- Heading
+				h2
+					| We have lots of experience 
+					br
+					span.text-primary building Bootstrap themes
+					| .
+				//-Text
+				p.font-size-lg.text-muted.mb-6.text-gray-700
+					| We&apos;ve built well over a dozen Bootstrap themes and sold tens of thousands of copies.
+				//-List
+				.d-flex
+					//- Icon
+					.icon.text-primary
+						svg(width='50' height='50' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+							g(fill='none' fill-rule='evenodd')
+								path(d='M0 0h24v24H0z')
+								path(d='M12 8H8a4 4 0 00-4 4v1a3 3 0 003 3v2a5 5 0 01-5-5v-1a6 6 0 016-6h4V4.728a.5.5 0 01.8-.4l2.856 2.133a.5.5 0 01-.001.802l-2.857 2.121A.5.5 0 0112 8.983V8z' fill='#335EEA')
+								path(d='M12.058 16H16a4 4 0 004-4v-1a3 3 0 00-3-3V6a5 5 0 015 5v1a6 6 0 01-6 6h-3.942v.983a.5.5 0 01-.798.401l-2.857-2.12a.5.5 0 010-.803l2.856-2.134a.5.5 0 01.8.401V16z' fill='#335EEA' opacity='.3')
+					.ml-5
+						//- Heading
+						h4.mb-1
+							| Bootstrap users since the beginning
+						//- Text
+						p.text-muted.mb-6.text-gray-700
+							| We&apos;ve been developing with Bootstrap since it was publicly released in 2011.
+				.d-flex
+					//- Icon
+					.icon.text-primary
+						svg(width='50' height='50' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+							g(fill='none' fill-rule='evenodd')
+								path(d='M0 0h24v24H0z')
+								path(d='M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z' fill='#335EEA')
+								rect(fill='#335EEA' opacity='.3' transform='rotate(15 12 12)' x='11' y='4' width='2' height='16' rx='1')
+					.ml-5
+						//- Heading
+						h4.mb-1
+							| Deep understanding of Bootstrap
+						//- Text
+						p.text-muted.mb-6.mb-md-0.text-gray-700
+							| We&apos;ve watched Bootstrap grow up over the years and understand it better than almost anyone.
+			.col-12.col-md-5.col-lg-6
+				.w-md-150.w-lg-130.position-relative.aos-init.aos-animate(data-aos='fade-left')
+					.hvr-skew-forward
+						//- Image
+						img.screenshot.img-fluid(src=`${CWD}assets/img/gallery/dashkit.jpg` alt='...' style='max-width: 620px; ')
+		//-.row
+	//-.container
+//- ABOUT END

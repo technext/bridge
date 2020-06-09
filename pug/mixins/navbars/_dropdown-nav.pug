@@ -1,0 +1,266 @@
+mixin dropdownNav
+	.container
+		nav.navbar.navbar-expand-lg.navbar-light.bg-white.pt-4
+			a.navbar-brand(href='#')
+				img(src=`${CWD}assets/img/gallery/brand.svg` width='' height='' alt='')
+			button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+				span.navbar-toggler-icon
+			#navbarSupportedContent.collapse.navbar-collapse
+				ul.navbar-nav.ml-auto
+					li.nav-item.dropdown.dropdown-menu-xl-li
+						a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+							| Landings
+						.dropdown-menu.dropdown-menu-xl.p-0(style='margin-left: 90px;' aria-labelledby='navbarLandings')
+							.row.no-gutters
+								.col-12.col-lg-6.px-0
+									.dropdown-img-left.text-center.align-items-center.pt-5
+										+background({ image:`${CWD}assets/img/gallery/photo-3.jpg`, className: 'overlay overlay-gradient-info rounded-left' }).border.border-light.rounded  
+										//- Heading
+										h4.font-weight-bold.text-white.mb-0.mt-5
+											| Want to see an overview?
+										//- Text
+										p.font-size-sm.text-white
+											| See all the pages at once.
+										//- Button
+										a.btn.btn-sm.text-primary.bg-light.font-size-sm(href='#')
+											| View all pages
+								.col-12.col-lg-6.px-0
+									.dropdown-body
+										.row.no-gutters
+											.col-6
+												//- Heading
+												span.dropdown-header
+													| Services
+												//- List
+												a.dropdown-item(href='#')
+													| Coworking
+												a.dropdown-item(href='#')
+													| Rental
+												a.dropdown-item.mb-2(href='#')
+													| Job Listing
+												//- Heading
+												span.dropdown-header
+													| Apps
+												//- List
+												a.dropdown-item(href='#')
+													| Desktop
+												a.dropdown-item(href='#')
+													| Mobile
+											.col-6
+												//-Heading
+												span.dropdown-header
+													| Web
+												//- List
+												a.dropdown-item(href='#')
+													| Basic
+												a.dropdown-item(href='#')
+													| Enterprise
+												a.dropdown-item(href='#')
+													| Service
+												a.dropdown-item(href='#')
+													| Cloud Hosting
+												a.dropdown-item(href='#')
+													| Agency 
+													span.text-uppercase.text-primary (new)
+										//- / .row
+							//- / .row
+					//- Landing
+					li.nav-item.dropdown.dropdown-menu-xl-li
+						a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+							| Pages
+						.dropdown-menu.dropdown-menu-xl.p-0(style='margin-left: 200px;' aria-labelledby='navbarPages')
+							.row.no-gutters.mx-0.my-4
+								.col-6
+									.row.no-gutters
+										.col-12.col-lg-6
+											//- Heading
+											span.dropdown-header
+												| Career
+											//-List
+											a.dropdown-item(href='#')
+												| Listing
+											a.dropdown-item(href='#')
+												| Opening
+											//- Heading
+											span.dropdown-header
+												| Company
+											//- List
+											a.dropdown-item(href='#')
+												| About
+											a.dropdown-item(href='#')
+												| Pricing
+											a.dropdown-item.mb-lg-0(href='#')
+												| Terms
+										.col-12.col-lg-6
+											//- Heading
+											span.dropdown-header
+												| Help center
+											//- List
+											a.dropdown-item(href='#')
+												| Overview
+											a.dropdown-item(href='#')
+												| Article
+											//- Heading
+											span.dropdown-header
+												| Contact
+											//- List
+											a.dropdown-item(href='#')
+												| Basic
+											a.dropdown-item(href='#')
+												| Cover
+								.col-6
+									.row.no-gutters.mx-0
+										.col-12.col-lg-6
+											//- Heading
+											span.dropdown-header
+												| Blog
+											//-List
+											a.dropdown-item(href='#')
+												| Rich View
+											a.dropdown-item(href='#')
+												| Article
+											a.dropdown-item(href='#')
+												| Showcase
+											a.dropdown-item.mb-lg-0(href='#')
+												| Search
+										.col-12.col-lg-6
+											//-Heading
+											span.dropdown-header
+												| Portfolio 
+												span.text-uppercase.text-primary (new)
+											//- List
+											a.dropdown-item(href='#')
+												| Masonry
+											a.dropdown-item(href='#')
+												| Grid Rows
+											a.dropdown-item(href='#')
+												| Parallax
+											a.dropdown-item(href='#')
+												| Case Study
+											a.dropdown-item(href='#')
+												| Sidebar
+											a.dropdown-item(href='#')
+												| Sidebar: Fluid
+											a.dropdown-item(href='#')
+												| Basic Grid
+					li.nav-item.dropdown.dropdown-menu-xl-li
+						a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+							| Account
+						ul.dropdown-menu.dropdown-menu-lg(style='margin-left: 450px;' aria-labelledby='navbarAccount')
+							li.dropdown-item.dropdown.dropdown-menu-xl-li.dropright
+								a.dropdown-link.text-decoration-none.text-500.d-flex.justify.justify-content-between.py-2(data-toggle='dropdown' href='#' aria-expanded='true')
+									span.font-weight-normal Sign In
+									span
+										i.fas.fa-chevron-right
+								.dropdown-menu.dropdown-menu-lg
+									a.dropdown-item.py-1(href='#')
+										| Side Cover
+									a.dropdown-item.py-1(href='#')
+										| Illustration
+									a.dropdown-item.py-1(href='#')
+										| Basic
+									a.dropdown-item.py-1(data-toggle='modal' href='#')
+										| Modal Horizontal
+									a.dropdown-item.py-1(data-toggle='modal' href='#')
+										| Modal Vertical
+							li.dropdown-item.dropdown.dropdown-menu-xl-li.dropright
+								a.dropdown-link.text-decoration-none.text-500.d-flex.justify-content-between.py-1(data-toggle='dropdown' href='#' aria-expanded='true')
+									span.font-weight-normal Sign Up
+									span
+										i.fas.fa-chevron-right
+								.dropdown-menu.dropdown-menu-lg
+									a.dropdown-item.py-1(href='#')
+										| Side Cover
+									a.dropdown-item.py-1(href='#')
+										| Illustration
+									a.dropdown-item.py-1(href='#')
+										| Basic
+									a.dropdown-item.py-1(data-toggle='modal' href='#')
+										| Modal Horizontal
+									a.dropdown-item.py-1(data-toggle='modal' href='#')
+										| Modal Vertical
+							li.dropdown-item.dropright.dropdown.dropdown-menu-xl-li
+								a.dropdown-link.text-decoration-none.text-500.d-flex.justify-content-between.py-1(data-toggle='dropdown' href='#')
+									span.font-weight-normal Password Reset
+									span
+										i.fas.fa-chevron-right
+								.dropdown-menu
+									a.dropdown-item(href='#')
+										| Side Cover
+									a.dropdown-item(href='#')
+										| Illustration
+									a.dropdown-item(href='#')
+										| Basic
+							li.dropdown-item.dropright.dropdown.dropdown-menu-xl-li
+								a.dropdown-link.text-decoration-none.text-500.d-flex.justify-content-between.py-1(data-toggle='dropdown' href='#')
+									span.font-weight-normal Error 
+									span
+										i.fas.fa-chevron-right
+								.dropdown-menu
+									a.dropdown-item.py-1(href='#')
+										| Side Cover
+									a.dropdown-item.py-1(href='#')
+										| Illustration
+									a.dropdown-item.py-1(href='#')
+										| Basic
+					li.nav-item.dropdown.dropdown-menu-xl-li
+						a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+							| Documentation
+						.dropdown-menu.dropdown-menu-md(style='margin-left:550px;' aria-labelledby='navbarDocumentation')
+							.list-group.list-group-flush
+								a.list-group-item(href='#')
+									//- Icon
+									.icon.icon-sm.text-primary
+										svg(width='40' height='40' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+											g(fill='none' fill-rule='evenodd')
+												path(d='M0 0h24v24H0z')
+												path(d='M8 3v.5A1.5 1.5 0 009.5 5h5A1.5 1.5 0 0016 3.5V3h2a2 2 0 012 2v16a2 2 0 01-2 2H6a2 2 0 01-2-2V5a2 2 0 012-2h2z' fill='#335EEA' opacity='.3')
+												path(d='M11 2a1 1 0 012 0h1.5a.5.5 0 01.5.5v1a.5.5 0 01-.5.5h-5a.5.5 0 01-.5-.5v-1a.5.5 0 01.5-.5H11z' fill='#335EEA')
+												rect(fill='#335EEA' opacity='.3' x='7' y='10' width='5' height='2' rx='1')
+												rect(fill='#335EEA' opacity='.3' x='7' y='14' width='9' height='2' rx='1')
+									//- Content
+									.ml-3
+										//-Heading
+										span.font-weight-bold.text-uppercase.text-primary.mb-0
+											| Documentation
+										//- Text
+										p.font-size-sm.text-secondary.mb-0
+											| Customizing and building
+								a.list-group-item(href='#')
+									//- Icon
+									.icon.icon-sm.text-primary
+										svg(width='40' height='40' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+											g(fill='none' fill-rule='evenodd')
+												path(d='M0 0h24v24H0z')
+												rect(fill='#335EEA' x='4' y='4' width='7' height='7' rx='1.5')
+												path(d='M5.5 13h4a1.5 1.5 0 011.5 1.5v4A1.5 1.5 0 019.5 20h-4A1.5 1.5 0 014 18.5v-4A1.5 1.5 0 015.5 13zm9-9h4A1.5 1.5 0 0120 5.5v4a1.5 1.5 0 01-1.5 1.5h-4A1.5 1.5 0 0113 9.5v-4A1.5 1.5 0 0114.5 4zm0 9h4a1.5 1.5 0 011.5 1.5v4a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-4a1.5 1.5 0 011.5-1.5z' fill='#335EEA' opacity='.3')
+									//- Content
+									.ml-3
+										//- Heading
+										span.font-weight-bold.text-uppercase.text-primary.mb-0
+											| Components
+										//-Text
+										p.font-size-sm.text-gray-700.mb-0
+											| Full list of components
+								a.list-group-item(href='#')
+									//- Icon
+									.icon.icon-sm.text-primary
+										svg(width='40' height='40' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
+											g(fill='none' fill-rule='evenodd')
+												path(d='M0 0h24v24H0z')
+												path(d='M5.857 2h7.88a1.5 1.5 0 01.968.355l4.764 4.029A1.5 1.5 0 0120 7.529v12.554c0 1.79-.02 1.917-1.857 1.917H5.857C4.02 22 4 21.874 4 20.083V3.917C4 2.127 4.02 2 5.857 2z' fill='#335EEA' opacity='.3')
+												rect(fill='#335EEA' x='6' y='11' width='9' height='2' rx='1')
+												rect(fill='#335EEA' x='6' y='15' width='5' height='2' rx='1')
+									//-Content
+									.ml-3
+										//- Heading
+										span.font-weight-bold.text-uppercase.text-primary.mb-0
+											| Changelog 
+											span.badge.badge-secondary.bg-light.text-primary 1.1.3
+										//- Text
+										p.font-size-sm.text-gray-700.mb-0
+											| Keep track of changes
+									//- Badge
+									span.badge.badge-pill.badge-primary.ml-auto
+										| 1.1.3
+				a.navbar-btn.btn.btn-sm.btn-primary.lift.ml-auto.hvr-float(href='!#' target='_blank') Buy now
