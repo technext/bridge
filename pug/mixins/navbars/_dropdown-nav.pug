@@ -2,77 +2,63 @@ mixin dropdownNav
 	.container
 		nav.navbar.navbar-expand-lg.navbar-light.bg-white.pt-4.pl-0
 			a.navbar-brand(href='#')
-				//-img(src=`${CWD}assets/img/gallery/brand.svg` width='' height='' alt='')
 				p.text-center.text-md-left.text-primary.font-weight-bold Bridge
 			button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
 				span.navbar-toggler-icon
 			#navbarSupportedContent.collapse.navbar-collapse
 				ul.navbar-nav.ml-auto
 					li.nav-item.dropdown.dropdown-menu-xl-li
-						a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+						a#navbarDropdownlanding.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
 							| Landings
-						.dropdown-menu.dropdown-menu-xl.p-0(style='margin-left: 90px;' aria-labelledby='navbarLandings')
-							.row.no-gutters
-								.col-12.col-lg-6.px-0
-									.dropdown-img-left.text-center.align-items-center.pt-5
-										+background({ image:`${CWD}assets/img/gallery/photo-3.jpg`, className: 'overlay overlay-gradient-info rounded-left' }).border.border-light.rounded  
+						.dropdown-menu.dropdown-menu-xl.p-0(style='margin-left: 90px;' aria-labelledby='navbarDropdownlanding')
+				
+							.dropdown-body
+								.row
+									.col-6
 										//- Heading
-										h4.font-weight-bold.text-white.mb-0.mt-5
-											| Want to see an overview?
-										//- Text
-										p.font-size-sm.text-white
-											| See all the pages at once.
-										//- Button
-										a.btn.btn-sm.text-primary.bg-light.font-size-sm(href='#')
-											| View all pages
-								.col-12.col-lg-6.px-0
-									.dropdown-body
-										.row.no-gutters
-											.col-6
-												//- Heading
-												span.dropdown-header
-													| Services
-												//- List
-												a.dropdown-item(href='#')
-													| Coworking
-												a.dropdown-item(href='#')
-													| Rental
-												a.dropdown-item.mb-2(href='#')
-													| Job Listing
-												//- Heading
-												span.dropdown-header
-													| Apps
-												//- List
-												a.dropdown-item(href='#')
-													| Desktop
-												a.dropdown-item(href='#')
-													| Mobile
-											.col-6
-												//-Heading
-												span.dropdown-header
-													| Web
-												//- List
-												a.dropdown-item(href='#')
-													| Basic
-												a.dropdown-item(href='#')
-													| Enterprise
-												a.dropdown-item(href='#')
-													| Service
-												a.dropdown-item(href='#')
-													| Cloud Hosting
-												a.dropdown-item(href='#')
-													| Agency 
-													span.text-uppercase.text-primary (new)
+										span.dropdown-header
+											| Services
+										//- List
+										a.dropdown-item(href='#')
+											| Coworking
+										a.dropdown-item(href='#')
+											| Rental
+										a.dropdown-item.mb-2(href='#')
+											| Job Listing
+										//- Heading
+										span.dropdown-header
+											| Apps
+										//- List
+										a.dropdown-item(href='#')
+											| Desktop
+										a.dropdown-item(href='#')
+											| Mobile
+									.col-6
+										//-Heading
+										span.dropdown-header
+											| Web
+										//- List
+										a.dropdown-item(href='#')
+											| Basic
+										a.dropdown-item(href='#')
+											| Enterprise
+										a.dropdown-item(href='#')
+											| Service
+										a.dropdown-item(href='#')
+											| Cloud Hosting
+										a.dropdown-item(href='#')
+											| Agency 
+											span.text-uppercase.text-primary (new)
 										//- / .row
 							//- / .row
 					//- Landing
 					li.nav-item.dropdown.dropdown-menu-xl-li
-						a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+						a#navbarDropdownpages.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
 							| Pages
-						.dropdown-menu.dropdown-menu-xl.p-0(style='margin-left: 200px;' aria-labelledby='navbarPages')
-							.row.no-gutters.mx-0.my-4
+						.dropdown-menu.dropdown-menu-xl.p-0(style='margin-left: 200px;' aria-labelledby='navbarDropdownpages')
+							.row.mx-0.my-4
 								.col-6
-									.row.no-gutters
+									.row
 										.col-12.col-lg-6
 											//- Heading
 											span.dropdown-header
@@ -145,69 +131,26 @@ mixin dropdownNav
 											a.dropdown-item(href='#')
 												| Basic Grid
 					li.nav-item.dropdown.dropdown-menu-xl-li
-						a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+						a#navbarDropdownaccount.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
 							| Account
-						ul.dropdown-menu.dropdown-menu-lg(style='margin-left: 450px;' aria-labelledby='navbarAccount')
+						ul.dropdown-menu.dropdown-menu-lg(style='margin-left: 450px;' aria-labelledby='navbarDropdownaccount')
 							li.dropdown-item.dropdown.dropdown-menu-xl-li.dropright
-								a.dropdown-link.text-decoration-none.text-500.d-flex.justify.justify-content-between.py-2(data-toggle='dropdown' href='#' aria-expanded='true')
+								a.dropdown-link.text-decoration-none.d-flex.justify.justify-content-between.py-2(data-toggle='dropdown' href='#' aria-expanded='true')
 									span.font-weight-normal Sign In
-									span
-										i.fas.fa-chevron-right
-								.dropdown-menu.dropdown-menu-lg
-									a.dropdown-item.py-1(href='#')
-										| Side Cover
-									a.dropdown-item.py-1(href='#')
-										| Illustration
-									a.dropdown-item.py-1(href='#')
-										| Basic
-									a.dropdown-item.py-1(data-toggle='modal' href='#')
-										| Modal Horizontal
-									a.dropdown-item.py-1(data-toggle='modal' href='#')
-										| Modal Vertical
+									
 							li.dropdown-item.dropdown.dropdown-menu-xl-li.dropright
 								a.dropdown-link.text-decoration-none.text-500.d-flex.justify-content-between.py-1(data-toggle='dropdown' href='#' aria-expanded='true')
 									span.font-weight-normal Sign Up
-									span
-										i.fas.fa-chevron-right
-								.dropdown-menu.dropdown-menu-lg
-									a.dropdown-item.py-1(href='#')
-										| Side Cover
-									a.dropdown-item.py-1(href='#')
-										| Illustration
-									a.dropdown-item.py-1(href='#')
-										| Basic
-									a.dropdown-item.py-1(data-toggle='modal' href='#')
-										| Modal Horizontal
-									a.dropdown-item.py-1(data-toggle='modal' href='#')
-										| Modal Vertical
 							li.dropdown-item.dropright.dropdown.dropdown-menu-xl-li
 								a.dropdown-link.text-decoration-none.text-500.d-flex.justify-content-between.py-1(data-toggle='dropdown' href='#')
 									span.font-weight-normal Password Reset
-									span
-										i.fas.fa-chevron-right
-								.dropdown-menu
-									a.dropdown-item(href='#')
-										| Side Cover
-									a.dropdown-item(href='#')
-										| Illustration
-									a.dropdown-item(href='#')
-										| Basic
 							li.dropdown-item.dropright.dropdown.dropdown-menu-xl-li
 								a.dropdown-link.text-decoration-none.text-500.d-flex.justify-content-between.py-1(data-toggle='dropdown' href='#')
 									span.font-weight-normal Error 
-									span
-										i.fas.fa-chevron-right
-								.dropdown-menu
-									a.dropdown-item.py-1(href='#')
-										| Side Cover
-									a.dropdown-item.py-1(href='#')
-										| Illustration
-									a.dropdown-item.py-1(href='#')
-										| Basic
 					li.nav-item.dropdown.dropdown-menu-xl-li
-						a#navbarDropdown.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+						a#navbarDropdowndoc.nav-link(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
 							| Documentation
-						.dropdown-menu.dropdown-menu-md(style='margin-left:550px;' aria-labelledby='navbarDocumentation')
+						.dropdown-menu.dropdown-menu-md(style='margin-left:550px;' aria-labelledby='navbarDropdowndoc')
 							.list-group.list-group-flush
 								a.list-group-item(href='#')
 									//- Icon
@@ -264,4 +207,4 @@ mixin dropdownNav
 									//- Badge
 									span.badge.badge-pill.badge-primary.ml-auto
 										| 1.1.3
-				a.navbar-btn.btn.btn-sm.btn-primary.lift.ml-auto.hvr-float(href='!#' target='_blank') Buy now
+				a.navbar-btn.btn.btn-sm.btn-primary.lift.ml-auto.hvr-float.btn-text-color(href='!#' target='_blank') Buy now

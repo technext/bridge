@@ -53,25 +53,14 @@ const PATHS = {
   JS: {
     ALL: 'js/**/*.js',
     BOOTSTRAP: [
-      './js/bootstrap/util.js',
-      './js/bootstrap/alert.js',
-      './js/bootstrap/button.js',
-      './js/bootstrap/carousel.js',
-      './js/bootstrap/collapse.js',
-      './js/bootstrap/dropdown.js',
-      './js/bootstrap/modal.js',
-      './js/bootstrap/tooltip.js',
-      './js/bootstrap/popover.js',
-      './js/bootstrap/scrollspy.js',
-      './js/bootstrap/tab.js',
-      './js/bootstrap/toast.js',
+      'js/bootstrap/**/*.js',
     ],
     THEME: [
       'js/theme/Utils.js',
       'js/theme/**/!(Utils)*.js',
     ],
     //PLUGINS: ['js/plugins/all.min.js'],
-    PLUGINS:['js/plugins/all.min.js','js/plugins/imagesloaded.pkgd.js','js/plugins/ScrollToPlugin.js','js/plugins/CustomEase.js'],
+    PLUGINS:['js/plugins/all.min.js'],
   },
   SCSS: {
     ALL: 'scss/**/*.scss',
@@ -86,16 +75,16 @@ const PATHS = {
   },
   CSS: 'pages/assets/css',
   DEPENDENCIES: {
-    jquery: {
-      FROM: 'node_modules/jquery/dist/jquery.min.js',
-      TO: JS,
-    },
+    // jquery: {
+    //   FROM: 'node_modules/jquery/dist/jquery.min.js',
+    //   TO: JS,
+    // },
     popper: {
       FROM: 'node_modules/popper.js/dist/umd/popper.min.js',
       TO: JS,
     },
     'bootstrap-js': {
-      FROM: 'node_modules/bootstrap/js/dist/!(index)*.js',
+      FROM: 'node_modules/bootstrap/js/dist/**/*.js',
       TO: 'js/bootstrap',
     },
     'bootstrap-scss': {
@@ -122,10 +111,10 @@ const PATHS = {
       FROM: ['node_modules/jquery.mb.ytplayer/dist/css/jquery.mb.YTPlayer.min.css', 'node_modules/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.min.js'],
       TO: lib,
     },
-    'gsap':{
-      FROM:['node_modules/gsap/dist/gsap.min.js'],
-      TO: lib,
-    },
+    // 'gsap':{
+    //   FROM:['node_modules/gsap/dist/gsap.min.js'],
+    //   TO: lib,
+    // },
     'semantic-ui-accordion': {
       FROM: ['node_modules/semantic-ui-accordion/accordion.min.css', 'node_modules/semantic-ui-accordion/accordion.min.js'],
       TO: lib,
@@ -140,11 +129,7 @@ const PATHS = {
     }
   },
   ZION: {
-    'zion-semantic-ui-accordion': {
-      SCSS: ['node_modules/zion-semantic-ui-accordion/dist/scss/_zion-semantic-ui-accordion.scss'],
-      PUG: ['node_modules/zion-semantic-ui-accordion/dist/pug/_zion-semantic-ui-accordion.pug'],
-      JS: ['node_modules/zion-semantic-ui-accordion/dist/js/zion-semantic-ui-accordion.js'],
-    },
+    
   },
   GENERATED: [
     'js/bootstrap',

@@ -15,10 +15,9 @@
   "homepage": "http://themewagon.com/",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
-    "bootstrap": "^4.5.0",
+    "bootstrap": "^5.0.0-alpha1",
     "gsap": "^3.2.6",
     "is_js": "^0.9.0",
-    "jquery": "^3.5.1",
     "jquery.mb.ytplayer": "^3.3.1",
     "popper.js": "^1.16.1",
     "prismjs": "^1.20.0",

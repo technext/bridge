@@ -1,6 +1,6 @@
 mixin features
 	.container
-		.row.features( data-zanim-xs='{"delay":0.7,"duration":0.7,"ease":"Power2.easeOut","from":{"y":20,"opacity":0},"to":{"y":0,"opacity":1}}')
+		.row.features
 			.col-12.col-md-4
 				//- Icon
 				.icon.text-primary.mb-3
@@ -13,9 +13,9 @@ mixin features
 				h3(style='font-size: 1.3125rem;')
 					| Get off to a quick start
 				//- Text
-				p.text-muted.mb-6.mb-md-0
+				p.text-muted.mb-3.mb-md-6.mb-md-0
 					| Base UI is the best starting point for your promo site. Just choose a template you like, insert your content and use.
-			.col-12.col-md-4.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='50')
+			.col-12.col-md-4
 				//- Icon
 				.icon.text-primary.mb-3
 					svg(width='50' height='50' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
@@ -27,9 +27,9 @@ mixin features
 				h3(style='font-size: 1.3125rem;')
 					| All-in-one design workflow
 				//- Text
-				p.text-muted.mb-6.mb-md-0
+				p.text-muted.mb-3.mb-md-6.mb-md-0
 					| Explore early concepts or pioneer new design patterns - an entire design workflow in one smart tool.
-			.col-12.col-md-4.aos-init.aos-animate(data-aos='fade-up' data-aos-delay='100')
+			.col-12.col-md-4
 				//- Icon
 				.icon.text-primary.mb-3
 					svg(width='50' height='50' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
@@ -41,7 +41,5 @@ mixin features
 				h3(style='font-size: 1.3125rem;')
 					| Next-generation design system
 				//- Text
-				p.text-muted.mb-0
+				p.text-muted.mb-0.mb-4
 					| Designing with base UI is a smooth experience all around. pick your screens, adjust a hue, control typefaces.
-		//- / .row
-	//- / .container

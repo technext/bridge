@@ -3,26 +3,26 @@ extends _skeleton-theme
 block append content
   section
     +dropdownNav 
-  section.welcome.overflow-hidden(data-zanim-timeline='{"delay":0}' data-zanim-trigger='scroll')
+  section.welcome.overflow-hidden
     +welcome
-  section.pb-8.border-bottom.overflow-hidden(data-zanim-timeline='{"delay":0.9}' data-zanim-trigger='scroll')
+  section.pb-md-4.border-bottom.overflow-hidden
     +features
   section.py-4.border-bottom
     +brands
-  section.pt-4.pt-md-8.bg-light.pb-5(data-zanim-timeline={ delay: 0.5 },data-zanim-trigger="scroll")
+  section.pt-4.pt-md-8.bg-light.pb-5
     +aboutSection
   section.pt-8.testimonials
     +testimonials
-  section.bg-gray-200.section-7
+  section.bg-light.section-7
     +stats
-  section.pt-5.pt-md-8.bg-gray-200
+  section.pt-5.pt-md-8.bg-light
     +pricingCard
   +shape
-  section.pt-5.bg-dark
+  section.bg-dark
     +faq
-  section.pt-5.bg-dark
+  section.bg-dark
     +cta
   //-SHAPE
   +shapeDown
-  footer.bg-gray-200
+  footer.pb-6
     +footer

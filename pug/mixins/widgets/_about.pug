@@ -1,62 +1,52 @@
 mixin aboutSection
 	.container
 		.row.align-items-center.justify-content-between
-			.about.col-12.col-md-6.order-md-2.animated(statdiv='')(data-zanim-xs!={
-				delay: 1,
-				duration: 1,
-				from: {
-					x:50,
-					opacity: 0
-				},
-				to: {
-					x: 0,
-					opacity: 1
-				}
-			})
+			.about.col-12.col-md-6.order-md-2
 				//-- Heading
 				h2
-					| The most useful resource
+					| Carefuly crafted components 
 				h2
-					span.text-success.pr-1 ever created for 
+					span.text-success.pr-1 ready to use in your project 
 					span.text-success.element.typed-cursor
-				p.font-size-lg.text-muted.mb-6
-					| Using Landkit to build your site means never worrying about designing another page or cross browser compatibility. Our ever-growing library of components and pre-designed layouts will make your life easier.
+				p.font-size-lg.text-muted.mb-4.mb-md-3
+					| 2 Million+ users like you from all around the globe use our products & services regularly. Our work doesn't end with the making of excellent products and services, we continue to thrive by helping clients and companies to transform as well.
 				.row
 					.col-12.col-lg-6
 						.d-flex
-							span.badge.badge-rounded-circle.badge-success-soft.mt-1.mr-1
-								i.far.fa-check-circle.text-success.fa-lg
+							span.badge.mt-1
+								<svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+								<path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+								</svg>
 							p.text-success
-								| Lifetime updates
+								| Lifetime free updates
 						.d-flex
-							span.badge.badge-rounded-circle.badge-success-soft.mt-1.mr-1
-								i.far.fa-check-circle.text-success.fa-lg
+							span.badge.mt-1
+								<svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+								<path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+								</svg>
 							p.text-success
-								| Tons of assets
+								| Based on Bootstrap 5
 					.col-12.col-lg-6.mb-6.mb-md-0
 						.d-flex
-							span.badge.badge-rounded-circle.badge-success-soft.mt-1.mr-1
-								i.far.fa-check-circle.text-success.fa-lg
+							span.badge.mt-1
+								<svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+								<path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+								</svg>
 							p.text-success
 								| Tech support
 						.d-flex
-							span.badge.badge-rounded-circle.badge-success-soft.mt-1.mr-1
-								i.far.fa-check-circle.text-success.fa-lg
+							span.badge.mt-1
+								<svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+								<path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+								</svg>
 							p.text-success
-								| Integration ready
+								| Fully Responsive
 				//- .row
-			.card-form.col-12.col-md-6.col-lg-5.order-md-1(data-zanim-xs!={
-				delay: 1,
-				duration: 1,
-				from: {
-					x:-50,
-					opacity: 0
-				},
-				to: {
-					x: 0,
-					opacity: 1
-				}
-			})
+			.card-form.col-12.col-md-6.col-lg-5.order-md-1
 				//- Card
 				.card.shadow-light-lg.lift.lift-lg.hvr-float-shadow
 					img.card-img-top.card-img-custom(src=`${CWD}assets/img/gallery/photo-2.jpg` alt='...')
@@ -71,30 +61,19 @@ mixin aboutSection
 							.form-group
 								input#cardPassword.form-control(type='password' placeholder='Password')
 								label(for='cardPassword')
-								button.btn.btn-block.btn-success.lift(type='submit')
+								button.btn.btn-block.btn-success.btn-text-color(type='submit')
 									| Download a sample
 		//-.row
-		.row.experience.align-items-center.py-8
-			.col-12.col-md-7.col-lg-6.aos-init(data-zanim-xs!={
-				delay: 2,
-				duration: 1,
-				from: {
-					x:-50,
-					opacity: 0
-				},
-				to: {
-					x: 0,
-					opacity: 1
-				}
-			})
+		.row.experience.align-items-center.py-md-8.py-5
+			.col-12.col-md-7.col-lg-6
 				//- Heading
 				h2
-					| We have lots of experience 
+					| We are a company of passionate
 					br
-					span.text-primary building Bootstrap themes
+					span.text-primary designers and developers
 					| .
-				p.font-size-lg.text-muted.mb-6.text-gray-700
-					| We&apos;ve built well over a dozen Bootstrap themes and sold tens of thousands of copies.
+				p.font-size-lg.text-muted.mb-4.mb-md-3.text-gray-700
+					| Hundreds of thousands of the developers and website owners build their website using the templates from ThemeWagon.
 				.d-flex
 					.icon.text-primary
 						svg(width='50' height='50' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
@@ -102,11 +81,11 @@ mixin aboutSection
 								path(d='M0 0h24v24H0z')
 								path(d='M12 8H8a4 4 0 00-4 4v1a3 3 0 003 3v2a5 5 0 01-5-5v-1a6 6 0 016-6h4V4.728a.5.5 0 01.8-.4l2.856 2.133a.5.5 0 01-.001.802l-2.857 2.121A.5.5 0 0112 8.983V8z' fill='#335EEA')
 								path(d='M12.058 16H16a4 4 0 004-4v-1a3 3 0 00-3-3V6a5 5 0 015 5v1a6 6 0 01-6 6h-3.942v.983a.5.5 0 01-.798.401l-2.857-2.12a.5.5 0 010-.803l2.856-2.134a.5.5 0 01.8.401V16z' fill='#335EEA' opacity='.3')
-					.ml-5
+					.ml-3
 						h4.mb-1
-							| Bootstrap users since the beginning
-						p.text-muted.mb-6.text-gray-700
-							| We&apos;ve been developing with Bootstrap since it was publicly released in 2011.
+							| Build fast, responsive sites with Bootstrap
+						p.text-muted.mb-4.mb-md-3.text-gray-700
+							| Every team member believes in excellence and you will find the reflection of our belief in our product, services, support and even the coffee we make.
 				.d-flex
 					.icon.text-primary
 						svg(width='50' height='50' viewbox='0 0 24 24' xmlns='http://www.w3.org/2000/svg')
@@ -114,24 +93,12 @@ mixin aboutSection
 								path(d='M0 0h24v24H0z')
 								path(d='M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z' fill='#335EEA')
 								rect(fill='#335EEA' opacity='.3' transform='rotate(15 12 12)' x='11' y='4' width='2' height='16' rx='1')
-					.ml-5
+					.ml-3
 						h4.mb-1
-							| Deep understanding of Bootstrap
-						p.text-muted.mb-6.mb-md-0.text-gray-700
-							| We&apos;ve watched Bootstrap grow up over the years and understand it better than almost anyone.
+							| Start your project with us
+						p.text-muted.mb-4.mb-md-0.text-gray-700
+							| Our work doesn't end with the making of excellent products and services, we continue to thrive by helping clients and companies to transform as well.
 			.col-12.col-md-5.col-lg-6
-				.w-md-150.w-lg-130.position-relative.aos-init.aos-animate(data-aos='fade-left')
-					.hvr-skew-forward(data-zanim-xs!={
-						delay: 2,
-						duration: 1,
-						from: {
-							x:50,
-							opacity: 0
-						},
-						to: {
-							x: 0,
-							opacity: 1
-						}
-					})
+				.position-relative
+					.hvr-skew-forward
 						img.screenshot.img-fluid(src=`${CWD}assets/img/gallery/falcon.png` alt='...' style='max-width: 620px; ')
-//- ABOUT END

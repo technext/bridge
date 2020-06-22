@@ -1,38 +1,24 @@
 mixin pricingCard
   .container
     .row.justify-content-center
-      .col-12.text-center
+      .col-12.text-center.pb-5
         //-Heading
         h1
-          | Fair, simple pricing for all.
+          | Choose your best plan.
         //- Text
-        p.lead.text-700
-          | All types of businesses need access to development resources, so we give you the option to decide how much you need to use.
-        //-Form
-        form.d-flex.align-items-center.justify-content-center.mb-7.mb-md-9
-          //- Label
-          span.text-muted#filt-hourly
-            | Annual
-          .custom-control.custom-switch.toggler.toggler--is-active
-            input#customSwitch1.custom-control-input(type='checkbox')
-            label.custom-control-label(for='customSwitch1')
-          //- Label
-          span.text-muted#filt-monthly
-            | Monthly
-    //- .row
-    //- Card
+        p.lead.text-muted
+          | Millions of users are using the themes and templates created<br> by the super talented and passionate web design team.
     .row.align-items-center.no-gutters.mb-n13
       .col-12.col-md-6
         //- Card
-
         .card#monthly.rounded-lg.shadow-lg.mb-6.mb-md-0(style='z-index: 1;')
           //- Body
-          .card-body.py-8.py-md-8
+          .card-body.py-6
             .row.justify-content-center
               .col-12.col-xl-9
                 //-Badge
                 .text-center.mb-5
-                  span.badge.badge-light.bg-200.font-weight-normal.text-uppercase.text-primary Standard
+                  span.badge.badge-light.bg-light.font-weight-normal.text-uppercase.text-primary Standard
                 //- Price
                 .d-flex.justify-content-center
                   span.h2.mb-0.mt-2 $
@@ -45,60 +31,75 @@ mixin pricingCard
                 //- Features
                 .d-flex.text-center
                   //- Check
-                  .badge.badge-rounded-circle.badge-success-soft.mt-1
-                    i.far.fa-check-circle.text-success.fa-lg
+                  .badge.mt-1
+                    <svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                    </svg>
                   //- Text
                   p.text-center
-                    | Rich, responsive landing pages
+                    | Fully Responsive design
                 .d-flex
                   //- Check
-                  .badge.badge-rounded-circle.badge-success-soft.mt-1
-                    i.far.fa-check-circle.text-success.fa-lg
+                  span.badge.mt-1
+                    <svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                    </svg>
                   //- Text
                   p
-                    | 100+ styled components
+                    | 100+ Unique layouts
                 .d-flex
                   //- Check
-                  .badge.badge-rounded-circle.badge-success-soft.mt-1
-                    i.far.fa-check-circle.text-success.fa-lg
+                  span.badge.mt-1
+                    <svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                    </svg>
                   //- Text
                   p
-                    | Flexible, simple license
+                    | Based on Bootstrap 5
                 .d-flex
                   //- Check
-                  .badge.badge-rounded-circle.badge-success-soft.mt-1
-                    i.far.fa-check-circle.text-success.fa-lg
+                  span.badge.mt-1
+                    <svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                    </svg>
                   //- Text
                   p
-                    | Speedy build tooling
+                    | Lifetime free updates
                 .d-flex
                   //- Check
-                  .badge.badge-rounded-circle.badge-success-soft.mt-1
-                    i.far.fa-check-circle.text-success.fa-lg
+                  span.badge.mt-1
+                    <svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
+                    </svg>
                   //- Text
                   p.mb-0
-                    | 6 months free support included
+                    | 12 months free support included
             //-.row
           //- Button
-          a.card-btn.btn.btn-block.btn-lg.btn-primary(href='#!')
+          a.card-btn.btn.btn-block.btn-lg.btn-primary.btn-text-color(href='#!')
             | Get it now
       //- Enterprise Card
       .col-12.col-md-6(style='z-index:1;')
         //- Card
         .card.rounded-lg.shadow-lg
           //- Body
-          .card-body.py-8
+          .card-body.py-6.py-md-8
             .row.justify-content-center
               .col-12.col-xl-10
                 //- Badge
                 p.text-center.my-4
-                  span.badge.badge-light.bg-200.font-weight-normal.text-uppercase.text-primary Enterprise
+                  span.badge.badge-light.bg-light.font-weight-normal.text-uppercase.text-primary Enterprise
                 //- Text
-                p.lead.text-center.text-muted.bg-white
-                  | We offer variable pricing with discounts for larger organizations. Get in touch with us and we&rsquo;ll figure out something that works for everyone.
+                p.text-center.text-muted.bg-white
+                  | There are way too many companies that have set up pricing tables with “packages” for their products without a solid understanding of the psychology behind package design.
             //-.row
           //- Button
-          a.card-btn.btn.btn-block.btn-lg.bg-300.text-500(href='#!')
+          a.card-btn.btn.btn-block.btn-lg.bg-light(href='#!')
             | Contact us
       //- Enterprise Card End
     //-.row

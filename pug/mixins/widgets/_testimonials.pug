@@ -4,16 +4,60 @@ mixin testimonials
 			.col-12.col-md-10.col-lg-8.text-center
 				//- Heading
 				h2
-					| Our customers are our biggest fans.
+					| What dcustomers are saying about us
 				//-Text
-				p.font-size-lg.text-muted.text-justify.mb-7.mb-md-9
-					| We dont&apos; like to brag, but we don&apos;t mind letting our customers do it for us. Here are a few nice things folks have said about our themes over the years.
+				p.font-size-lg.text-muted.text-justify.mb-5
+					| Don't just take it from us, let our customers do the talking
 		//-.row
-		.row
-			.col-12
-				#wrapper
-					//- <h1 class="text-muted">jQuery Slider</h1>
-					#slide-wrap
+		.row.mb-n7.shadow-lg
+			.col-12.px-0
+				#carouselExampleControls.carousel.slide(data-ride='carousel')
+					.carousel-inner
+						.carousel-item.active
+							.card.mb-0
+								.row.g-0
+									.col-md-5
+										img.d-block.w-100.h-100(src=`${CWD}assets/img/gallery/photo-4.jpg` alt='...')
+									.col-md-7
+										.card-body.text-center.p-7
+											img.img-fluid.pb-3(src=`${CWD}assets/img/gallery/airbnb.png` alt='...' )
+											p.card-text
+												| The theme is very robust but very easy to use. Moreover, the technical support is very reactive. I always receive the answers to my questions in less than an hour.
+											p.card-text
+												small.text-muted RICKAIN
+
+							//-img.d-block.w-100(src=`${CWD}assets/img/gallery/photo-1.jpg` alt='...')
+						.carousel-item
+							.card.mb-0
+								.row.g-0
+									.col-md-5
+										img.d-block.w-100.h-100(src=`${CWD}assets/img/gallery/photo-1.jpg` alt='...')
+									.col-md-7
+										.card-body.text-center.p-7
+											img.img-fluid.pb-3(src=`${CWD}assets/img/gallery/instagram-b.png` alt='...' )
+											p.card-text
+												| Easy to swap out sections for other ones from different pages. The mobile version is great with easy to access menu and slide-in account access panel!
+											p.card-text
+												small.text-muted JIM
+						.carousel-item
+							.card.mb-0
+								.row.g-0
+									.col-md-5
+										img.d-block.w-100.h-100(src=`${CWD}assets/img/gallery/photo-2.jpg` alt='...')
+									.col-md-7
+										.card-body.text-center.p-7
+											img.img-fluid.pb-3(src=`${CWD}assets/img/gallery/pinterest.png` alt='...' )
+											p.card-text
+												| Great job! Easy setup, but maybe the biggest plus is that it's receiving ongoing development, which is fantastic. Also, support is very fast at messaging back, and helpful. Thank you!
+											p.card-text
+												small.text-muted JAMES
+					a.carousel-control-prev(href='#carouselExampleControls', role='button', data-slide='prev')
+						span.carousel-control-prev-icon.bg-primary(aria-hidden='true')
+						span.sr-only Previous
+					a.carousel-control-next(href='#carouselExampleControls', role='button', data-slide='next')
+						span.carousel-control-next-icon.bg-primary(aria-hidden='true')
+						span.sr-only Next
+
 	//-
 		SHAPE
 		==================================================
