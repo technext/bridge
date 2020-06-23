@@ -1,6 +1,6 @@
 mixin pricingCard
   .container
-    .row.justify-content-center
+    .row.justify-content-center#pricing
       .col-12.text-center.pb-5
         //-Heading
         h1
@@ -8,10 +8,10 @@ mixin pricingCard
         //- Text
         p.lead.text-muted
           | Millions of users are using the themes and templates created<br> by the super talented and passionate web design team.
-    .row.align-items-center.no-gutters.mb-n13
+    .row.align-items-center.no-gutters.mb-sm-n13.mb-n11
       .col-12.col-md-6
         //- Card
-        .card#monthly.rounded-lg.shadow-lg.mb-6.mb-md-0(style='z-index: 1;')
+        .card#monthly.rounded-lg.mb-6.mb-md-0.border-0(style='z-index: 1;')
           //- Body
           .card-body.py-6
             .row.justify-content-center
@@ -81,12 +81,12 @@ mixin pricingCard
                     | 12 months free support included
             //-.row
           //- Button
-          a.card-btn.btn.btn-block.btn-lg.btn-primary.btn-text-color(href='#!')
+          a.card-btn.btn.btn-block.btn-lg.btn-primary.border-0.p-md-3(href='#!')
             | Get it now
       //- Enterprise Card
       .col-12.col-md-6(style='z-index:1;')
         //- Card
-        .card.rounded-lg.shadow-lg
+        .card.rounded-lg.shadow.border-0
           //- Body
           .card-body.py-6.py-md-8
             .row.justify-content-center
@@ -99,7 +99,7 @@ mixin pricingCard
                   | There are way too many companies that have set up pricing tables with “packages” for their products without a solid understanding of the psychology behind package design.
             //-.row
           //- Button
-          a.card-btn.btn.btn-block.btn-lg.bg-light(href='#!')
+          a.card-btn.btn.btn-block.btn-lg.bg-light.p-md-3(href='#!')
             | Contact us
       //- Enterprise Card End
     //-.row

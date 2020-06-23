@@ -32,10 +32,18 @@ body {
 
 
 //-Pricing
+//card button
+.card-btn {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
 
-.mb-n13, .my-n13 {
+.mb-sm-n13 {
     margin-bottom: -21rem!important;
 }
+// .mb-n11 {
+//   margin-bottom: -7rem!important;
+// }
 
 .no-gutters>.col,.no-gutters>[class*=col-] {
     padding-right: 0;
@@ -116,9 +124,53 @@ body {
 
 
   //-slider
+//testimonial image
+.slide-img {
+  min-height: 350px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-right-radius: 10px 60% ;
+  border-bottom-right-radius: 120px 80% ;
+  border-bottom-left-radius: 0.5rem !important;
+  border-top-left-radius: 0.5rem !important;
+}
   .mb-n7, .my-n7 {
     margin-bottom: -11rem!important;
 }
 
-//Nav
+.prev-icon{
+  margin-left: -120px;
+}
+.next-icon{
+  margin-right: -120px;
+}
+
+//about card form
+.card-img-custom {
+  height: 100%;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom-left-radius: 50% 3%;
+  border-bottom-right-radius: 50% 3%;
+}
+
+
+
+//container
+
+@media (min-width: 1170px){
+  .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: 1200px;
+}
+  
+}
+
+//button success
+.btn-success {
+  color: #ffffff;
+  background-color: #00BD77;
+  border-color: #00BD77;
+}
 

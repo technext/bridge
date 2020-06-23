@@ -21,19 +21,19 @@ $grid-breakpoints: (
 //*-----------------------------------------------
 //|   Color System
 //-----------------------------------------------*/
-$white: #fff !default;
-$gray-100: #f9fafd !default;
-$gray-200: #EAEFFD !default;
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
 $gray-300: #F1F4F8 !default;
-$gray-400: #A4B3CA !default;
-$gray-500: #8191AF !default;
-$gray-600: #748194 !default;
-$gray-700: #5e6e82 !default;
-$gray-800: #4d5969 !default;
-$gray-900: #344050 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
 $gray-1000: #203055 !default;
-$gray-1100: #1b2a4e !default;
-$black: #161C2D !default;
+$gray-1100: #091A2B!default;
+$black:    #000 !default;
 
 $grays: () !default;
 $grays: map_merge($grays, (
@@ -66,14 +66,14 @@ $grays: map_merge($grays, (
 ////$teal: #02a8b5 !default;
 //$cyan: #39afd1 !default;
 
-$blue: #335eea !default;
+$blue: #0D6EFD !default;
 $purple: #5856d6 !default;
 $pink: #ff2d55 !default;
-$red: #ff3b30 !default;
+$red: #DC3545 !default;
 $orange: #ff9500 !default;
-$yellow: #ffcc00 !default;
-$green: #42BA96 !default;
-$teal: #5ac8fa !default;
+$yellow: #FFC107 !default;
+$green: #00BD77 !default;
+$teal: #17A2B8 !default;
 
 
 //*-----------------------------------------------
@@ -141,8 +141,8 @@ $font-family-base: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", R
 //*-----------------------------------------------
 //|   Body
 //-----------------------------------------------*/
-$body-bg: $gray-200 !default;
-$body-color: $gray-800 !important;
+// $body-bg: $gray-200 !default;
+// $body-color: $gray-800 !important;
 
 //*-----------------------------------------------
 //|   Badge
@@ -159,29 +159,8 @@ $card-border-color:           rgba($white, .125) !default;
 // Carousel
 
 $carousel-control-color:             $primary !default;
-$carousel-control-width:             15% !default;
-$carousel-control-opacity:           .8 !default;
-$carousel-control-hover-opacity:     .9 !default;
-$carousel-control-transition:        opacity .15s ease !default;
 
-$carousel-indicator-width:           30px !default;
-$carousel-indicator-height:          3px !default;
-$carousel-indicator-hit-area-height: 10px !default;
-$carousel-indicator-spacer:          3px !default;
-$carousel-indicator-opacity:         .5 !default;
-$carousel-indicator-active-bg:       $white !default;
-$carousel-indicator-active-opacity:  1 !default;
-$carousel-indicator-transition:      opacity .6s ease !default;
+//list-group
+$list-group-border-color:           rgba($secondary, .125) !default;
 
-$carousel-caption-width:             70% !default;
-$carousel-caption-color:             $white !default;
-$carousel-caption-padding-y:         1.25rem !default;
-$carousel-caption-spacer:            1.25rem !default;
 
-$carousel-control-icon-width:        20px !default;
-
-$carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'><path d='M5.25 0l-4 4 4 4 1.5-1.5L4.25 4l2.5-2.5L5.25 0z'/></svg>") !default;
-$carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='#{$carousel-control-color}' viewBox='0 0 8 8'><path d='M2.75 0l-1.5 1.5L3.75 4l-2.5 2.5L2.75 8l4-4-4-4z'/></svg>") !default;
-
-$carousel-transition-duration:       .6s !default;
-$carousel-transition:                transform $carousel-transition-duration ease-in-out !default; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)

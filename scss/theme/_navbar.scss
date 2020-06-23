@@ -1,31 +1,12 @@
-// custom css
-  .dropdown-menu-xl-li {
-      position: static;
-  }
-  
-  .dropdown-menu-xl {
-      position: inherit;
-      width: 50%;
-      left: 0;
-      right: 0;
-    //   padding: 15px;
-  }
-  .navbar-nav .dropdown-menu-xl .dropdown-body {
-    padding: 2.375rem 2.5rem;
-  }
+//custom css
   .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 14rem;
+    min-width: 18.5rem;
     padding: 1.625rem 0;
     margin: 0 0 0;
     font-size: .9375rem;
-    color: #161c2d;
-    text-align: left;
     list-style: none;
     background-color: #fff;
     background-clip: padding-box;
@@ -33,27 +14,6 @@
     border-radius: .375rem;
     box-shadow: 0 0.5rem 1.5rem rgba(22,28,45,.1);
 }
-.dropdown-item {
-  display: block;
-  width: 100%;
-  padding: 0 1.75rem;
-  clear: both;
-  font-weight: 400;
-  color: #506690;
-  text-align: inherit;
-  white-space: nowrap;
-  background-color: transparent;
-  border: 0;
-}
-.dropdown-header {
-  display: block;
-  padding: 0.5rem 1.5rem;
-  margin-bottom: 0;
-  font-size: 0.875rem;
-  color: #1b78ca;
-  white-space: nowrap;
-}
-
 .navbar-nav .dropdown-menu .list-group-item {
     display: -webkit-box;
     display: flex;
