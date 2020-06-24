@@ -16,9 +16,9 @@ body {
 // }
 
 .badge-rounded-circle.badge-lg {
-    height: calc(1em + 1.1em);
-    padding-left: .7em;
-    padding-right: .7em;
+    height: calc(1em + 1.3em);
+    padding-left: .8em;
+    padding-right: .8em;
 }
 .badge-lg {
     padding: .7em 1.15em;
@@ -135,8 +135,8 @@ body {
   //-slider
 //testimonial image
 .slide-img {
-  min-height: 300px;
-  min-width: 353px;
+  min-height: 220px;
+  min-width: 258px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -151,10 +151,10 @@ body {
 
 @include media-breakpoint-up(lg) {
   .prev-icon {
-    margin-left: -70px;
+    margin-left: -55px;
   }
   .next-icon{
-    margin-right: -70px;
+    margin-right: -55px;
   }
 }
 
@@ -167,12 +167,20 @@ body {
   border-bottom-left-radius: 50% 3%;
   border-bottom-right-radius: 50% 3%;
 }
-.falcon-scr {
-  border-radius: .625rem;
-  box-shadow: 25px 60px 125px -25px rgba(80,102,144,.1), 16px 40px 75px -40px rgba(0,0,0,.2);
-  min-height: 390px ;
+@include media-breakpoint-down(lg) {
+  .falcon-skew {
+    border-radius: .625rem;
+    display: inline-block;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform-origin: 0 100%;
+    transform: skew(-4deg, -4deg);
+  }
 }
+// .falcon-skew {
+//   border-radius: .625rem;
 
+// }
 
 //container
 
@@ -188,5 +196,13 @@ body {
   color: #ffffff;
   background-color: #00BD77;
   border-color: #00BD77;
+}
+
+//shape Bottom
+
+.shape-bottom {
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
