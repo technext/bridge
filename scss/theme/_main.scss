@@ -38,12 +38,21 @@ body {
   border-top-left-radius: 0;
 }
 
-.mb-sm-n13 {
+@include media-breakpoint-up(xl) {
+  .pricing {
     margin-bottom: -21rem!important;
+  }
 }
-// .mb-n11 {
-//   margin-bottom: -7rem!important;
-// }
+@include media-breakpoint-down(xl) {
+  .pricing {
+    margin-bottom: -15rem!important;
+  }
+}
+@include media-breakpoint-down(md) {
+  .pricing {
+    margin-bottom: -7rem!important;
+  }
+}
 
 .no-gutters>.col,.no-gutters>[class*=col-] {
     padding-right: 0;
@@ -126,7 +135,7 @@ body {
   //-slider
 //testimonial image
 .slide-img {
-  min-height: 350px;
+  min-height: 280px;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -139,11 +148,13 @@ body {
     margin-bottom: -11rem!important;
 }
 
-.prev-icon{
-  margin-left: -120px;
-}
-.next-icon{
-  margin-right: -120px;
+@include media-breakpoint-up(lg) {
+  .prev-icon {
+    margin-left: -70px;
+  }
+  .next-icon{
+    margin-right: -70px;
+  }
 }
 
 //about card form
@@ -155,14 +166,18 @@ body {
   border-bottom-left-radius: 50% 3%;
   border-bottom-right-radius: 50% 3%;
 }
-
+.falcon-scr {
+  border-radius: .625rem;
+  box-shadow: 25px 60px 125px -25px rgba(80,102,144,.1), 16px 40px 75px -40px rgba(0,0,0,.2);
+  min-height: 390px ;
+}
 
 
 //container
 
 @media (min-width: 1170px){
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1200px;
+    max-width: 1300px;
 }
   
 }
