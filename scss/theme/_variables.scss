@@ -87,6 +87,9 @@ $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-300 !default;
 $dark: $gray-1100 !default;
+$sky: $gray-400 !default;
+$grey: $gray-600 !default;
+
 
 $theme-colors: () !default;
 $theme-colors: map_merge($theme-colors, (
@@ -98,6 +101,8 @@ $theme-colors: map_merge($theme-colors, (
   'danger': $danger,
   'light': $light,
   'dark': $dark,
+  'sky': $sky,
+  'grey': $grey,
 ));
 
 //*-----------------------------------------------
@@ -160,9 +165,18 @@ $card-border-color:           rgba($white, .125) !default;
 
 $carousel-control-color:             $primary !default;
 $carousel-control-opacity:           .9 !default;
-$carousel-control-hover-opacity:     .5 !default;
+$carousel-control-hover-opacity:     .9 !default;
+$carousel-control-icon-width:        40px !default;
+$carousel-control-bg-color:          $white !important;
 
 //list-group
 $list-group-border-color:           rgba($secondary, .125) !default;
+
+//box shadow
+$box-shadow:                  0 .5rem 1rem rgba($sky, .15) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($sky, .175) !default;
+
+// //link 
+
 
 

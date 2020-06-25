@@ -8,8 +8,8 @@ mixin pricingCard
         //- Text
         p.lead.text-muted
           | Millions of users are using the themes and templates created<br> by the super talented and passionate web design team.
-    .row.align-items-center.no-gutters.pricing
-      .col-12.col-md-6
+    .row.align-items-center.no-gutters.pricing.px-3.px-sm-0
+      .col-12.col-md-6(style='z-index:1;')
         //- Card
         .card#monthly.rounded-lg.mb-6.mb-md-0.border-0(style='z-index: 1;')
           //- Body
@@ -84,9 +84,9 @@ mixin pricingCard
           a.card-btn.btn.btn-block.btn-lg.btn-primary.border-0.p-md-3(href='#!')
             | Get it now
       //- Enterprise Card
-      .col-12.col-md-6(style='z-index:1;')
+      .col-12.col-md-6
         //- Card
-        .card.rounded-lg.shadow.border-0
+        .card.rounded-lg.shadow.border-0.pt-4
           //- Body
           .card-body.py-6.py-md-8
             .row.justify-content-center

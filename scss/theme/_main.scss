@@ -71,19 +71,20 @@ body {
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
     /* box-shadow: 0 0 1px rgba(0, 0, 0, 0); */
-    -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
-    -webkit-transition-property: transform;
     transition-property: transform;
-    -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
   }
   .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
-    -webkit-transform: translateY(-2px);
     transform: translateY(-2px);
     box-shadow: 0.5rem .5rem 1.5rem  rgba(22,28,45,.1)!important;
   }
-
+  .icon-prev:hover{
+    background-color: $carousel-control-bg-color;
+  }
+  .icon-next:hover{
+    background-color: $carousel-control-bg-color;
+  }
   //Sign in Card
 
   /* Float Shadow */
@@ -134,16 +135,19 @@ body {
 
   //-slider
 //testimonial image
+@include media-breakpoint-up(sm) {
+  .slide-img {
+    border-top-right-radius: 10px 60% ;
+    border-bottom-right-radius: 100px 40% ;
+    border-bottom-left-radius: 0.3rem !important;
+    border-top-left-radius: 0.3rem !important;
+  }
+}
 .slide-img {
-  min-height: 220px;
-  min-width: 258px;
+  max-width: 100%;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-top-right-radius: 10px 60% ;
-  border-bottom-right-radius: 100px 40% ;
-  border-bottom-left-radius: 0.5rem !important;
-  border-top-left-radius: 0.5rem !important;
 }
   .mb-n7, .my-n7 {
     margin-bottom: -11rem!important;
@@ -184,9 +188,9 @@ body {
 
 //container
 
-@media (min-width: 1170px){
+@media (min-width: 1200px){
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1300px;
+    max-width: 1140px;
 }
   
 }
@@ -198,11 +202,5 @@ body {
   border-color: #00BD77;
 }
 
-//shape Bottom
-
-.shape-bottom {
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
+//footer 
 
