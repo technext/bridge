@@ -2,7 +2,6 @@ extends core/_skeleton
 include _functions
 include mixins/widgets/_widgets
 include mixins/navbars/_navbar
-include mixins/navbars/_dropdown-nav
   
 
 block append variables
@@ -101,12 +100,6 @@ block append variables
 block scripts
   script(src=`${CWD}assets/lib/is/is.min.js`)
   script(src=`${CWD}assets/lib/stickyfilljs/stickyfill.min.js`)
-  //-script(src=`${CWD}assets/lib/sticky-kit/sticky-kit.min.js`)
-  //- script(src=`${CWD}assets/lib/gsap/gsap.min.js`)
-  //- script(src=`${CWD}assets/lib/typed/typed.js`)
-  //- script(src=`${CWD}assets/lib/counterup/jquery.counterup.min.js`)
-  //- script(src=`${CWD}assets/lib/waypoints-counterup/jquery.waypoints.min.js`)
-  //- script(src=`${CWD}assets/lib/slider/slider.js`)
   
   if ENV === 'LIVE'
     // Global site tag (gtag.js) - Google Analytics
@@ -116,8 +109,10 @@ block styles
   
 
 block mainContent
-  //- +navbar.navbar-expand-md.navbar-dark.bg-dark.sticky-top.font-weight-semi-bold.fs--1
+  +navbar
   block wrapperContent 
     block beforeContent
     block content
     block afterContent
+  footer.pb-6
+    +footer

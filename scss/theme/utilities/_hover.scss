@@ -1,0 +1,34 @@
+
+  /* Float Shadow */
+//   .hover-shadow {
+//     transform: translateY(1px) translateZ(0);
+//     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+//     position: relative;
+//     transition: all 0.3s;
+//     &:hover,
+//     &:focus{
+//     transform: translateY(-5px) translateZ(0);
+//     box-shadow: 0.5rem .5rem 1.5rem  rgba(22,28,45,.1)!important;
+//     }
+//   }
+
+  /* Hover Top */
+.hover-top-shadow{
+    transform: translateY(0) translateZ(0);
+    transition: all 0.3s ease-out;
+    &.hover-top-shadow-lg{
+        &:hover,
+        &:focus{
+          transform: translateY(-5px) translateZ(0);
+        }
+        
+    }
+    &:hover,
+    &:focus{
+      transform: translateY(-2px) translateZ(0);
+      box-shadow: 0.5rem .5rem 1.5rem  rgba(22,28,45,.1)!important;
+    }
+  
+  }
+
+  
