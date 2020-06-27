@@ -1,18 +1,4 @@
 .typed-cursor {
     color: $success !important;
   }
-  .hvr-skew-forward {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(200px) translateY(80deg);
-    transform: perspective(200px) translateY(80deg);
-    box-shadow: 0.5rem .5rem 1.5rem  rgba(61, 91, 189, 0.1)!important;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    -webkit-transform: skew(-5deg);
-    transform: skew(-5deg);
-  } 
+  
