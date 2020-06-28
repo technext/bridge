@@ -1,33 +1,25 @@
+mixin feature(config)
+	.col-md-4&attributes(attributes)
+		img(src=`${CWD}assets/img/gallery/${config.img}` alt='').mb-3
+		h5=config.title
+		p.text-muted.mb-0!=config.paragraph
 mixin features
-	.container
-		.row#feature
-			.col-12.col-md-4
-				//- Icon
-				.mb-3
-					img(src=`${CWD}assets/img/gallery/speed.png` alt='...').img-fluid
-				//- Heading
-				h5
-					| Get off to a quick start
-				//- Text
-				p.text-muted.mb-3.mb-md-6.mb-md-0
-					| This is the Best starting point for your project. Just choose a template you like, insert your content, and use it.
-			.col-12.col-md-4
-				//- Icon
-				.mb-3
-					img(src=`${CWD}assets/img/gallery/changelog.png` alt='...').img-fluid
-				//- Heading
-				h5
-					| All-in-one design workflow
-				//- Text
-				p.text-muted.mb-3.mb-md-6.mb-md-0
-					| Creating with Bridge is a smooth experience all around. Just pick your screens, adjust a hue, control typefaces.
-			.col-12.col-md-4
-				//- Icon
-				.mb-3
-					img(src=`${CWD}assets/img/gallery/bolt.png` alt='...').img-fluid
-				//- Heading
-				h5
-					| Next-generation design 
-				//- Text
-				p.text-muted.mb-0.mb-4
-					| Explore early concepts with new design patterns. This is an entire design workflow in one smart tool.
+	section.py-5.py-md-7.border-bottom#feature
+		.container
+			.row
+				+feature({
+					img:'speed.png', 
+					title:'Get off to a quick start' ,
+					paragraph:'This is the Best starting point for your project. Just choose a template you like, insert your content, and use it.'
+				 }).mb-4.mb-sm-0
+
+				+feature({
+					img:'changelog.png', 
+					title:'All-in-one design workflow' ,
+					paragraph:'Creating with Bridge is a smooth experience all around. Just pick your screens, adjust a hue, control typefaces.'
+				}).mb-4.mb-sm-0
+				+feature({
+					img:'bolt.png', 
+					title:'Next-generation design' ,
+					paragraph:'Explore early concepts with new design patterns. This is an entire modern design workflow in one smart tool.'
+				 })

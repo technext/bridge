@@ -163,7 +163,9 @@ $input-btn-padding-x:         map_get($spacers, 3) !default;
 $input-btn-padding-y-lg:      map_get($spacers, 3) !default;;
 $input-btn-padding-x-lg:      map_get($spacers, 3) !default;
 $input-btn-font-size-lg:      $font-size-base !default;
-
+//Lead
+$lead-font-size:              $font-size-base * 1.25 !default;
+$lead-font-weight:            400 !default;
 
 
 

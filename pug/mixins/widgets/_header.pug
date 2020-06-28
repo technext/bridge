@@ -1,0 +1,30 @@
+mixin header
+	section.pt-4.pt-md-5
+		.container
+			.row.align-items-center
+				.col-md-5.col-lg-6.order-md-1
+					//- Image
+					img.img-fluid.mb-5.mb-md-0(src=`${CWD}assets/img/gallery/illustration-4.png` alt='')
+				.col-md-7.col-lg-6
+					//- Heading
+					h1.display-6.text-center.text-md-left
+						| Welcome to 
+						span.text-primary Bridge
+						| . 
+						br
+						| Lets create the future.
+					//-Text
+					p.lead.text-center.text-md-left.text-muted.mb-3
+						| Build beautiful websites with flexible layouts with Bridge. The first and most compelling latest 
+						br.d-none.d-xl-block.d-xxl-none
+						| Bootstrap 5 theme.
+					//-Buttons
+					.text-center.text-md-left.pt-4
+						a.btn.btn-lg.btn-primary.hover-top-shadow.mr-3(href='#')
+							| View pages 
+							svg.bi.bi-arrow-right-short.ml-2(width='1.2em', height='1.2em', viewBox='0 0 16 16', fill='currentColor', xmlns='http://www.w3.org/2000/svg')
+								path(fill-rule='evenodd', d='M8.146 4.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.793 8 8.146 5.354a.5.5 0 0 1 0-.708z')
+								path(fill-rule='evenodd', d='M4 8a.5.5 0 0 1 .5-.5H11a.5.5 0 0 1 0 1H4.5A.5.5 0 0 1 4 8z')
+
+						a.btn.btn-lg.btn-light.text-primary.shadow-lg.hover-top-shadow(href='#')
+							| Get Started

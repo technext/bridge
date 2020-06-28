@@ -1,29 +1,14 @@
+mixin brand(image)
+	.col-6.col-sm-4.col-md-2&attributes(attributes)
+		img(src=`${CWD}assets/img/gallery/${image}` alt='').img-fluid
+
 mixin brands
-	.container
-		.row.align-items-center.justify-content-center
-			.col-6.col-sm-4.col-md-2.mb-md-0.gx-50
-				//- Brand
-				.img-fluid.text-gray-600.mb-2.mb-md-0.svg-shim
-					img(src=`${CWD}assets/img/gallery/1.png` alt='...').mw-100
-			.col-6.col-sm-4.col-md-2.mb-md-0
-				//-Brand
-				.img-fluid.text-gray-600.mb-2.mb-md-0.svg-shim
-					img(src=`${CWD}assets/img/gallery/2.png` alt='...').mw-100
-			.col-6.col-sm-4.col-md-2.mb-md-0
-				//-Brand
-				.img-fluid.text-gray-600.mb-2.mb-md-0.svg-shim
-					img(src=`${CWD}assets/img/gallery/3.png` alt='...').mw-100
-			.col-6.col-sm-4.col-md-2.mb-md-0
-				//-Brand
-				.img-fluid.text-gray-600.mb-2.mb-md-0.svg-shim
-					img(src=`${CWD}assets/img/gallery/4.png` alt='...').mw-100
-			.col-6.col-sm-4.col-md-2.mb-md-0
-				//-Brand
-				.img-fluid.text-gray-600.mb-2.mb-md-0.svg-shim
-					img(src=`${CWD}assets/img/gallery/5.png` alt='...').mw-100
-			.col-6.col-sm-4.col-md-2.mb-md-0
-				//- Brand
-				.img-fluid.text-gray-600.mb-2.mb-md-0.svg-shim
-					img(src=`${CWD}assets/img/gallery/6.png` alt='...').mw-100
-		//- / .row
-	//- / .container
+	section.py-5.border-bottom
+		.container
+			.row
+				+brand('1.png').mb-2.mb-md-0
+				+brand('2.png').mb-2.mb-md-0
+				+brand('3.png').mb-2.mb-md-0
+				+brand('4.png').mb-2.mb-sm-0
+				+brand('5.png').mb-2.mb-sm-0
+				+brand('6.png').mb-2.mb-sm-0

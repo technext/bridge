@@ -1,104 +1,3 @@
-// @import url('https://fonts.googleapis.com/css?family=Poppins:400,300&display=swap');
-// body {
-//     margin: 0;
-//     font-family: 'Poppins', sans-serif;
-//     font-size: 1.0625rem;
-//     font-weight: 400;
-//     line-height: 1.6;
-//     color: #161c2d;
-//     text-align: left;
-//     background-color: #fff;
-//     overflow-x: hidden;
-// }
-
-.badge-rounded-circle.badge-lg {
-    height: calc(1em + 1.3em);
-    padding-left: .8em;
-    padding-right: .8em;
-}
-.badge-lg {
-    padding: .7em 1.15em;
-}
-.badge-rounded-circle {
-    height: calc(1em + 1.1rem);
-    padding-left: .25rem;
-    padding-right: .25rem;
-    border-radius: 10rem;
-}
-
-
-//-Pricing
-//card button
-.card-btn {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-
-@include media-breakpoint-up(xl) {
-  .pricing {
-    margin-bottom: -21rem!important;
-  }
-}
-@include media-breakpoint-down(xl) {
-  .pricing {
-    margin-bottom: -15rem!important;
-  }
-}
-@include media-breakpoint-down(md) {
-  .pricing {
-    margin-bottom: -7rem!important;
-  }
-}
-
-.no-gutters>.col,.no-gutters>[class*=col-] {
-    padding-right: 0;
-    padding-left: 0
-}
-
-.lead {
-    font-size: 1.3125rem;
-    font-weight: 400;
-}
-//-Button
-
-  .icon-prev:hover{
-    background-color: $carousel-control-bg-color;
-  }
-  .icon-next:hover{
-    background-color: $carousel-control-bg-color;
-  }
-  //Sign in Card
-
-
-  //-slider
-//testimonial image
-@include media-breakpoint-up(sm) {
-  .slide-img {
-    border-top-right-radius: 10px 60% ;
-    border-bottom-right-radius: 100px 40% ;
-    border-bottom-left-radius: 0.3rem !important;
-    border-top-left-radius: 0.3rem !important;
-  }
-}
-.slide-img {
-  max-width: 100%;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-  .mb-n7, .my-n7 {
-    margin-bottom: -11rem!important;
-}
-
-@include media-breakpoint-up(lg) {
-  .prev-icon {
-    margin-left: -55px;
-  }
-  .next-icon{
-    margin-right: -55px;
-  }
-}
-
 
 
 //button success
@@ -108,5 +7,18 @@
   border-color: #00BD77;
 }
 
+// .something-sucess{
+//   color: color-contrast(#28a745);
+// }
+
 //footer 
+@media (min-width: 992px)
+ {
+  .mw-lg-130{
+    max-width: 130%!important;
+  }
+    
+}
+
+
 

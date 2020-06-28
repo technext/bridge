@@ -3,16 +3,11 @@ block append variables
   - var currentPage = 'index';
 
 block append content
-  section.welcome.overflow-hidden
-    +welcome
-  section.pb-md-4.pt-5.pt-sm-0.border-bottom.overflow-hidden
-    +features
-  section.py-6.border-bottom
-    +brands
-  section.pt-4.pt-md-8.bg-light.pb-5
-    +aboutSection
-  section.pt-8
-    +testimonials
+  +header
+  +features
+  +brands
+  +about
+  +testimonials
   section.bg-light.pt-10.pt-md-0
     +stats
   section.pt-5.pt-md-8.bg-light

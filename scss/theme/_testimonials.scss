@@ -1,0 +1,32 @@
+//testimonial image
+@include media-breakpoint-up(sm) {
+  .img-curve-right {
+    border-top-right-radius: 10px 60% ;
+    border-bottom-right-radius: 100px 40% ;
+    border-bottom-left-radius: 0.3rem !important;
+    border-top-left-radius: 0.3rem !important;
+  }
+}
+.img-curve-right {
+  max-width: 100%;
+}
+  .mb-n7, .my-n7 {
+    margin-bottom: -11rem!important;
+}
+
+@include media-breakpoint-up(lg) {
+  .prev-icon {
+    margin-left: -55px;
+  }
+  .next-icon{
+    margin-right: -55px;
+  }
+}
+
+
+.icon-prev:hover{
+  background-color: $carousel-control-bg-color;
+}
+.icon-next:hover{
+  background-color: $carousel-control-bg-color;
+}
