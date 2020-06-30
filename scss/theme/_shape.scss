@@ -1,17 +1,17 @@
-.shape-triangle{
-    z-index: -1;
-    position: relative;
-    margin-top: -14rem;
+// SHAPES
+.shape-triangle {
+  z-index: -1;
+  position: relative;
+  margin-top: -14rem;
 }
 
-.shape-arc-up{
-    margin-top: -10rem;
-}
-@include media-breakpoint-up(md) {
-    .shape-arc-up{
-        margin-top: -21rem;
-    }
+.shape-arc-up {
+  margin-top: -10rem;
+  @include media-breakpoint-up(md) {
+    margin-top: -21rem;
   }
-.shape-arc-down{
-    margin-bottom: -16rem; 
-}  
+}
+
+.shape-arc-down {
+  margin-bottom: -16rem;
+}

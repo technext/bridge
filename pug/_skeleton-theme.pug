@@ -1,7 +1,7 @@
 extends core/_skeleton
 include _functions
-include mixins/widgets/_widgets
-include mixins/navbars/_navbar
+include mixins/_navbar
+include mixins/_footer
   
 
 block append variables
@@ -9,94 +9,12 @@ block append variables
   - var themeName = 'Bridge';
   - var version = 'v1.0.0';
   - var theme = `${themeName}-${version}`;
-  - var bootstrapVersion = 4.3;
-  - var ATTRS_MAIN = { id: 'top', class: 'main' };
+  - var bootstrapVersion = 5.0;
+  - var ATTRS_MAIN = { class: 'main' };
   - var colors = ['primary', 'secondary', 'success', 'info', 'warning', 'danger', 'light', 'dark'];
   - var grays = ['black', 1100, 1000, 900, 800, 700, 600, 500, 400, 300, 200, 100, 'white'];
   - var colorsAll = colors.concat(grays);
-  -
-    var sitemap = {
-      components: {
-        icon: 'fas fa-puzzle-piece',
-        inners: {
-          alerts: 'alerts',
-          background: 'background',
-          badges: 'badges',
-          breadcrumb: 'breadcrumb',
-          buttons: 'buttons',
-          cards: 'cards',
-          carousel: 'carousel',
-          collapse: 'collapse',
-          dropdowns: 'dropdowns',
-          fancyscroll: 'fancyscroll',
-          forms: 'forms',
-          hoverbox: 'hoverbox',
-          'list-group': 'list-group',
-          modals: 'modals',
-          'media-object': 'media-object',
-          navs: 'navs',
-          navbar: 'navbar',
-          'page-headers': 'page-headers',
-          pagination: 'pagination',
-          popovers: 'popovers',
-          progress: 'progress',
-          scrollspy: 'scrollspy',
-          spinners: 'Spinners',
-          tables: 'tables',
-          tabs: 'tabs',
-          tooltips: 'tooltips',
-          toasts: 'Toasts'
-        }
-      },
-      utilities: {
-        icon: 'fab fa-hotjar',
-        inners: {
-          borders: 'borders',
-          clearfix: 'Clearfix',
-          'close-icon': "Close-icon",
-          colors: 'colors',
-          display: 'display',
-          embed: 'embed',
-          flex: 'flex',
-          figures: 'figures',
-          grid: 'grid',
-          sizing: 'sizing',
-          'stretched-link': 'stretched-link',
-          spacing: 'spacing',
-          typography: 'typography',
-          'vertical-align': 'vertical-Align',
-          visibility: 'visibility'
-          
-        }
-      },
-      plugins: {
-        icon: 'fas fa-plug',
-        inners: {
-          accordion: 'accordion',
-        }
-      },
-      documentation: {
-        icon: 'fas fa-book',
-        inners: {
-          'getting-started': 'getting-started',
-          'file-structure': 'file-structure',
-          customization: 'customization',
-          gulp: 'gulp',
-          RTL: 'RTL',
-          plugins: 'plugins',
-        }
-      },
-      changelog: {
-        icon: 'fas fa-code-branch',
-        link: 'changelog',
-        badge: {
-          text: version,
-          type: 'primary'
-        }
-      }
-    };
-
-
+  
 block scripts
   script(src=`${CWD}assets/lib/is/is.min.js`)
   script(src=`${CWD}assets/lib/stickyfilljs/stickyfill.min.js`)

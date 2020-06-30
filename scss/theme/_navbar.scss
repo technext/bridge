@@ -1,25 +1,8 @@
 //custom css
-  .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 18.5rem;
-    padding: 1.625rem 0;
-    margin: 0 0 0;
-    font-size: .9375rem;
-    list-style: none;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 0 solid rgba(22,28,45,.15); 
-    border-radius: .375rem;
-    box-shadow: 0 0.5rem 1.5rem rgba(22,28,45,.1);
+.navbar-dropdown-menu {
+  min-width: 18.5rem;
+  font-size: 0.9375rem;
+  border: 0;
+  border-radius: 0.375rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(22, 28, 45, 0.1);
 }
-.navbar-nav .dropdown-menu .list-group-item {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    color: inherit;
-  }

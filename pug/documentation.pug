@@ -1,10 +1,159 @@
-extends _skeleton-theme
+extends _skeleton-component
 
-block append content
-	section.bg-light.pt-8.pb-7.pt-lg-6.pb-lg-5.pt-xl-8.pb-xl-7
-		.container
-			.row
-				.col-lg-6.col-xl-5
-					h1.fs-3.fs-sm-4 Getting Started
-					
-			
+block append variables
+	- var firstParent = 'documentation'              
+	- var currentPage = 'getting-started'
+
+block component
+	.card.shadow-sm.mb-3
+		.card-header
+			h5#quick-start.mb-0.contains-anchor Quick start
+				a(href='#quick-start') #
+		.card-body.bg-light
+			p.mb-0 Looking to start your project quickly? Just unzip the 
+				code #{version}.zip
+				| . We have precompiled and packaged everything in the 
+				code pages
+				|  directory for you. Start editing the 
+				code pages/page-starter.html
+				|  with a text or code editor, save it, and open the file in your favourite browser to see the changes.
+
+	.card.shadow-sm.mb-3
+		.card-header
+			h5#setting-up-build-system.mb-0.contains-anchor Setting up Build system
+				a(href='#setting-up-build-system') #
+		.card-body.bg-light
+			p Unzip the 
+				code #{version}.zip
+				|  to any folder and open a command line or terminal at that location.
+				| theme's dev tools require 
+				a(href='https://nodejs.org/en/' target='_blank') Node
+				|  and 
+				a(href='https://git-scm.com/' target='_blank') Git
+				|  . If you do not have them in your machine, please install their latest stable version from their corresponding website. As you have 
+				span.font-weight-black.text-black Node and Git installed and accessible from your terminal or command line
+				| , install 
+				a(href="https://gulpjs.com/" target='_blank') Gulp CLI
+				|  package 
+				|  globally with the following command:
+			pre
+				code.lang-html.
+					npm i gulp-cli -g
+
+			p.mt-4 When you’re done, install the rest of the theme’s dependencies with:
+			pre
+				code.lang-html.
+					npm i
+
+			p.mt-4 Now run:
+			pre
+				code.lang-html.
+					gulp
+
+			p.mt-4 Running gulp will compile the SCSS, transpile the javascript, copy all required libraries form 
+				code node_modules
+				|  to the corresponding 
+				code pages/assets/ 
+				|  directory and will open a browser window to 
+				code pages/index.html
+			p All of the following folders are monitored for changes, which will tell the browser to reload automatically after any changes are made:
+			pre
+				code.lang-html.
+					pages/*.html
+					pages/assets/fonts/
+					pages/assets/video/
+					pages/assets/img/
+					scss/ 
+					js/
+
+			p.mt-4 Now you can edit any html file from 
+				code pages
+				| , change SCSS variable with 
+				code _user-variables.scss
+				| , or write your own SCSS code in 
+				code scss/_user.scss
+
+			.alert.alert-warning Running the 
+				code gulp
+				|  command will discard and regenerate all the files in following directories:
+			pre
+				code.lang-html.
+					js/bootstrap/
+					scss/bootstrap/
+					pages/assets/css/
+					pages/assets/js/
+					pages/assets/lib/
+
+			p.mt-4 Hit 
+				code Ctrl+C
+				|  or just close the command line window to stop the server.
+
+			p Happy editing!
+	.card.shadow-sm.mb-3
+		.card-body
+			h3.mb-0#rtl RTL
+				a(href='#rtl') #
+	.card.shadow-sm.mb-3
+		.card-header
+			h5#setting-up-html.mb-0.contains-anchor Setting up HTML
+				a(href='#setting-up-html') #
+	.card-body.bg-light
+		p Your theme comes with a built-in automated rlt feature. 
+			a(href=`${CWD}index-rtl.html`) Here
+			|  is the example. To use rtl, set the 
+			code dir='rtl'
+			|  in your html like:
+		pre
+			code.lang-html.
+				#{'<html dir=\'rtl\'>...</html>'}
+		p.mt-4 And use the rtl stylesheet instead of 
+			code theme.css
+			| :
+		pre
+			code.lang-html.
+				#{'<link href="assets/css/theme-rtl.css" rel="stylesheet">'}
+	.card.shadow-sm.mb-3
+		.card-header
+			h5#setting-up-buil-tools.mb-0.contains-anchor Setting up build tools
+				a(href='#setting-up-buil-tools') #
+		.card-body.bg-light
+			p To compile 
+				code theme-rtl.css
+				|  directly with the built tools run:
+			pre
+				code.language-javascript.
+					#{'product scss:rtl'}
+
+			p.mt-4 To set your build tool in 
+				code rtl
+				|  mode, change the following code located at the last line of your 
+				code gulpfile.js
+			h5 From:
+			pre
+				code.language-javascript.
+					#{'gulp.task(\'default\', product.series(\'copy:dependency\', \'scss\', \'js\', product.parallel(\'watch\', \'serve\')));'}
+			h5 to:
+			pre
+				code.language-javascript.
+					#{'gulp.task(\'default\', product.series(\'copy:dependency\', \'scss:rtl\', \'js\', product.parallel(\'watch\', \'serve\')));'}
+
+			p.mt-4 And Also update the 
+				code gulp watch
+				|  to call the 
+				code scss:rtl
+				|  task by updating the following code at 
+				code line 401
+				|  in your 
+				code gulpfile.js
+				| : 
+			h5 From:
+			pre
+				code.language-javascript.
+					#{'gulp.watch(Paths.SCSS.ALL, product.series(\'scss\'));'}
+			h5 to:
+			pre
+				code.language-javascript.
+					#{'gulp.watch(Paths.SCSS.ALL, product.series(\'scss:rtl\'));'}
+
+
+

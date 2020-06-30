@@ -1,0 +1,67 @@
+mixin navbar
+	nav.navbar.navbar-expand-lg.navbar-light.bg-white.py-4.pl-0
+		.container
+			a.navbar-brand.text-primary.font-weight-bold(href=`${CWD}index.html`)  Bridge	
+			button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+				span.navbar-toggler-icon
+			#navbarSupportedContent.collapse.navbar-collapse
+				ul.navbar-nav.ml-auto
+					li.nav-item.text-muted
+						a.nav-link.active(aria-current='page', href=`${CWD}index.html` class= currentPage === 'index' ? 'active' : false) Landing
+					li.nav-item.dropdown
+						a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-expanded='false')
+							| Pages
+							//-.dropdown-menu( aria-labelledby='navbarDropdownpages')
+						ul.dropdown-menu.navbar-dropdown-menu(aria-labelledby='navbarDropdown')
+							li
+								a.dropdown-item.text-secondary.p-3.border-bottom(href='#feature') Feature
+							li
+								a.dropdown-item.text-secondary.p-3.border-bottom(href='#about') About	
+							li
+								a.dropdown-item.text-secondary.p-3.border-bottom(href='#testimonial') Testimonilas
+							li
+								a.dropdown-item.text-secondary.p-3.border-bottom(href='#pricing') Pricing
+							li
+								a.dropdown-item.text-secondary.p-3(href='#faq') FAQ					
+					li.nav-item
+						a.nav-link(href='#') Account
+					li.nav-item.dropdown
+						a#navbarDropdowndoc.nav-link(href='#', role='button', data-toggle='dropdown', aria-expanded='false')
+							| Documentation
+						.dropdown-menu.navbar-dropdown-menu( aria-labelledby='navbarDropdowndoc')
+							.list-group.list-group-flush
+								a.list-group-item.py-3.d-flex.align-items-center(href=`${CWD}documentation.html`)
+									//- Icon
+									img(src=`${CWD}assets/img/gallery/document.png` alt='')
+									//- Content
+									.ml-3
+										//-Heading
+										span.font-weight-bold.text-uppercase.text-primary
+											| Documentation
+										//- Text
+										p.text-secondary.mb-0
+											| Customizing and building
+								a.list-group-item.py-3.d-flex.align-items-center(href='#')
+									//- Icon
+									img(src=`${CWD}assets/img/gallery/components.png` alt='')
+									//- Content
+									.ml-3
+										//- Heading
+										span.font-weight-bold.text-uppercase.text-primary
+											| Components
+										//-Text
+										p.text-secondary.mb-0
+											| Full list of components
+								a.list-group-item.py-3.d-flex.align-items-center(href='#')
+									//- Icon
+									img(src=`${CWD}assets/img/gallery/bar_chart.png` alt='')
+									//-Content
+									.ml-3
+										//- Heading
+										span.font-weight-bold.text-uppercase.text-primary
+											| Changelog 
+											span.badge.badge-secondary.bg-light.text-primary 1.1.3
+										//- Text
+										p.text-secondary.mb-0
+											| Keep track of changes
+				a.btn.btn-primary.ml-auto.hover-top-shadow(href='!#' ) Buy now

@@ -1,6 +1,6 @@
 extends _skeleton-theme
-include mixins/navbars/_navbar-elements
-include mixins/widgets/_widgets
+include mixins/_navbar
+include mixins/_footer
 
 block append styles
   link(href=`${CWD}assets/lib/prismjs/prism-okaidia.css`, rel='stylesheet')
@@ -17,4 +17,10 @@ block append content
         block component
 
       .col.d-none.d-lg-block
-        +navbarElements
+        ul.list-unstyled
+          li.text-muted 
+            a.text-decoration-none.text-muted(href='#quick-start') Quick start
+          li 
+            a.text-decoration-none.text-muted(href='#setting-up-build-system') Build system
+          li 
+            a.text-decoration-none.text-muted(href='#rtl') RTL
