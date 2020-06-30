@@ -1,105 +1,104 @@
 mixin footer
-  .container
-    .row
-      .col-12.col-md-4.col-lg-3
-        h4.text-primary.font-weight-bold Bridge
-        //- Text
-        p.mb-2.text-muted
-          | Where design connects <br> with excellence.
-        //- Social
-        ul.list-unstyled.list-inline.list-social.mb-6.mb-md-0
-          li.list-inline-item.list-social-item.mr-3
-            a.text-decoration-none(href='#!')
-              img.list-social-icon(src=`${CWD}assets/img/gallery/facebook-f.svg` alt='...')
-          li.list-inline-item.list-social-item.mr-3
-            a.text-decoration-none(href='#!')
-              img.list-social-icon(src=`${CWD}assets/img/gallery/linkedin.svg` alt='...')
-          li.list-inline-item.list-social-item.mr-3
-            a.text-decoration-none(href='#!')
-              img.list-social-icon(src=`${CWD}assets/img/gallery/twitter.svg` alt='...')
-          li.list-inline-item.list-social-item
-            a.text-decoration-none(href='#!')
-              img.list-social-icon(src=`${CWD}assets/img/gallery/github.svg` alt='...')
-      .col-6.col-md-4.col-lg-2
-        //- Heading
-        h6.font-weight-bold.text-uppercase.pb-2(style='font-size: .75rem; line-height: 1.55;')
-          | Products
-        //- List
-        ul.list-unstyled.text-muted.mb-md-4.mb-lg-0
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | Page Builder
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | UI Kit
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | Styleguide
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | Documentation
-          li
-            a.text-reset.text-decoration-none(href='#!')
-              | Changelog
-      .col-6.col-md-4.col-lg-2
-        //- Heading
-        h6.font-weight-bold.text-uppercase.pb-2(style='font-size: .75rem; line-height: 1.55;')
-          | Services
-        //- List
-        ul.list-unstyled.text-muted.mb-6.mb-md-4.mb-lg-0
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | Documentation
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | Changelog
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | Pagebuilder
-          li
-            a.text-reset.text-decoration-none(href='#!')
-              | UI Kit
-      .col-6.col-md-4.offset-md-4.col-lg-2.offset-lg-0
-        //- Heading
-        h6.font-weight-bold.text-uppercase.pb-2(style='font-size: .75rem; line-height: 1.55;')
-          | Connect
-        //- List
-        ul.list-unstyled.text-muted.mb-0
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | Page Builder
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | UI Kit
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | Styleguide
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | Documentation
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | Changelog
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | Documentation
-          li
-            a.text-reset.text-decoration-none(href='#!')
-              | Changelog
-      .col-6.col-md-4.col-lg-2
-        //- Heading
-        h6.font-weight-bold.text-uppercase.pb-2(style='font-size: .75rem; line-height: 1.55;')
-          | Legal
-        //- List
-        ul.list-unstyled.text-muted.mb-0
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | Documentation
-          li.mb-2.mb-lg-2
-            a.text-reset.text-decoration-none(href='#!')
-              | Changelog
-          li
-            a.text-reset.text-decoration-none(href='#!')
-              | Pagebuilder
-  //- .row
-  //- .container
+  footer.py-8
+    .container
+      .row
+        .col-md-4.col-lg-3
+          h4.text-primary.font-weight-bold Bridge
+          //- Text
+          p.mb-2.text-muted
+            | Where design connects <br> with excellence.
+          //- Social
+          ul.list-unstyled.list-inline.mb-6.mb-md-0
+            li.list-inline-item.mr-3
+              a.text-decoration-none(href='#!')
+                img.list-social-icon(src=`${CWD}assets/img/gallery/facebook.svg` alt='')
+            li.list-inline-item.mr-3
+              a.text-decoration-none(href='#!')
+                img.list-social-icon(src=`${CWD}assets/img/gallery/linkedin.svg` alt='')
+            li.list-inline-item.mr-3
+              a.text-decoration-none(href='#!')
+                img.list-social-icon(src=`${CWD}assets/img/gallery/instagram.svg` alt='')
+            li.list-inline-item
+              a.text-decoration-none(href='#!')
+                img.list-social-icon(src=`${CWD}assets/img/gallery/github.svg` alt='')
+        .col-6.col-md-4.col-lg-2
+          //- Heading
+          h6.font-weight-bold.footer-nav
+            | Products
+          //- List
+          ul.list-unstyled.text-muted.mb-md-4.mb-lg-0
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | Page Builder
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | UI Kit
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | Styleguide
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | Documentation
+            li
+              a.text-reset.text-decoration-none(href='#!')
+                | Changelog
+        .col-6.col-md-4.col-lg-2
+          //- Heading
+          h6.font-weight-bold.footer-nav
+            | Services
+          //- List
+          ul.list-unstyled.text-muted.mb-6.mb-md-4.mb-lg-0
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | Documentation
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | Changelog
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | Pagebuilder
+            li
+              a.text-reset.text-decoration-none(href='#!')
+                | UI Kit
+        .col-6.col-md-4.offset-md-4.col-lg-2.offset-lg-0
+          //- Heading
+          h6.font-weight-bold.footer-nav
+            | Connect
+          //- List
+          ul.list-unstyled.text-muted.mb-0
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | Page Builder
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | UI Kit
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | Styleguide
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | Documentation
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | Changelog
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | Documentation
+            li
+              a.text-reset.text-decoration-none(href='#!')
+                | Changelog
+        .col-6.col-md-4.col-lg-2
+          //- Heading
+          h6.font-weight-bold.footer-nav
+            | Legal
+          //- List
+          ul.list-unstyled.text-muted.mb-0
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | Documentation
+            li.mb-2.mb-lg-2
+              a.text-reset.text-decoration-none(href='#!')
+                | Changelog
+            li
+              a.text-reset.text-decoration-none(href='#!')
+                | Pagebuilder

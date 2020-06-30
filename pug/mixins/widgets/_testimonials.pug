@@ -1,59 +1,59 @@
-mixin carousel(config)
-	.card.mb-0.border-0
-		.row.g-0
-			.col-md-5
-				img.d-block.w-100.h-100.img-fluid.img-curve-right(src=`${CWD}assets/img/gallery/${config.img}` alt='')
-			.col-md-7
-				.card-body.text-center.p-7.p-md-6.p-lg-8
-					img(src=`${CWD}assets/img/gallery/${config.icon}` alt='' )
-					p.card-text=config.paragraph
-					p.card-text
-						small.text-muted=config.name
+mixin carousel-item(config)
+	.carousel-item&attributes(attributes)
+		.card.border-0
+			.row.g-0
+				.col-md-5
+					img.img-testimonial(src=`${CWD}assets/img/gallery/${config.img}` alt='')
+				.col-md-7
+					.card-body.text-center.p-7.p-md-5.p-lg-8
+						img.mb-2(src=`${CWD}assets/img/gallery/${config.icon}` alt='' )
+						p=config.paragraph
+						p
+							small.text-muted.text-uppercase=config.name
 mixin testimonials
-	section.pt-8
-		.container#testimonial
-			.row.justify-content-center
-				.col-md-10.col-lg-8.text-center
-					//- Heading
-					h2 What customers are saying about us
-					//-Text
-					p.text-muted.mb-5
-						| Don't just take it from us, let our customers do the talking
-			.px-3.px-sm-0.mb-n7
-				#carouselExampleControls.carousel.slide(data-ride='carousel')
-					.carousel-inner.shadow-lg
-						.carousel-item.active
-							+carousel({
-								img:'slider-1.png',
-								icon:'airbnb.png',
-								paragraph:'Amazing product, its easy to use, even if you dont have enough knowledge in React. Congrats!',
-								name:'JAVIER'
-							})
-						.carousel-item
-							+carousel({
-								img:'slider-2.png',
-								icon:'airbnb.png',
-								paragraph:'This theme is great - going to save us a lot of time. The developer is also very responsive and courteous.',
-								name:'YURI'
-							})
-						.carousel-item
-							+carousel({
-								img:'slider-3.png',
-								icon:'pinterest.png',
-								paragraph:'Great Theme, and thank you for the support team on fixing a issue on the purchase we made.',
-								name:'OTAVIO'
-							})
-							
-						a.carousel-control-prev.prev-icon(href='#carouselExampleControls', role='button', data-slide='prev')
-							span.carousel-control-prev-icon.rounded-pill.bg-light.hover-top-shadow.icon-prev(aria-hidden='true')
-							span.sr-only Previous
-						a.carousel-control-next.next-icon(href='#carouselExampleControls', role='button', data-slide='next')
-							span.carousel-control-next-icon.rounded-pill.bg-light.hover-top-shadow.icon-next(aria-hidden='true')
-							span.sr-only Next																											
+	section.pt-4.pt-md-8#testimonial
+		.container
+			.text-center
+				h2 What customers are 
+					br.d-md-none
+					|saying about us
+				//-Text
+				p.text-muted.mb-5
+					| Don't just take it from us, let our 
+					br.d-md-none
+					|customers do the talking
+
+			#carouselExampleControls.carousel.slide(data-ride='carousel')
+				.carousel-inner.shadow-lg
+
+					+carousel-item({
+						img:'slider-1.png',
+						icon:'airbnb.png',
+						paragraph:'Amazing product, its easy to use, even if you dont have enough knowledge in React. Congrats!',
+						name:'Javier'
+					}).active
+					+carousel-item({
+						img:'slider-2.png',
+						icon:'instagram-b.png',
+						paragraph:'This theme is great - going to save us a lot of time. The developer is also  responsive and courteous.',
+						name:'Yuri'
+					})
+					+carousel-item({
+						img:'slider-3.png',
+						icon:'pinterest.png',
+						paragraph:'Great Theme, and thank you for the support team on fixing a issue on the purchase we made.',
+						name:'Otavio'
+					})
+
+					a.carousel-control-prev.carousel-icon(href='#carouselExampleControls', role='button', data-slide='prev')
+						span.carousel-control-prev-icon.rounded-pill.bg-light.hover-top-shadow(aria-hidden='true')
+						span.sr-only Previous
+					a.carousel-control-next.carousel-icon(href='#carouselExampleControls', role='button', data-slide='next')
+						span.carousel-control-next-icon.rounded-pill.bg-light.hover-top-shadow(aria-hidden='true')
+						span.sr-only Next																											
 		//-
 			SHAPE
 			==================================================
-		.position-relative.shape-slider
-			.shape.shape-bottom.shape-fluid-x.svg-shim.text-dark
-				svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1440 320')
-					path(fill='#F1F4F8' fill-opacity='1' d='M0,256L1440,0L1440,320L0,320Z')
+		.shape-triangle
+			svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1440 320')
+				path(fill='#F1F4F8' fill-opacity='1' d='M0,256L1440,0L1440,320L0,320Z')

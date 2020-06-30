@@ -4,23 +4,8 @@
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
+.z-index-1{
+  z-index:1;
+}
 
-@include media-breakpoint-up(xl) {
-  .pricing {
-    margin-bottom: -21rem!important;
-  }
-}
-@include media-breakpoint-down(xl) {
-  .pricing {
-    margin-bottom: -15rem!important;
-  }
-}
-@include media-breakpoint-down(md) {
-  .pricing {
-    margin-bottom: -7rem!important;
-  }
-}
-.no-gutters>.col,.no-gutters>[class*=col-] {
-  padding-right: 0;
-  padding-left: 0
-}
+

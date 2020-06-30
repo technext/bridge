@@ -1,106 +1,84 @@
 mixin pricingCard
-  .container
-    .row.justify-content-center#pricing
-      .col-12.text-center.pb-5
+  section.pt-5.pt-md-8.bg-light#pricing
+    .container
+      .text-center.mb-5.text-justify
         //-Heading
-        h1
-          | Choose your best plan.
+        h1 Choose your best plan.
         //- Text
-        p.lead.text-muted
-          | Millions of users are using the themes and templates created<br> by the super talented and passionate web design team.
-    .row.align-items-center.no-gutters.pricing.px-3.px-sm-0
-      .col-12.col-md-6(style='z-index:1;')
-        //- Card
-        .card#monthly.rounded-lg.mb-6.mb-md-0.border-0(style='z-index: 1;')
-          //- Body
-          .card-body.py-6
-            .row.justify-content-center
-              .col-12.col-xl-9
-                //-Badge
-                .text-center.mb-5
-                  span.badge.badge-light.bg-light.font-weight-normal.text-uppercase.text-primary Standard
-                //- Price
-                .d-flex.justify-content-center
-                  span.h2.mb-0.mt-2 $
-                  span.price.display-3.mb-0.font-weight-normal(data-annual='29' data-monthly='49') 29
-                  span.h2.align-self-end.mb-1 /mo
-                //- Text
-                p.text-center.text-muted.mb-2.mb-md-4
-                  | per seat
-                  
-                //- Features
-                .d-flex.text-center
-                  //- Check
-                  .badge.mt-1
-                    <svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-                    </svg>
-                  //- Text
-                  p.text-center
-                    | Fully Responsive design
-                .d-flex
-                  //- Check
-                  span.badge.mt-1
-                    <svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-                    </svg>
-                  //- Text
-                  p
-                    | 100+ Unique layouts
-                .d-flex
-                  //- Check
-                  span.badge.mt-1
-                    <svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-                    </svg>
-                  //- Text
-                  p
-                    | Based on Bootstrap 5
-                .d-flex
-                  //- Check
-                  span.badge.mt-1
-                    <svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-                    </svg>
-                  //- Text
-                  p
-                    | Lifetime free updates
-                .d-flex
-                  //- Check
-                  span.badge.mt-1
-                    <svg class="bi bi-check-circle" width="1.1em" height="1.1em" viewBox="0 0 16 16" fill="#389E7F" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                    <path fill-rule="evenodd" d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z"/>
-                    </svg>
-                  //- Text
-                  p.mb-0
-                    | 12 months free support included
-            //-.row
-          //- Button
-          a.card-btn.btn.btn-block.btn-lg.btn-primary.border-0.p-md-3(href='#!')
-            | Get it now
-      //- Enterprise Card
-      .col-12.col-md-6
-        //- Card
-        .card.rounded-lg.shadow.border-0.pt-4.pt-lg-6
-          //- Body
-          .card-body.py-6.py-md-8
-            .row.justify-content-center
-              .col-12.col-xl-10
-                //- Badge
-                p.text-center.my-4
-                  span.badge.badge-light.bg-light.font-weight-normal.text-uppercase.text-primary Enterprise
-                //- Text
-                p.text-center.text-muted.bg-white
-                  | There are way too many companies that have set up pricing tables with “packages” for their products without a solid understanding of the psychology behind package design.
-            //-.row
-          //- Button
-          a.card-btn.btn.btn-block.btn-lg.bg-light.p-md-3(href='#!')
-            | Contact us
-      //- Enterprise Card End
-    //-.row
-  //- .container
+        p.lead.text-muted Millions of users are using the themes and templates created
+          br.d-none.d-md-block
+          |by the super talented and passionate web design team.
+      .row.justify-content-center
+        .col-lg-10
+          .row.align-items-center.g-0
+            .col-md-6
+              //- Card
+              .card.rounded-lg.shadow-lg.mb-5.mb-md-0.border-0.z-index-1.overflow-hidden
+                .card-body.py-6.px-7.py-md-6.px-md-3.px-lg-4.px-xl-7
+                    .text-center.mb-5
+                      span.badge.bg-light.font-weight-normal.text-uppercase.text-primary Standard
+                    //- Price
+                    .d-flex.justify-content-center
+                      span.h2.mb-0.mt-2 $
+                      span.display-3.font-weight-normal 29
+                      span.h2.align-self-end.mb-1 /mo
+                    //- Text
+                    p.text-center.text-muted.mb-2.mb-md-4 per seat
+                    ul.list-unstyled
+                      //- Check
+                      li.mb-3
+                        span.mr-2
+                          svg.bi.bi-check-circle(width='.8em', height='.8em', viewBox='0 0 16 16', fill='#389E7F', xmlns='http://www.w3.org/2000/svg')
+                            path(fill-rule='evenodd', d='M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z')
+                            path(fill-rule='evenodd', d='M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z')
+                          //- Text
+                        | Fully Responsive design
+
+                      li.mb-3
+                        //- Check
+                        span.mr-2
+                          svg.bi.bi-check-circle(width='.8em', height='.8em', viewBox='0 0 16 16', fill='#389E7F', xmlns='http://www.w3.org/2000/svg')
+                            path(fill-rule='evenodd', d='M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z')
+                            path(fill-rule='evenodd', d='M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z')
+                          
+                        | 100+ Unique layouts
+                      li.mb-3
+                        //- Check
+                        span.mr-2
+                          svg.bi.bi-check-circle(width='.8em', height='.8em', viewBox='0 0 16 16', fill='#389E7F', xmlns='http://www.w3.org/2000/svg')
+                            path(fill-rule='evenodd', d='M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z')
+                            path(fill-rule='evenodd', d='M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z')
+                        //- Text
+                        | Based on Bootstrap 5
+                      li.mb-3
+                        //- Check
+                        span.mr-2
+                          svg.bi.bi-check-circle(width='.8em', height='.8em', viewBox='0 0 16 16', fill='#389E7F', xmlns='http://www.w3.org/2000/svg')
+                            path(fill-rule='evenodd', d='M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z')
+                            path(fill-rule='evenodd', d='M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z')
+                        //- Text
+                        | Lifetime free updates
+                      li.mb-3
+                        //- Check
+                        span.mr-2
+                          svg.bi.bi-check-circle(width='.8em', height='.8em', viewBox='0 0 16 16', fill='#389E7F', xmlns='http://www.w3.org/2000/svg')
+                            path(fill-rule='evenodd', d='M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z')
+                            path(fill-rule='evenodd', d='M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.236.236 0 0 1 .02-.022z')
+                        //- Text
+                        | 12 months free support included
+                .card-footer.p-0.border-0
+                  a.btn.btn-lg.btn-block.btn-primary.border-0.rounded-0(href='#!') Get it now
+            //- Enterprise Card
+            .col-md-6
+              .card.rounded-lg.shadow-lg.border-0.overflow-hidden
+                .card-body.py-6.px-md-4.px-xl-6.py-md-7.py-lg-8
+                  .text-center.my-5
+                    span.badge.bg-light.font-weight-normal.text-uppercase.text-primary Enterprise
+                    p.text-muted.mt-4 There are way too many companies that have set up pricing tables with “packages” for their products without a solid understanding of the psychology behind package design.
+                .card-footer.p-0.border-0
+                  a.btn.btn-lg.btn-light.btn-block.rounded-0(href='#!') Contact us
+            //- Enterprise Card End
+    .shape-arc-up
+      svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1440 220')
+        path(fill='#091A2B' fill-opacity='1' d='M0,128L120,133.3C240,139,480,149,720,144C960,139,1200,117,1320,106.7L1440,96L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z')              
+            

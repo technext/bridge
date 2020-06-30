@@ -1,55 +1,39 @@
+mixin faq-item(config)
+	.col-md-6&attributes(attributes)
+		.d-flex
+			.badge.badge-lg.badge-oval.bg-success
+				span ?
+			.ml-4
+				h4.text-white=config.title
+				p.text-muted.mb-0!=config.paragraph 
+
 mixin faq 
-	.container.pt-9.pt-md-11
-		.row#faq
-			.col-12.col-md-6
+	section.bg-dark.pt-9.pt-md-13.pt-lg-11#faq
+		.container
+			.row
 				//- Item
-				.d-flex.mb-md-6
-					//- Badge
-					div.badge.badge-lg.badge-rounded-circle.bg-success
-						span ?
-					.ml-4
-						//- Heading
-						h4.text-white
-							| Do I get free updates?
-						//- Text
-						p.text-muted.mb-6.mb-md-0
-							| Yes. We update all of our themes with each Bootstrap update, plus are constantly adding new components, pages, and features to our themes.
-				//- Item
-				.d-flex
-					//- Badge
-					div.badge.badge-lg.badge-rounded-circle.bg-success
-						span ?
-					.ml-4
-						//- Heading
-						h4.text-white
-							| Can I build a complete project with this template?
-						//- Text
-						p.text-muted.mb-6.mb-md-0
-							| Yes, Why not. You can build a project and complete website as you are like. More component are available include in this templete. And you can be use it following documentation.
-			.col-12.col-md-6
-				//- Item
-				.d-flex.mb-md-6
-					//- Badge
-					div.badge.badge-lg.badge-rounded-circle.bg-success
-						span ?
-					.ml-4
-						//- Heading
-						h4.text-white
-							| Can I get update regularly?
-						//- Text
-						p.text-muted.mb-6.mb-md-0
-							| Yes, We will get update the Bridge. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times.
-				//- Item
-				.d-flex
-					//- Badge
-					div.badge.badge-lg.badge-rounded-circle.bg-success
-						span ?
-					.ml-4
-						//- Heading
-						h4.text-white
-							| How can I get the customer support?
-						//- Text
-						p.text-muted.mb-md-6.mb-md-0
-							| After purchasing the product need you any support you can be share with us with sending mail to info@themewagon.com we’re always glad to help you. 
+				+faq-item({
+					title:'Do I get free updates?',
+					paragraph:'Yes. We update all of our themes with each Bootstrap update, plus are constantly adding new components, pages, and features to our themes.'
+
+				}).mb-6
+
+				+faq-item({
+					title:'Can I get update regularly?',
+					paragraph:'Yes, We will get update the Bridge. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times.'
+
+				}).mb-6
+				+faq-item({
+					title:'Can I build a complete project with this template?',
+					paragraph:'Yes, Why not. You can build a project and complete website as you are like. More component are available include in this templete. And you can be use it following documentation.'
+
+				}).mb-6.mb-md-0
+
+				+faq-item({
+					title:'How can I get the customer support?',
+					paragraph:'After purchasing the product need you any support you can be share with us with sending mail to info@themewagon.com we’re always glad to help you.'
+
+				})
+				
 		//- .row
 		//- .container

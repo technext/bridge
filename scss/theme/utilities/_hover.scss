@@ -6,13 +6,13 @@
     &.hover-top-shadow-lg{
         &:hover,
         &:focus{
-          transform: translateY(-5px) translateZ(0);
+          transform: translateY(-0.3125rem) translateZ(0);
         }
         
     }
     &:hover,
     &:focus{
-      transform: translateY(-2px) translateZ(0);
+      transform: translateY(-0.125rem) translateZ(0);
       box-shadow: 0.5rem .5rem 1.5rem  rgba(22,28,45,.1)!important;
     }
   
