@@ -1,39 +1,38 @@
 mixin faq-item(config)
 	.col-md-6&attributes(attributes)
 		.d-flex
-			.badge.badge-lg.badge-oval.bg-success
-				span ?
+			.badge.badge-circle.bg-success ?
 			.ml-4
 				h4.text-white=config.title
 				p.text-muted.mb-0!=config.paragraph 
 
 mixin faq 
-	section.bg-dark.pt-9.pt-md-13.pt-lg-11#faq
-		.container
-			.row
-				//- Item
-				+faq-item({
-					title:'Do I get free updates?',
-					paragraph:'Yes. We update all of our themes with each Bootstrap update, plus are constantly adding new components, pages, and features to our themes.'
+	+section.bg-dark.pt-9.pt-md-13.pt-lg-12.pt-xl-11#faq
 
-				}).mb-6
+		.row
+			//- Item
+			+faq-item({
+				title:'Do I get free updates?',
+				paragraph:'Yes. We update all of our themes with each Bootstrap update, plus are constantly adding new components, pages, and features to our themes.'
 
-				+faq-item({
-					title:'Can I get update regularly?',
-					paragraph:'Yes, We will get update the Bridge. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times.'
+			}).mb-6
 
-				}).mb-6
-				+faq-item({
-					title:'Can I build a complete project with this template?',
-					paragraph:'Yes, Why not. You can build a project and complete website as you are like. More component are available include in this templete. And you can be use it following documentation.'
+			+faq-item({
+				title:'Can I get update regularly?',
+				paragraph:'Yes, We will get update the Bridge. And you can get it any time. Next time we will comes with more feature. You can be get update for unlimited times.'
 
-				}).mb-6.mb-md-0
+			}).mb-6
+			+faq-item({
+				title:'Can I build a complete project with this template?',
+				paragraph:'Yes, Why not. You can build a project and complete website as you are like. More component are available include in this templete. And you can be use it following documentation.'
 
-				+faq-item({
-					title:'How can I get the customer support?',
-					paragraph:'After purchasing the product need you any support you can be share with us with sending mail to info@themewagon.com we’re always glad to help you.'
+			}).mb-6.mb-md-0
 
-				})
-				
+			+faq-item({
+				title:'How can I get the customer support?',
+				paragraph:'After purchasing the product need you any support you can be share with us with sending mail to info@themewagon.com we’re always glad to help you.'
+
+			})
+
 		//- .row
 		//- .container

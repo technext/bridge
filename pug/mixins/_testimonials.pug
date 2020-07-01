@@ -11,49 +11,48 @@ mixin carousel-item(config)
 						p
 							small.text-muted.text-uppercase=config.name
 mixin testimonials
-	section.pt-5.pt-md-8#testimonial
-		.container
-			.text-center
-				h2 What customers are 
-					br.d-md-none
-					|saying about us
-				//-Text
-				p.text-muted.mb-4
-					| Don't just take it from us, let our 
-					br.d-md-none
-					|customers do the talking
+	+section.pt-5.pt-md-8#testimonial
+		.text-center
+			h2 What customers are 
+				br.d-md-none
+				|saying about us
+			//-Text
+			p.text-muted.mb-4
+				| Don't just take it from us, let our 
+				br.d-md-none
+				|customers do the talking
 
-			#carouselExampleControls.carousel.slide(data-ride='carousel')
-				.carousel-inner.shadow-lg
+		#carouselExampleControls.carousel.slide(data-ride='carousel')
+			.carousel-inner.shadow-lg
 
-					+carousel-item({
-						img:'slider-1.png',
-						icon:'airbnb.png',
-						paragraph:'Amazing product, its easy to use, even if you dont have enough knowledge in React. Congrats!',
-						name:'Javier'
-					}).active
-					+carousel-item({
-						img:'slider-2.png',
-						icon:'instagram-b.png',
-						paragraph:'This theme is great - going to save us a lot of time. The developer is also responsive and courteous.',
-						name:'Yuri'
-					})
-					+carousel-item({
-						img:'slider-3.png',
-						icon:'pinterest.png',
-						paragraph:'Great Theme, and thank you for the support team on fixing a issue on the purchase we made.',
-						name:'Otavio'
-					})
+				+carousel-item({
+					img:'slider-1.png',
+					icon:'airbnb.png',
+					paragraph:'Amazing product, its easy to use, even if you dont have enough knowledge in React. Congrats!',
+					name:'Javier'
+				}).active
+				+carousel-item({
+					img:'slider-2.png',
+					icon:'instagram-b.png',
+					paragraph:'This theme is great - going to save us a lot of time. The developer is also responsive and courteous.',
+					name:'Yuri'
+				})
+				+carousel-item({
+					img:'slider-3.png',
+					icon:'pinterest.png',
+					paragraph:'Great Theme, and thank you for the support team on fixing a issue on the purchase we made.',
+					name:'Otavio'
+				})
 
-					a.carousel-control-prev.carousel-icon(href='#carouselExampleControls', role='button', data-slide='prev')
-						span.carousel-control-prev-icon.rounded-pill.bg-light.hover-top-shadow(aria-hidden='true')
-						span.sr-only Previous
-					a.carousel-control-next.carousel-icon(href='#carouselExampleControls', role='button', data-slide='next')
-						span.carousel-control-next-icon.rounded-pill.bg-light.hover-top-shadow(aria-hidden='true')
-						span.sr-only Next																											
+				a.carousel-control-prev.carousel-icon(href='#carouselExampleControls', role='button', data-slide='prev')
+					span.carousel-control-prev-icon.rounded-pill.bg-light.hover-top-shadow(aria-hidden='true')
+					span.sr-only Previous
+				a.carousel-control-next.carousel-icon(href='#carouselExampleControls', role='button', data-slide='next')
+					span.carousel-control-next-icon.rounded-pill.bg-light.hover-top-shadow(aria-hidden='true')
+					span.sr-only Next																											
 		//-
 			SHAPE
 			==================================================
-		.shape-triangle
-			svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1440 320')
-				path(fill='#F1F4F8' fill-opacity='1' d='M0,256L1440,0L1440,320L0,320Z')
+	.shape-triangle
+		svg(xmlns='http://www.w3.org/2000/svg' viewbox='0 0 1440 320')
+			path(fill='#F2F6FF' fill-opacity='1' d='M0,256L1440,0L1440,320L0,320Z')

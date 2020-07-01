@@ -4,22 +4,21 @@ mixin feature(config)
 		h5=config.title
 		p.text-muted.mb-0!=config.paragraph
 mixin features
-	section.py-5.py-md-7.border-bottom#feature
-		.container
-			.row
-				+feature({
-					img:'speed.png', 
-					title:'Get off to a quick start' ,
-					paragraph:'This is the Best starting point for your project. Just choose a template you like, insert your content, and use it.'
-				 }).mb-4
-
-				+feature({
-					img:'changelog.png', 
-					title:'All-in-one design workflow' ,
-					paragraph:'Creating with Bridge is a smooth experience all around. Just pick your screens, adjust a hue, control typefaces.'
+	+section.py-5.py-md-7.border-bottom#feature
+		.row
+			+feature({
+				img:'speed.png', 
+				title:'Get off to a quick start' ,
+				paragraph:'This is the Best starting point for your project. Just choose a template you like, insert your content, and use it.'
 				}).mb-4
-				+feature({
-					img:'bolt.png', 
-					title:'Next-generation design' ,
-					paragraph:'Explore early concepts with new design patterns. This is an entire modern design workflow in one smart tool.'
-				 })
+
+			+feature({
+				img:'changelog.png', 
+				title:'All-in-one design workflow' ,
+				paragraph:'Creating with Bridge is a smooth experience all around. Just pick your screens, adjust a hue, control typefaces.'
+			}).mb-4
+			+feature({
+				img:'bolt.png', 
+				title:'Next-generation design' ,
+				paragraph:'Explore early concepts with new design patterns. This is an entire modern design workflow in one smart tool.'
+				})
