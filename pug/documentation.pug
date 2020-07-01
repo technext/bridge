@@ -1,15 +1,14 @@
 extends _skeleton-component
 
-block append variables
-	- var firstParent = 'documentation'              
-	- var currentPage = 'getting-started'
+block append variables             
+	- var currentPage = 'documentation'
 
 block component
 	.card.shadow-sm.mb-3
-		.card-header
+		.card-header.px-4.py-3
 			h5#quick-start.mb-0.contains-anchor Quick start
-				a(href='#quick-start').text-decoration-none #
-		.card-body.bg-light
+				a(href='#quick-start').anchor  #
+		.card-body.p-4
 			p.mb-0 Looking to start your project quickly? Just unzip the 
 				code #{theme}.zip
 				| . We have precompiled and packaged everything in the 
@@ -19,10 +18,10 @@ block component
 				|  with a text or code editor, save it, and open the file in your favourite browser to see the changes.
 
 	.card.shadow-sm.mb-3
-		.card-header
+		.card-header.px-4.py-3
 			h5#setting-up-build-system.mb-0.contains-anchor Setting up Build system
-				a(href='#setting-up-build-system') #
-		.card-body.bg-light
+				a(href='#setting-up-build-system').anchor  #
+		.card-body.p-4
 			p Unzip the 
 				code #{theme}.zip
 				|  to any folder and open a command line or terminal at that location.
@@ -89,34 +88,33 @@ block component
 				|  or just close the command line window to stop the server.
 
 			p Happy editing!
+
+	h3.mt-6.mb-4.contains-anchor#rtl RTL
+		a(href='#rtl').anchor #
 	.card.shadow-sm.mb-3
-		.card-body
-			h3.mb-0#rtl RTL
-				a(href='#rtl') #
-	.card.shadow-sm.mb-3
-		.card-header
+		.card-header.px-4.py-3
 			h5#setting-up-html.mb-0.contains-anchor Setting up HTML
-				a(href='#setting-up-html') #
-	.card-body.bg-light
-		p Your theme comes with a built-in automated rlt feature. 
-			a(href=`${CWD}index-rtl.html`) Here
-			|  is the example. To use rtl, set the 
-			code dir='rtl'
-			|  in your html like:
-		pre
-			code.lang-html.
-				#{'<html dir=\'rtl\'>...</html>'}
-		p.mt-4 And use the rtl stylesheet instead of 
-			code theme.css
-			| :
-		pre
-			code.lang-html.
-				#{'<link href="assets/css/theme-rtl.css" rel="stylesheet">'}
+				a(href='#setting-up-html').anchor  #
+		.card-body.p-4
+			p Your theme comes with a built-in automated rlt feature. 
+				a(href=`${CWD}index-rtl.html`) Here
+				|  is the example. To use rtl, set the 
+				code dir='rtl'
+				|  in your html like:
+			pre
+				code.lang-html.
+					#{'<html dir=\'rtl\'>...</html>'}
+			p.mt-4 And use the rtl stylesheet instead of 
+				code theme.css
+				| :
+			pre
+				code.lang-html.
+					#{'<link href="assets/css/theme-rtl.css" rel="stylesheet">'}
 	.card.shadow-sm.mb-3
-		.card-header
+		.card-header.px-4.py-3
 			h5#setting-up-buil-tools.mb-0.contains-anchor Setting up build tools
-				a(href='#setting-up-buil-tools') #
-		.card-body.bg-light
+				a(href='#setting-up-buil-tools').anchor #
+		.card-body.p-4
 			p To compile 
 				code theme-rtl.css
 				|  directly with the built tools run:
@@ -142,7 +140,7 @@ block component
 				|  to call the 
 				code scss:rtl
 				|  task by updating the following code at 
-				code line 401
+				code line 332
 				|  in your 
 				code gulpfile.js
 				| : 

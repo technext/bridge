@@ -103,6 +103,21 @@ $spacers: map-merge($spacers, (
   13 : ($spacer * 21.0),
 ));
 
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1200px,
+) !default;
+// scss-docs-end container-max-widths
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
 //*-----------------------------------------------
 //|   Borders
 //-----------------------------------------------*/
@@ -155,6 +170,7 @@ $box-shadow-lg: 0 1rem 3rem rgba($sky, 0.175) !default;
 
 // //navbar active color
 $navbar-light-active-color: rgba($primary, 0.9) !default;
+$navbar-light-hover-color: rgba($primary, 0.7) !default;
 
 // Navbardropdown
 $dropdown-link-hover-color: ($primary, 5%) !default;

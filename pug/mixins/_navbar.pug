@@ -7,10 +7,10 @@ mixin navbar
 			#navbarSupportedContent.collapse.navbar-collapse
 				ul.navbar-nav.ml-auto
 					li.nav-item.text-muted
-						a.nav-link.active(aria-current='page', href=`${CWD}index.html` class= currentPage === 'index' ? 'active' : false) Landing
+						a.nav-link(aria-current='page', href=`${CWD}index.html` class= currentPage === 'index' ? 'active' : false) Landing
 					li.nav-item.dropdown
 						a#navbarDropdown.nav-link(href='#', role='button', data-toggle='dropdown', aria-expanded='false')
-							| Pages
+							| Elements
 							//-.dropdown-menu( aria-labelledby='navbarDropdownpages')
 						ul.dropdown-menu.navbar-dropdown-menu(aria-labelledby='navbarDropdown')
 							li
@@ -26,7 +26,7 @@ mixin navbar
 					li.nav-item
 						a.nav-link(href='#') Account
 					li.nav-item.dropdown
-						a#navbarDropdowndoc.nav-link(href='#', role='button', data-toggle='dropdown', aria-expanded='false')
+						a#navbarDropdowndoc.nav-link(href='#',class= currentPage === 'documentation' ? 'active' : false role='button', data-toggle='dropdown', aria-expanded='false')
 							| Documentation
 						.dropdown-menu.navbar-dropdown-menu( aria-labelledby='navbarDropdowndoc')
 							.list-group.list-group-flush

@@ -4,3 +4,10 @@
   text-transform: uppercase;
   font-weight: bold;
 }
+
+a.text-500 {
+  color: $gray-500 !important;
+  &:hover {
+    color: $gray-600 !important;
+  }
+}

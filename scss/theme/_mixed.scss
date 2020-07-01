@@ -8,3 +8,16 @@
     max-width: 24.5rem;
   }
 }
+
+.contains-anchor {
+  .anchor {
+    text-decoration: none;
+    margin-left: 0.4rem;
+    opacity: 0;
+  }
+  &:hover {
+    .anchor {
+      opacity: 1;
+    }
+  }
+}
