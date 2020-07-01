@@ -5,20 +5,20 @@ mixin carousel-item(config)
 				.col-md-5
 					img.img-testimonial(src=`${CWD}assets/img/gallery/${config.img}` alt='')
 				.col-md-7
-					.card-body.text-center.p-7.p-md-5.p-lg-8
+					.card-body.text-center.py-7.px-6.p-md-5.p-lg-7.p-xxl-8
 						img.mb-2(src=`${CWD}assets/img/gallery/${config.icon}` alt='' )
-						p=config.paragraph
+						p!=config.paragraph
 						p
 							small.text-muted.text-uppercase=config.name
 mixin testimonials
-	section.pt-4.pt-md-8#testimonial
+	section.pt-5.pt-md-8#testimonial
 		.container
 			.text-center
 				h2 What customers are 
 					br.d-md-none
 					|saying about us
 				//-Text
-				p.text-muted.mb-5
+				p.text-muted.mb-4
 					| Don't just take it from us, let our 
 					br.d-md-none
 					|customers do the talking
@@ -35,7 +35,7 @@ mixin testimonials
 					+carousel-item({
 						img:'slider-2.png',
 						icon:'instagram-b.png',
-						paragraph:'This theme is great - going to save us a lot of time. The developer is also  responsive and courteous.',
+						paragraph:'This theme is great - going to save us a lot of time. The developer is also responsive and courteous.',
 						name:'Yuri'
 					})
 					+carousel-item({

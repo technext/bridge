@@ -129,7 +129,6 @@ gulp.task("scss", () =>
     )
     .pipe(
       autoprefixer({
-        browsers: ["last 5 versions"],
         cascade: false,
       })
     )
@@ -151,7 +150,6 @@ gulp.task("scss:min", () =>
     )
     .pipe(
       autoprefixer({
-        browsers: ["last 5 versions"],
         cascade: false,
       })
     )
@@ -175,7 +173,6 @@ gulp.task("scss:rtl", () =>
     )
     .pipe(
       autoprefixer({
-        browsers: ["last 5 versions"],
         cascade: false,
       })
     )
@@ -199,7 +196,6 @@ gulp.task("scss:rtl:min", () =>
     )
     .pipe(
       autoprefixer({
-        browsers: ["last 5 versions"],
         cascade: false,
       })
     )

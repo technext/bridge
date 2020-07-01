@@ -32,31 +32,8 @@ const PATHS = {
   },
   JS: {
     ALL: "js/**/*.js",
-    BOOTSTRAP: [
-      "./js/bootstrap/util.js",
-      "./js/bootstrap/alert.js",
-      "./js/bootstrap/button.js",
-      "./js/bootstrap/carousel.js",
-      "./js/bootstrap/collapse.js",
-      "./js/bootstrap/dropdown.js",
-      "./js/bootstrap/modal.js",
-      "./js/bootstrap/tooltip.js",
-      "./js/bootstrap/popover.js",
-      "./js/bootstrap/scrollspy.js",
-      "./js/bootstrap/tab.js",
-      "./js/bootstrap/toast.js",
-    ],
-    THEME: [
-      "js/theme/Utils.js", // Required
-      "js/theme/bootstrap-navbar.js", // Required
-      "js/theme/bootstrap-select-menu.js", // Required
-      "js/theme/detector.js", // Required
-      "js/theme/forms.js", // Required
-      "js/theme/stickyfill.js", // Required
-      "js/theme/stickykit.js", // Required
-      "js/theme/tooltip-popover.js", // Required
-      "js/theme/**/!(Utils | bootstrap-navbar | bootstrap-select-menu | detector | forms | stickyfill | stickykit | tooltip-popover)*.js",
-    ],
+    BOOTSTRAP: ["js/bootstrap/**/*.js"],
+    THEME: ["js/theme/Utils.js", "js/theme/**/!(Utils)*.js"],
     PLUGINS: ["js/plugins/all.min.js"],
   },
   SCSS: {
@@ -129,7 +106,6 @@ gulp.task("scss", () =>
     )
     .pipe(
       autoprefixer({
-        browsers: ["last 5 versions"],
         cascade: false,
       })
     )
@@ -151,7 +127,6 @@ gulp.task("scss:min", () =>
     )
     .pipe(
       autoprefixer({
-        browsers: ["last 5 versions"],
         cascade: false,
       })
     )
@@ -175,7 +150,6 @@ gulp.task("scss:rtl", () =>
     )
     .pipe(
       autoprefixer({
-        browsers: ["last 5 versions"],
         cascade: false,
       })
     )
@@ -199,7 +173,6 @@ gulp.task("scss:rtl:min", () =>
     )
     .pipe(
       autoprefixer({
-        browsers: ["last 5 versions"],
         cascade: false,
       })
     )
