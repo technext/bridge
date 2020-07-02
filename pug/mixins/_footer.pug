@@ -1,5 +1,11 @@
 mixin footer
-  footer.py-7
+  +section.text-center.border-top.footer-text.py-3
+    | Made with ❤️ by 
+    a.text-500.text-decoration-none(href='https://themewagon.com/')  ThemeWagon 
+  
+
+mixin pre-footer
+  section.py-7
     .container
       .row
         .col-md-4.col-lg-3
@@ -98,4 +104,6 @@ mixin footer
                 | Changelog
             li
               a.text-500.text-decoration-none(href='#!')
-                | Pagebuilder
+                | Pagebuilder 
+  +footer                     
+              
