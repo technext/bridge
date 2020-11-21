@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Bridge</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="../assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="../assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300&amp;display=swap" rel="stylesheet">
+    <link href="../assets/lib/prismjs/prism-okaidia.css" rel="stylesheet">
+    <link href="../assets/css/theme.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 pl-0">
+        <div class="container"><a class="navbar-brand text-primary font-weight-bold" href="../index.html"> Bridge </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item text-muted"><a class="nav-link active" aria-current="page" href="#">Landing</a></li>
+              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#feature">Feature</a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#about">About </a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#testimonial">Testimonilas</a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#pricing">Pricing</a></li>
+                  <li><a class="dropdown-item text-secondary p-3" href="#faq">FAQ </a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdowndoc" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Documentation</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdowndoc">
+                  <div class="list-group list-group-flush"><a class="list-group-item" href="#"><img src="../assets/img/gallery/document.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Documentation</span>
+                        <p class="text-secondary mb-0">Customizing and building</p>
+                      </div>
+                    </a><a class="list-group-item" href="#"><img src="../assets/img/gallery/components.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Components</span>
+                        <p class="text-secondary mb-0">Full list of components</p>
+                      </div>
+                    </a><a class="list-group-item" href="#"><img src="../assets/img/gallery/bar_chart.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Changelog <span class="badge badge-secondary bg-light text-primary">1.1.3</span></span>
+                        <p class="text-secondary mb-0">Keep track of changes</p>
+                      </div>
+                    </a></div>
+                </div>
+              </li>
+            </ul><a class="btn btn-primary ml-auto hover-top-shadow" href="!#">Buy now</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-lg-9 col-xxl-10">
+            <div class="card shadow-sm mb-3">
+              <div class="card-body">
+                <h3>Card</h3>
+                <p class="mb-0">Falcon’s cards provide a flexible and extensible content container with multiple variants and options.</p><a class="btn btn-link btn-sm pl-0 mt-2" href="https://getbootstrap.com/docs/4.3/components/card/" target="_blank">Card on Bootstrap<span class="fas fa-chevron-right ml-1 fs--2"></span></a>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-xl-6 pr-xl-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0">Basic Example</h5>
+                  </div>
+                  <div class="card-body bg-light overflow-hidden">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="card" style="width: 20rem;">
+                          <div class="card-img-top"><img class="img-fluid" src="../assets/img/generic/1.jpg" alt="Card image cap" /></div>
+                          <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p><a class="btn btn-primary btn-sm" href="#!">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;width: 20rem;&quot;&gt;
+  &lt;div class=&quot;card-img-top&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;../assets/img/generic/1.jpg&quot; alt=&quot;Card image cap&quot; /&gt;&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;&lt;a class=&quot;btn btn-primary btn-sm&quot; href=&quot;#!&quot;&gt;Go somewhere&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 pl-xl-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0">Card with list</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="bg-white rounded-soft py-2">
+                          <a class="dropdown-item font-weight-bold text-warning" href="#!"><span class="fas fa-crown mr-1"></span><span>Go Pro</span></a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="#!">Set status</a>
+                          <a class="dropdown-item" href="../pages/profile.html">Profile &amp; account</a>
+                          <a class="dropdown-item" href="#!">Feedback</a>
+                          <div class="dropdown-divider"></div>
+                          <a class="dropdown-item" href="../pages/settings.html">Settings</a>
+                          <a class="dropdown-item" href="../authentication/log-out.html">Logout</a>
+                        </div>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;bg-white rounded-soft py-2&quot;&gt;
+  &lt;a class=&quot;dropdown-item font-weight-bold text-warning&quot; href=&quot;#!&quot;&gt;&lt;span class=&quot;fas fa-crown mr-1&quot;&gt;&lt;/span&gt;&lt;span&gt;Go Pro&lt;/span&gt;&lt;/a&gt;
+  &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;#!&quot;&gt;Set status&lt;/a&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;../pages/profile.html&quot;&gt;Profile &amp;amp; account&lt;/a&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;#!&quot;&gt;Feedback&lt;/a&gt;
+  &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;../pages/settings.html&quot;&gt;Settings&lt;/a&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;../authentication/log-out.html&quot;&gt;Logout&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-0">Card with image</h5>
+              </div>
+              <div class="card-body bg-light overflow-hidden">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card" style="width: 20rem;">
+                      <div class="card-img-top"><img class="img-fluid" src="../assets/img/generic/3.jpg" alt="Card image cap" /></div>
+                      <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      </div>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                      </ul>
+                      <div class="card-body"><a class="card-link" href="#!">Card link</a><a class="card-link" href="#!">Another link</a></div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;card&quot; style=&quot;width: 20rem;&quot;&gt;
+  &lt;div class=&quot;card-img-top&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;../assets/img/generic/3.jpg&quot; alt=&quot;Card image cap&quot; /&gt;&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;h5 class=&quot;card-title&quot;&gt;Card title&lt;/h5&gt;
+    &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;ul class=&quot;list-group list-group-flush&quot;&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Cras justo odio&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Dapibus ac facilisis in&lt;/li&gt;
+    &lt;li class=&quot;list-group-item&quot;&gt;Vestibulum at eros&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;div class=&quot;card-body&quot;&gt;&lt;a class=&quot;card-link&quot; href=&quot;#!&quot;&gt;Card link&lt;/a&gt;&lt;a class=&quot;card-link&quot; href=&quot;#!&quot;&gt;Another link&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-0">Background</h5>
+              </div>
+              <div class="card-body bg-light overflow-hidden">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card bg-dark text-white" style="max-width: 30rem;">
+                      <div class="card-img-top"><img class="img-fluid" src="../assets/img/generic/3.jpg" alt="Card image" /></div>
+                      <div class="card-img-overlay d-flex align-items-end">
+                        <div>
+                          <h5 class="card-title text-white">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;card bg-dark text-white&quot; style=&quot;max-width: 30rem;&quot;&gt;
+  &lt;div class=&quot;card-img-top&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;../assets/img/generic/3.jpg&quot; alt=&quot;Card image&quot; /&gt;&lt;/div&gt;
+  &lt;div class=&quot;card-img-overlay d-flex align-items-end&quot;&gt;
+    &lt;div&gt;
+      &lt;h5 class=&quot;card-title text-white&quot;&gt;Card title&lt;/h5&gt;
+      &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-0">Card Groups</h5>
+              </div>
+              <div class="card-body bg-light overflow-hidden">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card-group">
+                      <div class="card">
+                        <div class="card-img-top"><img class="img-fluid" src="../assets/img/generic/10.jpg" alt="Card image cap" /></div>
+                        <div class="card-body">
+                          <h5 class="card-title">First card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 45 mins ago</small></p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-img-top"><img class="img-fluid" src="../assets/img/generic/11.jpg" alt="Card image cap" /></div>
+                        <div class="card-body">
+                          <h5 class="card-title">Second card title</h5>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                          <p class="card-text"><small class="text-muted">Last updated an hour ago</small></p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-img-top"><img class="img-fluid" src="../assets/img/generic/12.jpg" alt="Card image cap" /></div>
+                        <div class="card-body">
+                          <h5 class="card-title">Yet another card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          <p class="card-text"><small class="text-muted">Last updated yesterday</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;card-group&quot;&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-img-top&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;../assets/img/generic/10.jpg&quot; alt=&quot;Card image cap&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;h5 class=&quot;card-title&quot;&gt;First card title&lt;/h5&gt;
+      &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+      &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 45 mins ago&lt;/small&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-img-top&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;../assets/img/generic/11.jpg&quot; alt=&quot;Card image cap&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;h5 class=&quot;card-title&quot;&gt;Second card title&lt;/h5&gt;
+      &lt;p class=&quot;card-text&quot;&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+      &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated an hour ago&lt;/small&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-img-top&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;../assets/img/generic/12.jpg&quot; alt=&quot;Card image cap&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;h5 class=&quot;card-title&quot;&gt;Yet another card title&lt;/h5&gt;
+      &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.&lt;/p&gt;
+      &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated yesterday&lt;/small&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-0">Card Decks</h5>
+              </div>
+              <div class="card-body bg-light overflow-hidden">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card-deck">
+                      <div class="card">
+                        <div class="card-img-top"><img class="img-fluid" src="../assets/img/generic/6.jpg" alt="Card image cap" /></div>
+                        <div class="card-body">
+                          <h5 class="card-title">Awesome card title</h5>
+                          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 22 mins ago</small></p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-img-top"><img class="img-fluid" src="../assets/img/generic/7.jpg" alt="Card image cap" /></div>
+                        <div class="card-body">
+                          <h5 class="card-title">Beautiful card title</h5>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 hours ago</small></p>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-img-top"><img class="img-fluid" src="../assets/img/generic/8.jpg" alt="Card image cap" /></div>
+                        <div class="card-body">
+                          <h5 class="card-title">Gorgeous card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                          <p class="card-text"><small class="text-muted">Last updated on Monday</small></p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;card-deck&quot;&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-img-top&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;../assets/img/generic/6.jpg&quot; alt=&quot;Card image cap&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;h5 class=&quot;card-title&quot;&gt;Awesome card title&lt;/h5&gt;
+      &lt;p class=&quot;card-text&quot;&gt;This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.&lt;/p&gt;
+      &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 22 mins ago&lt;/small&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-img-top&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;../assets/img/generic/7.jpg&quot; alt=&quot;Card image cap&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;h5 class=&quot;card-title&quot;&gt;Beautiful card title&lt;/h5&gt;
+      &lt;p class=&quot;card-text&quot;&gt;This card has supporting text below as a natural lead-in to additional content.&lt;/p&gt;
+      &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated 3 hours ago&lt;/small&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;card&quot;&gt;
+    &lt;div class=&quot;card-img-top&quot;&gt;&lt;img class=&quot;img-fluid&quot; src=&quot;../assets/img/generic/8.jpg&quot; alt=&quot;Card image cap&quot; /&gt;&lt;/div&gt;
+    &lt;div class=&quot;card-body&quot;&gt;
+      &lt;h5 class=&quot;card-title&quot;&gt;Gorgeous card title&lt;/h5&gt;
+      &lt;p class=&quot;card-text&quot;&gt;This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.&lt;/p&gt;
+      &lt;p class=&quot;card-text&quot;&gt;&lt;small class=&quot;text-muted&quot;&gt;Last updated on Monday&lt;/small&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-0">Card styles</h5>
+              </div>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="row">
+                      <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card text-white bg-primary">
+                          <div class="card-body">
+                            <div class="card-title">Primary card title</div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card text-white bg-secondary">
+                          <div class="card-body">
+                            <div class="card-title">Primary card title</div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card text-white bg-success">
+                          <div class="card-body">
+                            <div class="card-title">Primary card title</div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card text-white bg-danger">
+                          <div class="card-body">
+                            <div class="card-title">Primary card title</div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card text-white bg-warning">
+                          <div class="card-body">
+                            <div class="card-title">Primary card title</div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card text-white bg-info">
+                          <div class="card-body">
+                            <div class="card-title">Primary card title</div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card bg-light">
+                          <div class="card-body">
+                            <div class="card-title">Primary card title</div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-lg-4 mb-4">
+                        <div class="card text-white bg-dark">
+                          <div class="card-body">
+                            <div class="card-title">Primary card title</div>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-sm-6 col-lg-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card text-white bg-primary&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;div class=&quot;card-title&quot;&gt;Primary card title&lt;/div&gt;
+        &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-6 col-lg-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card text-white bg-secondary&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;div class=&quot;card-title&quot;&gt;Primary card title&lt;/div&gt;
+        &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-6 col-lg-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card text-white bg-success&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;div class=&quot;card-title&quot;&gt;Primary card title&lt;/div&gt;
+        &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-6 col-lg-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card text-white bg-danger&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;div class=&quot;card-title&quot;&gt;Primary card title&lt;/div&gt;
+        &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-6 col-lg-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card text-white bg-warning&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;div class=&quot;card-title&quot;&gt;Primary card title&lt;/div&gt;
+        &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-6 col-lg-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card text-white bg-info&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;div class=&quot;card-title&quot;&gt;Primary card title&lt;/div&gt;
+        &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-6 col-lg-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card bg-light&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;div class=&quot;card-title&quot;&gt;Primary card title&lt;/div&gt;
+        &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;col-sm-6 col-lg-4 mb-4&quot;&gt;
+    &lt;div class=&quot;card text-white bg-dark&quot;&gt;
+      &lt;div class=&quot;card-body&quot;&gt;
+        &lt;div class=&quot;card-title&quot;&gt;Primary card title&lt;/div&gt;
+        &lt;p class=&quot;card-text&quot;&gt;Some quick example text to build on the card title and make up the bulk of the card's content.&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <ul class="nav flex-column sticky-kit mt-6 accordion font-weight-semi-bold" id="sidebar-nav">
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#documentation" role="button" aria-expanded="false" aria-controls="documentation">Documentation</a>
+                <div class="nav collapse pl-3" id="documentation" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../documentation/getting-started.html">Getting started</a><a class="nav-link w-100 py-0 text-600" href="../documentation/file-structure.html">File structure</a><a class="nav-link w-100 py-0 text-600" href="../documentation/customization.html">Customization</a><a class="nav-link w-100 py-0 text-600" href="../documentation/gulp.html">Gulp</a><a class="nav-link w-100 py-0 text-600" href="../documentation/RTL.html">RTL</a><a class="nav-link w-100 py-0 text-600" href="../documentation/plugins.html">Plugins</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-info" data-toggle="collapse" href="#components" role="button" aria-expanded="true" aria-controls="components">Components</a>
+                <div class="nav collapse pl-3 show" id="components" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../components/alerts.html">Alerts</a><a class="nav-link w-100 py-0 text-600" href="../components/background.html">Background</a><a class="nav-link w-100 py-0 text-600" href="../components/badges.html">Badges</a><a class="nav-link w-100 py-0 text-600" href="../components/breadcrumb.html">Breadcrumb</a><a class="nav-link w-100 py-0 text-600" href="../components/buttons.html">Buttons</a><a class="nav-link w-100 py-0 text-info" href="../components/cards.html">Cards</a><a class="nav-link w-100 py-0 text-600" href="../components/carousel.html">Carousel</a><a class="nav-link w-100 py-0 text-600" href="../components/collapse.html">Collapse</a><a class="nav-link w-100 py-0 text-600" href="../components/dropdowns.html">Dropdowns</a><a class="nav-link w-100 py-0 text-600" href="../components/fancyscroll.html">Fancyscroll</a><a class="nav-link w-100 py-0 text-600" href="../components/forms.html">Forms</a><a class="nav-link w-100 py-0 text-600" href="../components/hoverbox.html">Hoverbox</a><a class="nav-link w-100 py-0 text-600" href="../components/list-group.html">List group</a><a class="nav-link w-100 py-0 text-600" href="../components/modals.html">Modals</a><a class="nav-link w-100 py-0 text-600" href="../components/media-object.html">Media object</a><a class="nav-link w-100 py-0 text-600" href="../components/navs.html">Navs</a><a class="nav-link w-100 py-0 text-600" href="../components/navbar.html">Navbar</a><a class="nav-link w-100 py-0 text-600" href="../components/page-headers.html">Page headers</a><a class="nav-link w-100 py-0 text-600" href="../components/pagination.html">Pagination</a><a class="nav-link w-100 py-0 text-600" href="../components/popovers.html">Popovers</a><a class="nav-link w-100 py-0 text-600" href="../components/progress.html">Progress</a><a class="nav-link w-100 py-0 text-600" href="../components/scrollspy.html">Scrollspy</a><a class="nav-link w-100 py-0 text-600" href="../components/spinners.html">Spinners</a><a class="nav-link w-100 py-0 text-600" href="../components/tables.html">Tables</a><a class="nav-link w-100 py-0 text-600" href="../components/tabs.html">Tabs</a><a class="nav-link w-100 py-0 text-600" href="../components/tooltips.html">Tooltips</a><a class="nav-link w-100 py-0 text-600" href="../components/toasts.html">Toasts</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#utilities" role="button" aria-expanded="false" aria-controls="utilities">Utilities</a>
+                <div class="nav collapse pl-3" id="utilities" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../utilities/borders.html">Borders</a><a class="nav-link w-100 py-0 text-600" href="../utilities/clearfix.html">Clearfix</a><a class="nav-link w-100 py-0 text-600" href="../utilities/close-icon.html">Close icon</a><a class="nav-link w-100 py-0 text-600" href="../utilities/colors.html">Colors</a><a class="nav-link w-100 py-0 text-600" href="../utilities/display.html">Display</a><a class="nav-link w-100 py-0 text-600" href="../utilities/embed.html">Embed</a><a class="nav-link w-100 py-0 text-600" href="../utilities/flex.html">Flex</a><a class="nav-link w-100 py-0 text-600" href="../utilities/figures.html">Figures</a><a class="nav-link w-100 py-0 text-600" href="../utilities/grid.html">Grid</a><a class="nav-link w-100 py-0 text-600" href="../utilities/sizing.html">Sizing</a><a class="nav-link w-100 py-0 text-600" href="../utilities/stretched-link.html">Stretched link</a><a class="nav-link w-100 py-0 text-600" href="../utilities/spacing.html">Spacing</a><a class="nav-link w-100 py-0 text-600" href="../utilities/typography.html">Typography</a><a class="nav-link w-100 py-0 text-600" href="../utilities/vertical-align.html">Vertical align</a><a class="nav-link w-100 py-0 text-600" href="../utilities/visibility.html">Visibility</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#plugins" role="button" aria-expanded="false" aria-controls="plugins">Plugins</a>
+                <div class="nav collapse pl-3" id="plugins" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../plugins/accordion.html">Accordion</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="py-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-lg-3">
+              <h4 class="text-primary font-weight-bold">Bridge</h4>
+              <p class="mb-2 text-muted">Where design connects <br> with excellence.</p>
+              <ul class="list-unstyled list-inline mb-6 mb-md-0">
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/facebook.svg" alt="" /></a></li>
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/linkedin.svg" alt="" /></a></li>
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/instagram.svg" alt="" /></a></li>
+                <li class="list-inline-item"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/github.svg" alt="" /></a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Products</h6>
+              <ul class="list-unstyled text-muted mb-md-4 mb-lg-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Page Builder</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Styleguide</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Services</h6>
+              <ul class="list-unstyled text-muted mb-6 mb-md-4 mb-lg-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Pagebuilder</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+              <h6 class="font-weight-bold footer-nav">Connect</h6>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Page Builder</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Styleguide</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Legal</h6>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Pagebuilder</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/lib/is/is.min.js"></script>
+    <script src="../assets/lib/stickyfilljs/stickyfill.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics-->
+    <script src="../assets/lib/prismjs/prism.js"></script>
+    <script src="../assets/js/theme.js"></script>
+  </body>
+
+</html>

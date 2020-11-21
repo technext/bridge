@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Bridge</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="../assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="../assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300&amp;display=swap" rel="stylesheet">
+    <link href="../assets/lib/prismjs/prism-okaidia.css" rel="stylesheet">
+    <link href="../assets/css/theme.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 pl-0">
+        <div class="container"><a class="navbar-brand text-primary font-weight-bold" href="../index.html"> Bridge </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item text-muted"><a class="nav-link active" aria-current="page" href="#">Landing</a></li>
+              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#feature">Feature</a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#about">About </a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#testimonial">Testimonilas</a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#pricing">Pricing</a></li>
+                  <li><a class="dropdown-item text-secondary p-3" href="#faq">FAQ </a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdowndoc" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Documentation</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdowndoc">
+                  <div class="list-group list-group-flush"><a class="list-group-item" href="#"><img src="../assets/img/gallery/document.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Documentation</span>
+                        <p class="text-secondary mb-0">Customizing and building</p>
+                      </div>
+                    </a><a class="list-group-item" href="#"><img src="../assets/img/gallery/components.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Components</span>
+                        <p class="text-secondary mb-0">Full list of components</p>
+                      </div>
+                    </a><a class="list-group-item" href="#"><img src="../assets/img/gallery/bar_chart.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Changelog <span class="badge badge-secondary bg-light text-primary">1.1.3</span></span>
+                        <p class="text-secondary mb-0">Keep track of changes</p>
+                      </div>
+                    </a></div>
+                </div>
+              </li>
+            </ul><a class="btn btn-primary ml-auto hover-top-shadow" href="!#">Buy now</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-lg-9 col-xxl-10">
+            <div class="card shadow-sm mb-3">
+              <div class="card-body">
+                <h3>Flex</h3>
+                <p class="mb-0">Quickly manage the layout, alignment, and sizing of grid columns, navigation, components, and more with a full suite of responsive flexbox utilities. For more complex implementations, custom CSS may be necessary.</p><a class="btn btn-link btn-sm pl-0 mt-2" href="https://getbootstrap.com/docs/4.3/utilities/flex/" target="_blank">Flex on Bootstrap<span class="fas fa-chevron-right ml-1 fs--2"></span></a>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-1">Enable flex behaviors</h5>
+                <p class="mb-0">Apply <code>display</code> utilities to create a flexbox container and transform direct children elements into flex items. Flex containers and items are able to be modified further with additional flex properties.</p>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex p-2 bg-200 mb-2">Flexbox container!</div>
+                    <div class="d-inline-flex p-2 bg-200">Inline flexbox container!</div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;d-flex p-2 bg-200 mb-2&quot;&gt;Flexbox container!&lt;/div&gt;
+&lt;div class=&quot;d-inline-flex p-2 bg-200&quot;&gt;Inline flexbox container!&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-1">Direction</h5>
+                <p class="mb-0">Use <code>.flex-row </code>to set a horizontal direction (the browser default), or .flex-row-reverse to start the horizontal direction from the opposite side.</p>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex bg-200 mb-3 flex-row">
+                      <div class="p-2 bg-300 border border-400">Flex item 1</div>
+                      <div class="p-2 bg-300 border border-400">Flex item 2</div>
+                      <div class="p-2 bg-300 border border-400">Flex item 3</div>
+                    </div>
+                    <div class="d-flex bg-200 mb-3 flex-row-reverse">
+                      <div class="p-2 bg-300 border border-400">Flex item 1</div>
+                      <div class="p-2 bg-300 border border-400">Flex item 2</div>
+                      <div class="p-2 bg-300 border border-400">Flex item 3</div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;d-flex bg-200 mb-3 flex-row&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item 1&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item 2&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex bg-200 mb-3 flex-row-reverse&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item 1&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item 2&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+                <p class="mt-3">Use <code>.flex-column </code>to set a vertical direction, or <code>.flex-column-reverse </code>to start the vertical direction from the opposite side</p>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex bg-200 mb-3 flex-column">
+                      <div class="p-2 bg-300 border border-400">Flex item 1</div>
+                      <div class="p-2 bg-300 border border-400">Flex item 2</div>
+                      <div class="p-2 bg-300 border border-400">Flex item 3</div>
+                    </div>
+                    <div class="d-flex bg-200 mb-3 flex-column-reverse">
+                      <div class="p-2 bg-300 border border-400">Flex item 1</div>
+                      <div class="p-2 bg-300 border border-400">Flex item 2</div>
+                      <div class="p-2 bg-300 border border-400">Flex item 3</div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;d-flex bg-200 mb-3 flex-column&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item 1&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item 2&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex bg-200 mb-3 flex-column-reverse&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item 1&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item 2&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item 3&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-1">Justify Content</h5>
+                <p class="mb-0">Use <code>justify-content </code>utilities on flexbox containers to change the alignment of flex items on the main axis (the x-axis to start, y-axis if <code>flex-direction: column</code>). Choose from start (browser default), <code>end</code>, <code>center</code>, <code>between</code>, or <code>around.</code></p>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex justify-content-start bg-200 mb-2">
+                      <div class="p-2 bg-300 border border-400">Flex Item</div>
+                    </div>
+                    <div class="d-flex justify-content-end bg-200 mb-2">
+                      <div class="p-2 bg-300 border border-400">Flex Item</div>
+                    </div>
+                    <div class="d-flex justify-content-center bg-200 mb-2">
+                      <div class="p-2 bg-300 border border-400">Flex Item</div>
+                    </div>
+                    <div class="d-flex justify-content-between bg-200 mb-2">
+                      <div class="p-2 bg-300 border border-400">Flex Item</div>
+                    </div>
+                    <div class="d-flex justify-content-around bg-200 mb-2">
+                      <div class="p-2 bg-300 border border-400">Flex Item</div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;d-flex justify-content-start bg-200 mb-2&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex Item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex justify-content-end bg-200 mb-2&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex Item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex justify-content-center bg-200 mb-2&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex Item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex justify-content-between bg-200 mb-2&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex Item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex justify-content-around bg-200 mb-2&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex Item&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-1">With align items</h5>
+                <p class="mb-0">Vertically move one flex item to the top or bottom of a container by mixing <code>align-items</code>, <code>flex-direction: column </code>, and <code>margin-top: auto or margin-bottom: auto.</code></p>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex align-items-start bg-200 mb-2" style="height: 5rem;">
+                      <div class="p-2 bg-300 border border-400">Flex item </div>
+                    </div>
+                    <div class="d-flex align-items-end bg-200 mb-2" style="height: 5rem;">
+                      <div class="p-2 bg-300 border border-400">Flex item </div>
+                    </div>
+                    <div class="d-flex align-items-center bg-200 mb-2" style="height: 5rem;">
+                      <div class="p-2 bg-300 border border-400">Flex item </div>
+                    </div>
+                    <div class="d-flex align-items-baseline bg-200 mb-2" style="height: 5rem;">
+                      <div class="p-2 bg-300 border border-400">Flex item </div>
+                    </div>
+                    <div class="d-flex align-items-stretch bg-200 mb-2" style="height: 5rem;">
+                      <div class="p-2 bg-300 border border-400">Flex item </div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;d-flex align-items-start bg-200 mb-2&quot; style=&quot;height: 5rem;&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex align-items-end bg-200 mb-2&quot; style=&quot;height: 5rem;&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex align-items-center bg-200 mb-2&quot; style=&quot;height: 5rem;&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex align-items-baseline bg-200 mb-2&quot; style=&quot;height: 5rem;&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex align-items-stretch bg-200 mb-2&quot; style=&quot;height: 5rem;&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-1">Align self</h5>
+                <p class="mb-0">Use <code>align-self </code>utilities on flexbox items to individually change their alignment on the cross axis (the y-axis to start, x-axis if <code>flex-direction: column</code>). Choose from the same options as <code>align-items: start, </code><code>end</code>, <code>center</code>, <code>baseline</code>, or <code>stretch (browser default).</code></p>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex bg-200 mb-2" style="height: 5rem;">
+                      <div class="border border-400 p-2 bg-300">Flex Item</div>
+                      <div class="border border-400 p-2 bg-300 align-self-start">Align self start</div>
+                      <div class="border border-400 p-2 bg-300">Flex Item</div>
+                    </div>
+                    <div class="d-flex bg-200 mb-2" style="height: 5rem;">
+                      <div class="border border-400 p-2 bg-300">Flex Item</div>
+                      <div class="border border-400 p-2 bg-300 align-self-end">Align self end</div>
+                      <div class="border border-400 p-2 bg-300">Flex Item</div>
+                    </div>
+                    <div class="d-flex bg-200 mb-2" style="height: 5rem;">
+                      <div class="border border-400 p-2 bg-300">Flex Item</div>
+                      <div class="border border-400 p-2 bg-300 align-self-center">Align self center</div>
+                      <div class="border border-400 p-2 bg-300">Flex Item</div>
+                    </div>
+                    <div class="d-flex bg-200 mb-2" style="height: 5rem;">
+                      <div class="border border-400 p-2 bg-300">Flex Item</div>
+                      <div class="border border-400 p-2 bg-300 align-self-baseline">Align self baseline</div>
+                      <div class="border border-400 p-2 bg-300">Flex Item</div>
+                    </div>
+                    <div class="d-flex bg-200 mb-2" style="height: 5rem;">
+                      <div class="border border-400 p-2 bg-300">Flex Item</div>
+                      <div class="border border-400 p-2 bg-300 align-self-stretch">Align self stretch</div>
+                      <div class="border border-400 p-2 bg-300">Flex Item</div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;d-flex bg-200 mb-2&quot; style=&quot;height: 5rem;&quot;&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300&quot;&gt;Flex Item&lt;/div&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300 align-self-start&quot;&gt;Align self start&lt;/div&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300&quot;&gt;Flex Item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex bg-200 mb-2&quot; style=&quot;height: 5rem;&quot;&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300&quot;&gt;Flex Item&lt;/div&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300 align-self-end&quot;&gt;Align self end&lt;/div&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300&quot;&gt;Flex Item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex bg-200 mb-2&quot; style=&quot;height: 5rem;&quot;&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300&quot;&gt;Flex Item&lt;/div&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300 align-self-center&quot;&gt;Align self center&lt;/div&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300&quot;&gt;Flex Item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex bg-200 mb-2&quot; style=&quot;height: 5rem;&quot;&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300&quot;&gt;Flex Item&lt;/div&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300 align-self-baseline&quot;&gt;Align self baseline&lt;/div&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300&quot;&gt;Flex Item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex bg-200 mb-2&quot; style=&quot;height: 5rem;&quot;&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300&quot;&gt;Flex Item&lt;/div&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300 align-self-stretch&quot;&gt;Align self stretch&lt;/div&gt;
+  &lt;div class=&quot;border border-400 p-2 bg-300&quot;&gt;Flex Item&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-1">Fill</h5>
+                <p class="mb-0">Use the <code>.flex-fill </code>class on a series of sibling elements to force them into widths equal to their content (or equal widths if their content does not surpass their border-boxes) while taking up all available horizontal space.</p>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex bg-200">
+                      <div class="p-2 flex-fill bg-300 border border-400">Flex item with a lot of content</div>
+                      <div class="p-2 flex-fill bg-300 border border-400">Flex item</div>
+                      <div class="p-2 flex-fill bg-300 border border-400">Flex item</div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;d-flex bg-200&quot;&gt;
+  &lt;div class=&quot;p-2 flex-fill bg-300 border border-400&quot;&gt;Flex item with a lot of content&lt;/div&gt;
+  &lt;div class=&quot;p-2 flex-fill bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 flex-fill bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-1">Grow and shrink</h5>
+                <p class="mb-0">Use <code>.flex-grow-* </code>utilities to toggle a flex item’s ability to grow to fill available space. In the example below, the <code>.flex-grow-1 </code>elements uses all available space it can, while allowing the remaining two flex items their necessary space.</p>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex bg-200">
+                      <div class="p-2 w-100 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 flex-shrink-1 bg-300 border border-400">Flex item</div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;d-flex bg-200&quot;&gt;
+  &lt;div class=&quot;p-2 w-100 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 flex-shrink-1 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-1">Auto margins</h5>
+                <p class="mb-0">Flexbox can do some pretty awesome things when you mix flex alignments with auto margins. Shown below are three examples of controlling flex items via auto margins: default (no auto margin), pushing two items to the right (<code>.mr-auto</code>), and pushing two items to the left (<code>.ml-auto</code>).</p>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex bg-200 mb-2">
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                    <div class="d-flex bg-200 mb-2">
+                      <div class="mr-auto p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                    <div class="d-flex bg-200 mb-2">
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="ml-auto p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;d-flex bg-200 mb-2&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex bg-200 mb-2&quot;&gt;
+  &lt;div class=&quot;mr-auto p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex bg-200 mb-2&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;ml-auto p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-1">With align items</h5>
+                <p class="mb-0">Vertically move one flex item to the top or bottom of a container by mixing <code>align-items</code>, <code>flex-direction: column </code>, and <code>margin-top: auto or margin-bottom: auto.</code></p>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex flex-column bg-200 mb-3 align-items-start" style="height: 200px;">
+                      <div class="mb-auto p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                    <div class="d-flex flex-column bg-200 mb-3 align-items-end" style="height: 200px;">
+                      <div class="mb-auto p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;d-flex flex-column bg-200 mb-3 align-items-start&quot; style=&quot;height: 200px;&quot;&gt;
+  &lt;div class=&quot;mb-auto p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex flex-column bg-200 mb-3 align-items-end&quot; style=&quot;height: 200px;&quot;&gt;
+  &lt;div class=&quot;mb-auto p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-1">Wrap</h5>
+                <p class="mb-0">Change how flex items wrap in a flex container. Choose from no wrapping at all (the browser default) with <code>.flex-nowrap</code>, wrapping with <code>.flex-wrap</code>, or reverse wrapping with <code>.flex-wrap-reverse</code>.</p>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex flex-nowrap mb-3 bg-200 border border-300 py-3" style="width: 8rem">
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                    <div class="d-flex mb-3 bg-200 border border-300 flex-wrap">
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                    <div class="d-flex mb-3 bg-200 border border-300 flex-wrap-reverse">
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;d-flex flex-nowrap mb-3 bg-200 border border-300 py-3&quot; style=&quot;width: 8rem&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex mb-3 bg-200 border border-300 flex-wrap&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex mb-3 bg-200 border border-300 flex-wrap-reverse&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-1">Order</h5>
+                <p class="mb-0">Change the <em>visual </em>order of specific flex items with a handful of <code>order </code>utilities. We only provide options for making an item first or last, as well as a reset to use the DOM order. As <code>order </code>takes any integer value (e.g., <code>5</code>), add custom CSS for any additional values needed.</p>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex flex-nowrap bg-200">
+                      <div class="order-3 p-2 bg-300 border border-400">First flex item</div>
+                      <div class="order-2 p-2 bg-300 border border-400">Second flex item</div>
+                      <div class="order-1 p-2 bg-300 border border-400">Third flex item</div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;d-flex flex-nowrap bg-200&quot;&gt;
+  &lt;div class=&quot;order-3 p-2 bg-300 border border-400&quot;&gt;First flex item&lt;/div&gt;
+  &lt;div class=&quot;order-2 p-2 bg-300 border border-400&quot;&gt;Second flex item&lt;/div&gt;
+  &lt;div class=&quot;order-1 p-2 bg-300 border border-400&quot;&gt;Third flex item&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-1">Align content</h5>
+                <p class="mb-0">Use <code>align-content </code>utilities on flexbox containers to align flex items <em>together </em>on the cross axis. Choose from <code>start (browser default)</code>, <code>end</code>, <code>center</code>, <code>between</code>, <code>around</code>, or <code>stretch. To demonstrate these utilities, we’ve enforced </code><code>flex-wrap: wrap </code>and increased the number of flex items.</p>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="d-flex flex-wrap bg-200 mb-3 align-content-start" style="height: 300px;">
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                    <div class="d-flex flex-wrap bg-200 mb-3 align-content-center" style="height: 300px;">
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                    <div class="d-flex flex-wrap bg-200 mb-3 align-content-end" style="height: 300px;">
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                    <div class="d-flex flex-wrap bg-200 mb-3 align-content-between" style="height: 300px;">
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                    <div class="d-flex flex-wrap bg-200 mb-3 align-content-around" style="height: 300px;">
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                    <div class="d-flex flex-wrap bg-200 mb-3 align-content-stretch" style="height: 300px;">
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                      <div class="p-2 bg-300 border border-400">Flex item</div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;d-flex flex-wrap bg-200 mb-3 align-content-start&quot; style=&quot;height: 300px;&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex flex-wrap bg-200 mb-3 align-content-center&quot; style=&quot;height: 300px;&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex flex-wrap bg-200 mb-3 align-content-end&quot; style=&quot;height: 300px;&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex flex-wrap bg-200 mb-3 align-content-between&quot; style=&quot;height: 300px;&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex flex-wrap bg-200 mb-3 align-content-around&quot; style=&quot;height: 300px;&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;d-flex flex-wrap bg-200 mb-3 align-content-stretch&quot; style=&quot;height: 300px;&quot;&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+  &lt;div class=&quot;p-2 bg-300 border border-400&quot;&gt;Flex item&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <ul class="nav flex-column sticky-kit mt-6 accordion font-weight-semi-bold" id="sidebar-nav">
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#documentation" role="button" aria-expanded="false" aria-controls="documentation">Documentation</a>
+                <div class="nav collapse pl-3" id="documentation" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../documentation/getting-started.html">Getting started</a><a class="nav-link w-100 py-0 text-600" href="../documentation/file-structure.html">File structure</a><a class="nav-link w-100 py-0 text-600" href="../documentation/customization.html">Customization</a><a class="nav-link w-100 py-0 text-600" href="../documentation/gulp.html">Gulp</a><a class="nav-link w-100 py-0 text-600" href="../documentation/RTL.html">RTL</a><a class="nav-link w-100 py-0 text-600" href="../documentation/plugins.html">Plugins</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#components" role="button" aria-expanded="false" aria-controls="components">Components</a>
+                <div class="nav collapse pl-3" id="components" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../components/alerts.html">Alerts</a><a class="nav-link w-100 py-0 text-600" href="../components/background.html">Background</a><a class="nav-link w-100 py-0 text-600" href="../components/badges.html">Badges</a><a class="nav-link w-100 py-0 text-600" href="../components/breadcrumb.html">Breadcrumb</a><a class="nav-link w-100 py-0 text-600" href="../components/buttons.html">Buttons</a><a class="nav-link w-100 py-0 text-600" href="../components/cards.html">Cards</a><a class="nav-link w-100 py-0 text-600" href="../components/carousel.html">Carousel</a><a class="nav-link w-100 py-0 text-600" href="../components/collapse.html">Collapse</a><a class="nav-link w-100 py-0 text-600" href="../components/dropdowns.html">Dropdowns</a><a class="nav-link w-100 py-0 text-600" href="../components/fancyscroll.html">Fancyscroll</a><a class="nav-link w-100 py-0 text-600" href="../components/forms.html">Forms</a><a class="nav-link w-100 py-0 text-600" href="../components/hoverbox.html">Hoverbox</a><a class="nav-link w-100 py-0 text-600" href="../components/list-group.html">List group</a><a class="nav-link w-100 py-0 text-600" href="../components/modals.html">Modals</a><a class="nav-link w-100 py-0 text-600" href="../components/media-object.html">Media object</a><a class="nav-link w-100 py-0 text-600" href="../components/navs.html">Navs</a><a class="nav-link w-100 py-0 text-600" href="../components/navbar.html">Navbar</a><a class="nav-link w-100 py-0 text-600" href="../components/page-headers.html">Page headers</a><a class="nav-link w-100 py-0 text-600" href="../components/pagination.html">Pagination</a><a class="nav-link w-100 py-0 text-600" href="../components/popovers.html">Popovers</a><a class="nav-link w-100 py-0 text-600" href="../components/progress.html">Progress</a><a class="nav-link w-100 py-0 text-600" href="../components/scrollspy.html">Scrollspy</a><a class="nav-link w-100 py-0 text-600" href="../components/spinners.html">Spinners</a><a class="nav-link w-100 py-0 text-600" href="../components/tables.html">Tables</a><a class="nav-link w-100 py-0 text-600" href="../components/tabs.html">Tabs</a><a class="nav-link w-100 py-0 text-600" href="../components/tooltips.html">Tooltips</a><a class="nav-link w-100 py-0 text-600" href="../components/toasts.html">Toasts</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-info" data-toggle="collapse" href="#utilities" role="button" aria-expanded="true" aria-controls="utilities">Utilities</a>
+                <div class="nav collapse pl-3 show" id="utilities" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../utilities/borders.html">Borders</a><a class="nav-link w-100 py-0 text-600" href="../utilities/clearfix.html">Clearfix</a><a class="nav-link w-100 py-0 text-600" href="../utilities/close-icon.html">Close icon</a><a class="nav-link w-100 py-0 text-600" href="../utilities/colors.html">Colors</a><a class="nav-link w-100 py-0 text-600" href="../utilities/display.html">Display</a><a class="nav-link w-100 py-0 text-600" href="../utilities/embed.html">Embed</a><a class="nav-link w-100 py-0 text-info" href="../utilities/flex.html">Flex</a><a class="nav-link w-100 py-0 text-600" href="../utilities/figures.html">Figures</a><a class="nav-link w-100 py-0 text-600" href="../utilities/grid.html">Grid</a><a class="nav-link w-100 py-0 text-600" href="../utilities/sizing.html">Sizing</a><a class="nav-link w-100 py-0 text-600" href="../utilities/stretched-link.html">Stretched link</a><a class="nav-link w-100 py-0 text-600" href="../utilities/spacing.html">Spacing</a><a class="nav-link w-100 py-0 text-600" href="../utilities/typography.html">Typography</a><a class="nav-link w-100 py-0 text-600" href="../utilities/vertical-align.html">Vertical align</a><a class="nav-link w-100 py-0 text-600" href="../utilities/visibility.html">Visibility</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#plugins" role="button" aria-expanded="false" aria-controls="plugins">Plugins</a>
+                <div class="nav collapse pl-3" id="plugins" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../plugins/accordion.html">Accordion</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="py-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-lg-3">
+              <h4 class="text-primary font-weight-bold">Bridge</h4>
+              <p class="mb-2 text-muted">Where design connects <br> with excellence.</p>
+              <ul class="list-unstyled list-inline mb-6 mb-md-0">
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/facebook.svg" alt="" /></a></li>
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/linkedin.svg" alt="" /></a></li>
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/instagram.svg" alt="" /></a></li>
+                <li class="list-inline-item"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/github.svg" alt="" /></a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Products</h6>
+              <ul class="list-unstyled text-muted mb-md-4 mb-lg-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Page Builder</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Styleguide</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Services</h6>
+              <ul class="list-unstyled text-muted mb-6 mb-md-4 mb-lg-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Pagebuilder</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+              <h6 class="font-weight-bold footer-nav">Connect</h6>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Page Builder</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Styleguide</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Legal</h6>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Pagebuilder</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/lib/is/is.min.js"></script>
+    <script src="../assets/lib/stickyfilljs/stickyfill.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics-->
+    <script src="../assets/lib/prismjs/prism.js"></script>
+    <script src="../assets/js/theme.js"></script>
+  </body>
+
+</html>

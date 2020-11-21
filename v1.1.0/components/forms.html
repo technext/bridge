@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Bridge</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="../assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="../assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300&amp;display=swap" rel="stylesheet">
+    <link href="../assets/lib/prismjs/prism-okaidia.css" rel="stylesheet">
+    <link href="../assets/css/theme.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 pl-0">
+        <div class="container"><a class="navbar-brand text-primary font-weight-bold" href="../index.html"> Bridge </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item text-muted"><a class="nav-link active" aria-current="page" href="#">Landing</a></li>
+              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#feature">Feature</a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#about">About </a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#testimonial">Testimonilas</a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#pricing">Pricing</a></li>
+                  <li><a class="dropdown-item text-secondary p-3" href="#faq">FAQ </a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdowndoc" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Documentation</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdowndoc">
+                  <div class="list-group list-group-flush"><a class="list-group-item" href="#"><img src="../assets/img/gallery/document.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Documentation</span>
+                        <p class="text-secondary mb-0">Customizing and building</p>
+                      </div>
+                    </a><a class="list-group-item" href="#"><img src="../assets/img/gallery/components.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Components</span>
+                        <p class="text-secondary mb-0">Full list of components</p>
+                      </div>
+                    </a><a class="list-group-item" href="#"><img src="../assets/img/gallery/bar_chart.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Changelog <span class="badge badge-secondary bg-light text-primary">1.1.3</span></span>
+                        <p class="text-secondary mb-0">Keep track of changes</p>
+                      </div>
+                    </a></div>
+                </div>
+              </li>
+            </ul><a class="btn btn-primary ml-auto hover-top-shadow" href="!#">Buy now</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-lg-9 col-xxl-10">
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h3>Form</h3>
+                <p class="mb-0">Examples and usage guidelines for form control styles, layout options, and custom components for creating a wide variety of forms.</p><a class="btn btn-link btn-sm pl-0 mt-2" href="https://getbootstrap.com/docs/4.3/components/forms/" target="_blank">Forms on Bootstrap<span class="fas fa-chevron-right ml-1 fs--2"></span></a>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-0">Basic Form</h5>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <form>
+                      <div class="form-group">
+                        <label for="name">Name</label>
+                        <input class="form-control" id="name" type="text" placeholder="Name" />
+                      </div>
+                      <div class="form-group">
+                        <label for="readonly">Read Only</label>
+                        <input class="form-control" id="readonly" type="text" placeholder="Readonly input here…" readonly="" />
+                      </div>
+                      <div class="form-group">
+                        <label>Read only plain text</label>
+                        <input class="form-control-plaintext" id="staticEmail" type="text" readonly="" value="email@example.com" />
+                      </div>
+                      <div class="form-group">
+                        <label for="email1">Email</label>
+                        <input class="form-control" id="email1" type="email" placeholder="Email" />
+                      </div>
+                      <div class="form-group">
+                        <label for="password">Password</label>
+                        <input class="form-control" id="password" type="password" placeholder="Password" />
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" id="defaultcheckbox1" type="checkbox" />
+                        <label class="form-check-label" for="defaultcheckbox1">Cehckbox</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" id="defaultCheck2" type="checkbox" value="" disabled="" />
+                        <label class="form-check-label" for="defaultCheck2">Disabled checkbox</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" id="exampleRadios2" type="radio" name="exampleRadios" value="option2" />
+                        <label class="form-check-label" for="exampleRadios2">Default radio</label>
+                      </div>
+                      <div class="form-group form-check">
+                        <input class="form-check-input" id="exampleRadios3" type="radio" name="exampleRadios" value="option3" disabled="" />
+                        <label class="form-check-label" for="exampleRadios3">Disabled radio</label>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlFile1">Example file input</label>
+                        <input class="form-control-file" id="exampleFormControlFile1" type="file" />
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">Example select</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect2">Example multiple select</label>
+                        <select class="form-control" id="exampleFormControlSelect2" multiple="">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label for="formControlRange">Example Range input</label>
+                        <input class="form-control-range" id="formControlRange" type="range" />
+                      </div>
+                    </form><button class="btn btn-primary mb-3" type="submit">Save</button>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;form&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;name&quot;&gt;Name&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;name&quot; type=&quot;text&quot; placeholder=&quot;Name&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;readonly&quot;&gt;Read Only&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;readonly&quot; type=&quot;text&quot; placeholder=&quot;Readonly input here…&quot; readonly=&quot;&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label&gt;Read only plain text&lt;/label&gt;
+    &lt;input class=&quot;form-control-plaintext&quot; id=&quot;staticEmail&quot; type=&quot;text&quot; readonly=&quot;&quot; value=&quot;email@example.com&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;email1&quot;&gt;Email&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;email1&quot; type=&quot;email&quot; placeholder=&quot;Email&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;password&quot;&gt;Password&lt;/label&gt;
+    &lt;input class=&quot;form-control&quot; id=&quot;password&quot; type=&quot;password&quot; placeholder=&quot;Password&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group form-check&quot;&gt;
+    &lt;input class=&quot;form-check-input&quot; id=&quot;defaultcheckbox1&quot; type=&quot;checkbox&quot; /&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;defaultcheckbox1&quot;&gt;Cehckbox&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group form-check&quot;&gt;
+    &lt;input class=&quot;form-check-input&quot; id=&quot;defaultCheck2&quot; type=&quot;checkbox&quot; value=&quot;&quot; disabled=&quot;&quot; /&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;defaultCheck2&quot;&gt;Disabled checkbox&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group form-check&quot;&gt;
+    &lt;input class=&quot;form-check-input&quot; id=&quot;exampleRadios2&quot; type=&quot;radio&quot; name=&quot;exampleRadios&quot; value=&quot;option2&quot; /&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios2&quot;&gt;Default radio&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group form-check&quot;&gt;
+    &lt;input class=&quot;form-check-input&quot; id=&quot;exampleRadios3&quot; type=&quot;radio&quot; name=&quot;exampleRadios&quot; value=&quot;option3&quot; disabled=&quot;&quot; /&gt;
+    &lt;label class=&quot;form-check-label&quot; for=&quot;exampleRadios3&quot;&gt;Disabled radio&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;exampleFormControlFile1&quot;&gt;Example file input&lt;/label&gt;
+    &lt;input class=&quot;form-control-file&quot; id=&quot;exampleFormControlFile1&quot; type=&quot;file&quot; /&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;exampleFormControlSelect1&quot;&gt;Example select&lt;/label&gt;
+    &lt;select class=&quot;form-control&quot; id=&quot;exampleFormControlSelect1&quot;&gt;
+      &lt;option&gt;1&lt;/option&gt;
+      &lt;option&gt;2&lt;/option&gt;
+      &lt;option&gt;3&lt;/option&gt;
+      &lt;option&gt;4&lt;/option&gt;
+      &lt;option&gt;5&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;exampleFormControlSelect2&quot;&gt;Example multiple select&lt;/label&gt;
+    &lt;select class=&quot;form-control&quot; id=&quot;exampleFormControlSelect2&quot; multiple=&quot;&quot;&gt;
+      &lt;option&gt;1&lt;/option&gt;
+      &lt;option&gt;2&lt;/option&gt;
+      &lt;option&gt;3&lt;/option&gt;
+      &lt;option&gt;4&lt;/option&gt;
+      &lt;option&gt;5&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;exampleFormControlTextarea1&quot;&gt;Example textarea&lt;/label&gt;
+    &lt;textarea class=&quot;form-control&quot; id=&quot;exampleFormControlTextarea1&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;label for=&quot;formControlRange&quot;&gt;Example Range input&lt;/label&gt;
+    &lt;input class=&quot;form-control-range&quot; id=&quot;formControlRange&quot; type=&quot;range&quot; /&gt;
+  &lt;/div&gt;
+&lt;/form&gt;&lt;button class=&quot;btn btn-primary mb-3&quot; type=&quot;submit&quot;&gt;Save&lt;/button&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-0">Input Group</h5>
+              </div>
+              <div class="card-body bg-light">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text" id="basic-addon1">@</span></div><input class="form-control" type="text" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+                    </div>
+                    <div class="input-group mb-3"><input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2" />
+                      <div class="input-group-append"><span class="input-group-text" id="basic-addon2">@example.com</span></div>
+                    </div><label for="basic-url">Your vanity URL</label>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text" id="basic-addon3">https:example.com/users/</span></div><input class="form-control" id="basic-url" type="text" aria-describedby="basic-addon3" />
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">$</span></div><input class="form-control" type="text" aria-label="Amount (to the nearest dollar)" />
+                      <div class="input-group-append"><span class="input-group-text">.00</span></div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">With textarea</span></div><textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><input type="checkbox" aria-label="Checkbox for following text input" /></div>
+                      </div><input class="form-control" type="text" aria-label="Text input with checkbox" />
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text"><input type="radio" aria-label="Radio button for following text input" /></div>
+                      </div><input class="form-control" type="text" aria-label="Text input with radio button" />
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">First and last name</span></div><input class="form-control" type="text" aria-label="First name" /><input class="form-control" type="text" aria-label="Last name" />
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">$</span><span class="input-group-text">0.00</span></div><input class="form-control" type="text" aria-label="Dollar amount (with dot and two decimal places)" />
+                    </div>
+                    <div class="input-group mb-3"><input class="form-control" type="text" aria-label="Dollar amount (with dot and two decimal places)" />
+                      <div class="input-group-append"><span class="input-group-text">$</span><span class="input-group-text">0.00</span></div>
+                    </div>
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><button class="btn btn-primary dropdown-toggle shadow-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider" role="separator"></div><a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div><input class="form-control" type="text" aria-label="Text input with dropdown button" />
+                    </div>
+                    <div class="input-group"><input class="form-control" type="text" aria-label="Text input with dropdown button" />
+                      <div class="input-group-append"><button class="btn btn-primary dropdown-toggle shadow-none" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</button>
+                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+                          <div class="dropdown-divider" role="separator"></div><a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;input-group mb-3&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;&lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon1&quot;&gt;@&lt;/span&gt;&lt;/div&gt;&lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot; aria-describedby=&quot;basic-addon1&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;&lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Recipient's username&quot; aria-label=&quot;Recipient's username&quot; aria-describedby=&quot;basic-addon2&quot; /&gt;
+  &lt;div class=&quot;input-group-append&quot;&gt;&lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon2&quot;&gt;@example.com&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;label for=&quot;basic-url&quot;&gt;Your vanity URL&lt;/label&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;&lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon3&quot;&gt;https:example.com/users/&lt;/span&gt;&lt;/div&gt;&lt;input class=&quot;form-control&quot; id=&quot;basic-url&quot; type=&quot;text&quot; aria-describedby=&quot;basic-addon3&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;&lt;span class=&quot;input-group-text&quot;&gt;$&lt;/span&gt;&lt;/div&gt;&lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Amount (to the nearest dollar)&quot; /&gt;
+  &lt;div class=&quot;input-group-append&quot;&gt;&lt;span class=&quot;input-group-text&quot;&gt;.00&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;&lt;span class=&quot;input-group-text&quot;&gt;With textarea&lt;/span&gt;&lt;/div&gt;&lt;textarea class=&quot;form-control&quot; aria-label=&quot;With textarea&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;div class=&quot;input-group-text&quot;&gt;&lt;input type=&quot;checkbox&quot; aria-label=&quot;Checkbox for following text input&quot; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Text input with checkbox&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;div class=&quot;input-group-text&quot;&gt;&lt;input type=&quot;radio&quot; aria-label=&quot;Radio button for following text input&quot; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Text input with radio button&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;&lt;span class=&quot;input-group-text&quot;&gt;First and last name&lt;/span&gt;&lt;/div&gt;&lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;First name&quot; /&gt;&lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Last name&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;&lt;span class=&quot;input-group-text&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;input-group-text&quot;&gt;0.00&lt;/span&gt;&lt;/div&gt;&lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Dollar amount (with dot and two decimal places)&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;&lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Dollar amount (with dot and two decimal places)&quot; /&gt;
+  &lt;div class=&quot;input-group-append&quot;&gt;&lt;span class=&quot;input-group-text&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;input-group-text&quot;&gt;0.00&lt;/span&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group mb-3&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;&lt;button class=&quot;btn btn-primary dropdown-toggle shadow-none&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/button&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+      &lt;div class=&quot;dropdown-divider&quot; role=&quot;separator&quot;&gt;&lt;/div&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Text input with dropdown button&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;input-group&quot;&gt;&lt;input class=&quot;form-control&quot; type=&quot;text&quot; aria-label=&quot;Text input with dropdown button&quot; /&gt;
+  &lt;div class=&quot;input-group-append&quot;&gt;&lt;button class=&quot;btn btn-primary dropdown-toggle shadow-none&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/button&gt;
+    &lt;div class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+      &lt;div class=&quot;dropdown-divider&quot; role=&quot;separator&quot;&gt;&lt;/div&gt;&lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-body">
+                <h3>Custom Forms</h3>
+                <p class="mb-0">For even more customization and cross-browser consistency, use Bootstrap's completely custom form elements to replace the browser defaults.</p><a class="btn btn-link btn-sm pl-0 mt-2" href="https://getbootstrap.com/docs/4.3/components/#custom-forms/" target="_blank">Custom-Forms on Bootstrap<span class="fas fa-chevron-right ml-1 fs--2"></span></a>
+              </div>
+            </div>
+            <div class="row no-gutters">
+              <div class="col-lg-6 pr-lg-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0">Checkboxes</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" id="customCheck1" type="checkbox" />
+                          <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" id="customCheck2" type="checkbox" />
+                          <label class="custom-control-label" for="customCheck2">Check another custom checkbox</label>
+                        </div>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; id=&quot;customCheck1&quot; type=&quot;checkbox&quot; /&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck1&quot;&gt;Check this custom checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; id=&quot;customCheck2&quot; type=&quot;checkbox&quot; /&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheck2&quot;&gt;Check another custom checkbox&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 pl-lg-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0">Radios</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input" id="customRadio1" type="radio" name="customRadio" />
+                          <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input" id="customRadio2" type="radio" name="customRadio" />
+                          <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                        </div>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;custom-control custom-radio&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; id=&quot;customRadio1&quot; type=&quot;radio&quot; name=&quot;customRadio&quot; /&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadio1&quot;&gt;Toggle this custom radio&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-radio&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; id=&quot;customRadio2&quot; type=&quot;radio&quot; name=&quot;customRadio&quot; /&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadio2&quot;&gt;Or toggle this other custom radio&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 pr-lg-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0">Inline Radios</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="custom-control pl-0"><label class="mb-0">Select one option</label></div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input class="custom-control-input" id="customRadioInline1" type="radio" name="customRadioInline1" />
+                          <label class="custom-control-label" for="customRadioInline1">Toggle</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input class="custom-control-input" id="customRadioInline2" type="radio" name="customRadioInline1" />
+                          <label class="custom-control-label" for="customRadioInline2">Or toggle this</label>
+                        </div>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;custom-control pl-0&quot;&gt;&lt;label class=&quot;mb-0&quot;&gt;Select one option&lt;/label&gt;&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-radio custom-control-inline&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; id=&quot;customRadioInline1&quot; type=&quot;radio&quot; name=&quot;customRadioInline1&quot; /&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadioInline1&quot;&gt;Toggle&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-radio custom-control-inline&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; id=&quot;customRadioInline2&quot; type=&quot;radio&quot; name=&quot;customRadioInline1&quot; /&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadioInline2&quot;&gt;Or toggle this&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 pl-lg-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0">Disabled</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="custom-control custom-checkbox">
+                          <input class="custom-control-input" id="customCheckDisabled1" type="checkbox" disabled="" />
+                          <label class="custom-control-label" for="customCheckDisabled1">Check this custom checkbox</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input class="custom-control-input" id="customRadioDisabled2" type="radio" name="radioDisabled" disabled="" />
+                          <label class="custom-control-label" for="customRadioDisabled2">Toggle this custom radio</label>
+                        </div>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; id=&quot;customCheckDisabled1&quot; type=&quot;checkbox&quot; disabled=&quot;&quot; /&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customCheckDisabled1&quot;&gt;Check this custom checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-radio&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; id=&quot;customRadioDisabled2&quot; type=&quot;radio&quot; name=&quot;radioDisabled&quot; disabled=&quot;&quot; /&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customRadioDisabled2&quot;&gt;Toggle this custom radio&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 pr-lg-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0">Switches</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="custom-control custom-switch">
+                          <input class="custom-control-input" id="customSwitch1" type="checkbox" />
+                          <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+                        </div>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;custom-control custom-switch&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; id=&quot;customSwitch1&quot; type=&quot;checkbox&quot; /&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch1&quot;&gt;Toggle this switch element&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 pl-lg-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0">Disabled Switches</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="custom-control custom-switch">
+                          <input class="custom-control-input" id="customSwitch2" type="checkbox" disabled="" />
+                          <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+                        </div>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;custom-control custom-switch&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; id=&quot;customSwitch2&quot; type=&quot;checkbox&quot; disabled=&quot;&quot; /&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch2&quot;&gt;Disabled switch element&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 pr-lg-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0"> Custom Select</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12"><select class="custom-select mb-3 custom-select-lg mb-3">
+                          <option selected="">Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <select class="custom-select mb-3">
+                          <option selected="">Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <select class="custom-select mb-3 custom-select-sm mb-3">
+                          <option selected="">Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;select class=&quot;custom-select mb-3 custom-select-lg mb-3&quot;&gt;
+  &lt;option selected=&quot;&quot;&gt;Open this select menu&lt;/option&gt;
+  &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class=&quot;custom-select mb-3&quot;&gt;
+  &lt;option selected=&quot;&quot;&gt;Open this select menu&lt;/option&gt;
+  &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class=&quot;custom-select mb-3 custom-select-sm mb-3&quot;&gt;
+  &lt;option selected=&quot;&quot;&gt;Open this select menu&lt;/option&gt;
+  &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 pl-lg-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0"> Multiple Select</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12"><select class="custom-select mb-3" multiple="">
+                          <option selected="">Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <select class="custom-select mb-3" multiple="" size="3">
+                          <option selected="">Open this select menu</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;select class=&quot;custom-select mb-3&quot; multiple=&quot;&quot;&gt;
+  &lt;option selected=&quot;&quot;&gt;Open this select menu&lt;/option&gt;
+  &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+&lt;/select&gt;
+&lt;select class=&quot;custom-select mb-3&quot; multiple=&quot;&quot; size=&quot;3&quot;&gt;
+  &lt;option selected=&quot;&quot;&gt;Open this select menu&lt;/option&gt;
+  &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
+  &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
+  &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 pr-lg-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0">Range Input</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12"><label for="customRange1">Example range</label>
+                        <input class="custom-range" id="customRange1" type="range"></div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;label for=&quot;customRange1&quot;&gt;Example range&lt;/label&gt;
+&lt;input class=&quot;custom-range&quot; id=&quot;customRange1&quot; type=&quot;range&quot;&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 pl-lg-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0">File Browser</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="custom-file">
+                          <input class="custom-file-input" id="customFile" type="file">
+                          <label class="custom-file-label" for="customFile">Choose file</label>
+                        </div>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;div class=&quot;custom-file&quot;&gt;
+  &lt;input class=&quot;custom-file-input&quot; id=&quot;customFile&quot; type=&quot;file&quot;&gt;
+  &lt;label class=&quot;custom-file-label&quot; for=&quot;customFile&quot;&gt;Choose file&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <ul class="nav flex-column sticky-kit mt-6 accordion font-weight-semi-bold" id="sidebar-nav">
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#documentation" role="button" aria-expanded="false" aria-controls="documentation">Documentation</a>
+                <div class="nav collapse pl-3" id="documentation" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../documentation/getting-started.html">Getting started</a><a class="nav-link w-100 py-0 text-600" href="../documentation/file-structure.html">File structure</a><a class="nav-link w-100 py-0 text-600" href="../documentation/customization.html">Customization</a><a class="nav-link w-100 py-0 text-600" href="../documentation/gulp.html">Gulp</a><a class="nav-link w-100 py-0 text-600" href="../documentation/RTL.html">RTL</a><a class="nav-link w-100 py-0 text-600" href="../documentation/plugins.html">Plugins</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-info" data-toggle="collapse" href="#components" role="button" aria-expanded="true" aria-controls="components">Components</a>
+                <div class="nav collapse pl-3 show" id="components" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../components/alerts.html">Alerts</a><a class="nav-link w-100 py-0 text-600" href="../components/background.html">Background</a><a class="nav-link w-100 py-0 text-600" href="../components/badges.html">Badges</a><a class="nav-link w-100 py-0 text-600" href="../components/breadcrumb.html">Breadcrumb</a><a class="nav-link w-100 py-0 text-600" href="../components/buttons.html">Buttons</a><a class="nav-link w-100 py-0 text-600" href="../components/cards.html">Cards</a><a class="nav-link w-100 py-0 text-600" href="../components/carousel.html">Carousel</a><a class="nav-link w-100 py-0 text-600" href="../components/collapse.html">Collapse</a><a class="nav-link w-100 py-0 text-600" href="../components/dropdowns.html">Dropdowns</a><a class="nav-link w-100 py-0 text-600" href="../components/fancyscroll.html">Fancyscroll</a><a class="nav-link w-100 py-0 text-info" href="../components/forms.html">Forms</a><a class="nav-link w-100 py-0 text-600" href="../components/hoverbox.html">Hoverbox</a><a class="nav-link w-100 py-0 text-600" href="../components/list-group.html">List group</a><a class="nav-link w-100 py-0 text-600" href="../components/modals.html">Modals</a><a class="nav-link w-100 py-0 text-600" href="../components/media-object.html">Media object</a><a class="nav-link w-100 py-0 text-600" href="../components/navs.html">Navs</a><a class="nav-link w-100 py-0 text-600" href="../components/navbar.html">Navbar</a><a class="nav-link w-100 py-0 text-600" href="../components/page-headers.html">Page headers</a><a class="nav-link w-100 py-0 text-600" href="../components/pagination.html">Pagination</a><a class="nav-link w-100 py-0 text-600" href="../components/popovers.html">Popovers</a><a class="nav-link w-100 py-0 text-600" href="../components/progress.html">Progress</a><a class="nav-link w-100 py-0 text-600" href="../components/scrollspy.html">Scrollspy</a><a class="nav-link w-100 py-0 text-600" href="../components/spinners.html">Spinners</a><a class="nav-link w-100 py-0 text-600" href="../components/tables.html">Tables</a><a class="nav-link w-100 py-0 text-600" href="../components/tabs.html">Tabs</a><a class="nav-link w-100 py-0 text-600" href="../components/tooltips.html">Tooltips</a><a class="nav-link w-100 py-0 text-600" href="../components/toasts.html">Toasts</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#utilities" role="button" aria-expanded="false" aria-controls="utilities">Utilities</a>
+                <div class="nav collapse pl-3" id="utilities" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../utilities/borders.html">Borders</a><a class="nav-link w-100 py-0 text-600" href="../utilities/clearfix.html">Clearfix</a><a class="nav-link w-100 py-0 text-600" href="../utilities/close-icon.html">Close icon</a><a class="nav-link w-100 py-0 text-600" href="../utilities/colors.html">Colors</a><a class="nav-link w-100 py-0 text-600" href="../utilities/display.html">Display</a><a class="nav-link w-100 py-0 text-600" href="../utilities/embed.html">Embed</a><a class="nav-link w-100 py-0 text-600" href="../utilities/flex.html">Flex</a><a class="nav-link w-100 py-0 text-600" href="../utilities/figures.html">Figures</a><a class="nav-link w-100 py-0 text-600" href="../utilities/grid.html">Grid</a><a class="nav-link w-100 py-0 text-600" href="../utilities/sizing.html">Sizing</a><a class="nav-link w-100 py-0 text-600" href="../utilities/stretched-link.html">Stretched link</a><a class="nav-link w-100 py-0 text-600" href="../utilities/spacing.html">Spacing</a><a class="nav-link w-100 py-0 text-600" href="../utilities/typography.html">Typography</a><a class="nav-link w-100 py-0 text-600" href="../utilities/vertical-align.html">Vertical align</a><a class="nav-link w-100 py-0 text-600" href="../utilities/visibility.html">Visibility</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#plugins" role="button" aria-expanded="false" aria-controls="plugins">Plugins</a>
+                <div class="nav collapse pl-3" id="plugins" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../plugins/accordion.html">Accordion</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="py-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-lg-3">
+              <h4 class="text-primary font-weight-bold">Bridge</h4>
+              <p class="mb-2 text-muted">Where design connects <br> with excellence.</p>
+              <ul class="list-unstyled list-inline mb-6 mb-md-0">
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/facebook.svg" alt="" /></a></li>
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/linkedin.svg" alt="" /></a></li>
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/instagram.svg" alt="" /></a></li>
+                <li class="list-inline-item"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/github.svg" alt="" /></a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Products</h6>
+              <ul class="list-unstyled text-muted mb-md-4 mb-lg-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Page Builder</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Styleguide</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Services</h6>
+              <ul class="list-unstyled text-muted mb-6 mb-md-4 mb-lg-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Pagebuilder</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+              <h6 class="font-weight-bold footer-nav">Connect</h6>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Page Builder</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Styleguide</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Legal</h6>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Pagebuilder</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/lib/is/is.min.js"></script>
+    <script src="../assets/lib/stickyfilljs/stickyfill.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics-->
+    <script src="../assets/lib/prismjs/prism.js"></script>
+    <script src="../assets/js/theme.js"></script>
+  </body>
+
+</html>

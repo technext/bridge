@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Bridge</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="../assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="../assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300&amp;display=swap" rel="stylesheet">
+    <link href="../assets/lib/prismjs/prism-okaidia.css" rel="stylesheet">
+    <link href="../assets/css/theme.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 pl-0">
+        <div class="container"><a class="navbar-brand text-primary font-weight-bold" href="../index.html"> Bridge </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item text-muted"><a class="nav-link active" aria-current="page" href="#">Landing</a></li>
+              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#feature">Feature</a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#about">About </a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#testimonial">Testimonilas</a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#pricing">Pricing</a></li>
+                  <li><a class="dropdown-item text-secondary p-3" href="#faq">FAQ </a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdowndoc" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Documentation</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdowndoc">
+                  <div class="list-group list-group-flush"><a class="list-group-item" href="#"><img src="../assets/img/gallery/document.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Documentation</span>
+                        <p class="text-secondary mb-0">Customizing and building</p>
+                      </div>
+                    </a><a class="list-group-item" href="#"><img src="../assets/img/gallery/components.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Components</span>
+                        <p class="text-secondary mb-0">Full list of components</p>
+                      </div>
+                    </a><a class="list-group-item" href="#"><img src="../assets/img/gallery/bar_chart.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Changelog <span class="badge badge-secondary bg-light text-primary">1.1.3</span></span>
+                        <p class="text-secondary mb-0">Keep track of changes</p>
+                      </div>
+                    </a></div>
+                </div>
+              </li>
+            </ul><a class="btn btn-primary ml-auto hover-top-shadow" href="!#">Buy now</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-lg-9 col-xxl-10">
+            <div class="card shadow-sm mb-3">
+              <div class="card-body">
+                <h3>Borders</h3>
+                <p class="mb-0">Use border utilities to quickly style the border and border-radius of an element. Great for images, buttons, or any other element.</p><a class="btn btn-link btn-sm pl-0 mt-2" href="https://getbootstrap.com/docs/4.3/utilities/borders/" target="_blank">Borders on Bootstrap<span class="fas fa-chevron-right ml-1 fs--2"></span></a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0">Border</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <p>The classes are named using the format <code>border-{side}</code> for <code>xs</code> and <code>border-{breakpoint}-{side}</code> for <code>sm</code>, <code>md</code>, <code>lg</code>, and <code>xl</code>.</p>
+                    <p>Where <em>side</em> is one of: </p>
+                    <ul>
+                      <li><code>top</code> - for classes that set style for <code>border-top</code></li>
+                      <li><code>bottom</code> - for classes that set style for <code>border-bottom</code></li>
+                      <li><code>left</code> - for classes that set style for <code>border-left</code></li>
+                      <li><code>right</code> - for classes that set style for <code>margin-right</code></li>
+                      <li><code>x</code> - for classes that set both <code>*-left</code> and <code>*-right</code></li>
+                      <li><code>y</code> - for classes that set both <code>*-top</code> and <code>*-bottom</code></li>
+                      <li>blank - for classes that set the <code>border</code> style on all 4 side of the element.</li>
+                    </ul>
+                    <p class="mb-0">Use border utilities to quickly style the <code>border</code> of an element. Great for images, buttons, or any other element.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row no-gutters border-component">
+              <div class="col-xl-6 pr-xl-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0">Additive</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12"><span class="border"></span>
+                        <span class="border-top"></span>
+                        <span class="borderright"></span>
+                        <span class="border-bottom"></span>
+                        <span class="border-left"></span></div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;span class=&quot;border&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border-top&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;borderright&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border-bottom&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border-left&quot;&gt;&lt;/span&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 pl-xl-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-0">Subtractive</h5>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12"><span class="border border-0"></span>
+                        <span class="border border-top-0"></span>
+                        <span class="border border-right-0"></span>
+                        <span class="border border-bottom-0"></span>
+                        <span class="border border-left-0"></span>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;span class=&quot;border border-0&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-top-0&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-right-0&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-bottom-0&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-left-0&quot;&gt;&lt;/span&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 pr-xl-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-1">Border Color</h5>
+                    <p class="mb-0">Change the border color using utilities built on our theme colors</p>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12"><span class="border border-primary"></span>
+                        <span class="border border-secondary"></span>
+                        <span class="border border-success"></span>
+                        <span class="border border-danger"></span>
+                        <span class="border border-warning"></span>
+                        <span class="border border-info"></span>
+                        <span class="border border-light"></span>
+                        <span class="border border-dark"></span>
+                        <span class="border border-white"></span>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;span class=&quot;border border-primary&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-secondary&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-success&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-danger&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-warning&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-info&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-light&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-dark&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-white&quot;&gt;&lt;/span&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 pl-xl-2">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-1">Border Radius</h5>
+                    <p class="mb-0">Add classes to an element to easily round its corners.</p>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12"><span class="rounded-0"></span>
+                        <span class="rounded"></span>
+                        <span class="rounded-soft"></span>
+                        <span class="rounded-circle"></span></div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;span class=&quot;rounded-0&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;rounded&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;rounded-soft&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;rounded-circle&quot;&gt;&lt;/span&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row border-component">
+              <div class="col-12">
+                <div class="card shadow-sm mb-3">
+                  <div class="card-header">
+                    <h5 class="mb-1">Border Style</h5>
+                    <p class="mb-0"> For the dashed border, the classes are named using the format, <code>border-dashed-{side}</code> for <code>xs</code> and <code>border-{breakpoint}-dashed-{side}</code> for <code>sm</code>, <code>md</code>, <code>lg</code>, <code>xl</code> and <code>xxl</code>.</p>
+                    <p class="mb-0">Where <em>side</em> is same as documented before.</p>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12"><span class="border-dashed"></span>
+                        <span class="border-dashed-top"></span>
+                        <span class="border-dashed-right"></span>
+                        <span class="border-dashed-bottom"></span>
+                        <span class="border-dashed-left"></span>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;span class=&quot;border-dashed&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border-dashed-top&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border-dashed-right&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border-dashed-bottom&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border-dashed-left&quot;&gt;&lt;/span&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="card">
+                  <div class="card-header">
+                    <h4>Border color and width</h4>
+                    <p>Border color set as <code>currentColor</code> and border width <code>1px</code>. Modifier can be used to change border color and width. The modifier classes for color are named using the format <code>border-{color}</code> and for width <code>border-2x</code>.</p>
+                    <p class="mb-0">Where<em> color</em> is one of: <code>primary</code>, <code>secondary</code>, <code>success</code>, <code>info</code>, <code>warning</code>, <code>danger</code>, <code>light</code>, <code>dark</code>, <code>black</code>, <code>1100</code>, <code>1000</code>, <code>900</code>, <code>800</code>, <code>700</code>, <code>600</code>, <code>500</code>, <code>400</code>, <code>300</code>, <code>200</code>, <code>100</code>, <code>white</code>, </p>
+                  </div>
+                  <div class="card-body bg-light">
+                    <div class="row">
+                      <div class="col-12"><span class="border border-info"></span>
+                        <span class="border border-success"></span>
+                        <span class="border border-warning"></span>
+                        <span class="border border-danger"></span>
+                        <span class="border border-stunning"></span>
+                        <span class="border border-cake"></span>
+                        <span class="border border-facebook"></span>
+                        <span class="border border-twitter"></span>
+                        <span class="border border-google-plus"></span>
+                        <span class="border border-github"></span>
+                        <div class="w-100"></div>
+                        <span class="border border-black"></span>
+                        <span class="border border-dark"></span>
+                        <span class="border border-1100"></span>
+                        <span class="border border-1000"></span>
+                        <span class="border border-900"></span>
+                        <span class="border border-800"></span>
+                        <span class="border border-700"></span>
+                        <span class="border border-600"></span>
+                        <span class="border border-500"></span>
+                        <span class="border border-400"></span>
+                        <span class="border border-300"></span>
+                        <span class="border border-200"></span>
+                        <span class="border border-100"></span>
+                        <span class="border border-light"></span>
+                        <span class="border border-white"></span>
+                        <span class="border border-2x"></span>
+                      </div>
+                      <div class="col-12"><pre class="rounded mt-2"><code class="language-html">&lt;span class=&quot;border border-info&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-success&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-warning&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-danger&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-stunning&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-cake&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-facebook&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-twitter&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-google-plus&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-github&quot;&gt;&lt;/span&gt;
+&lt;div class=&quot;w-100&quot;&gt;&lt;/div&gt;
+&lt;span class=&quot;border border-black&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-dark&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-1100&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-1000&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-900&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-800&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-700&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-600&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-500&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-400&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-300&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-200&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-100&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-light&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-white&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;border border-2x&quot;&gt;&lt;/span&gt;</code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <ul class="nav flex-column sticky-kit mt-6 accordion font-weight-semi-bold" id="sidebar-nav">
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#documentation" role="button" aria-expanded="false" aria-controls="documentation">Documentation</a>
+                <div class="nav collapse pl-3" id="documentation" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../documentation/getting-started.html">Getting started</a><a class="nav-link w-100 py-0 text-600" href="../documentation/file-structure.html">File structure</a><a class="nav-link w-100 py-0 text-600" href="../documentation/customization.html">Customization</a><a class="nav-link w-100 py-0 text-600" href="../documentation/gulp.html">Gulp</a><a class="nav-link w-100 py-0 text-600" href="../documentation/RTL.html">RTL</a><a class="nav-link w-100 py-0 text-600" href="../documentation/plugins.html">Plugins</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#components" role="button" aria-expanded="false" aria-controls="components">Components</a>
+                <div class="nav collapse pl-3" id="components" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../components/alerts.html">Alerts</a><a class="nav-link w-100 py-0 text-600" href="../components/background.html">Background</a><a class="nav-link w-100 py-0 text-600" href="../components/badges.html">Badges</a><a class="nav-link w-100 py-0 text-600" href="../components/breadcrumb.html">Breadcrumb</a><a class="nav-link w-100 py-0 text-600" href="../components/buttons.html">Buttons</a><a class="nav-link w-100 py-0 text-600" href="../components/cards.html">Cards</a><a class="nav-link w-100 py-0 text-600" href="../components/carousel.html">Carousel</a><a class="nav-link w-100 py-0 text-600" href="../components/collapse.html">Collapse</a><a class="nav-link w-100 py-0 text-600" href="../components/dropdowns.html">Dropdowns</a><a class="nav-link w-100 py-0 text-600" href="../components/fancyscroll.html">Fancyscroll</a><a class="nav-link w-100 py-0 text-600" href="../components/forms.html">Forms</a><a class="nav-link w-100 py-0 text-600" href="../components/hoverbox.html">Hoverbox</a><a class="nav-link w-100 py-0 text-600" href="../components/list-group.html">List group</a><a class="nav-link w-100 py-0 text-600" href="../components/modals.html">Modals</a><a class="nav-link w-100 py-0 text-600" href="../components/media-object.html">Media object</a><a class="nav-link w-100 py-0 text-600" href="../components/navs.html">Navs</a><a class="nav-link w-100 py-0 text-600" href="../components/navbar.html">Navbar</a><a class="nav-link w-100 py-0 text-600" href="../components/page-headers.html">Page headers</a><a class="nav-link w-100 py-0 text-600" href="../components/pagination.html">Pagination</a><a class="nav-link w-100 py-0 text-600" href="../components/popovers.html">Popovers</a><a class="nav-link w-100 py-0 text-600" href="../components/progress.html">Progress</a><a class="nav-link w-100 py-0 text-600" href="../components/scrollspy.html">Scrollspy</a><a class="nav-link w-100 py-0 text-600" href="../components/spinners.html">Spinners</a><a class="nav-link w-100 py-0 text-600" href="../components/tables.html">Tables</a><a class="nav-link w-100 py-0 text-600" href="../components/tabs.html">Tabs</a><a class="nav-link w-100 py-0 text-600" href="../components/tooltips.html">Tooltips</a><a class="nav-link w-100 py-0 text-600" href="../components/toasts.html">Toasts</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-info" data-toggle="collapse" href="#utilities" role="button" aria-expanded="true" aria-controls="utilities">Utilities</a>
+                <div class="nav collapse pl-3 show" id="utilities" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-info" href="../utilities/borders.html">Borders</a><a class="nav-link w-100 py-0 text-600" href="../utilities/clearfix.html">Clearfix</a><a class="nav-link w-100 py-0 text-600" href="../utilities/close-icon.html">Close icon</a><a class="nav-link w-100 py-0 text-600" href="../utilities/colors.html">Colors</a><a class="nav-link w-100 py-0 text-600" href="../utilities/display.html">Display</a><a class="nav-link w-100 py-0 text-600" href="../utilities/embed.html">Embed</a><a class="nav-link w-100 py-0 text-600" href="../utilities/flex.html">Flex</a><a class="nav-link w-100 py-0 text-600" href="../utilities/figures.html">Figures</a><a class="nav-link w-100 py-0 text-600" href="../utilities/grid.html">Grid</a><a class="nav-link w-100 py-0 text-600" href="../utilities/sizing.html">Sizing</a><a class="nav-link w-100 py-0 text-600" href="../utilities/stretched-link.html">Stretched link</a><a class="nav-link w-100 py-0 text-600" href="../utilities/spacing.html">Spacing</a><a class="nav-link w-100 py-0 text-600" href="../utilities/typography.html">Typography</a><a class="nav-link w-100 py-0 text-600" href="../utilities/vertical-align.html">Vertical align</a><a class="nav-link w-100 py-0 text-600" href="../utilities/visibility.html">Visibility</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#plugins" role="button" aria-expanded="false" aria-controls="plugins">Plugins</a>
+                <div class="nav collapse pl-3" id="plugins" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../plugins/accordion.html">Accordion</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="py-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-lg-3">
+              <h4 class="text-primary font-weight-bold">Bridge</h4>
+              <p class="mb-2 text-muted">Where design connects <br> with excellence.</p>
+              <ul class="list-unstyled list-inline mb-6 mb-md-0">
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/facebook.svg" alt="" /></a></li>
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/linkedin.svg" alt="" /></a></li>
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/instagram.svg" alt="" /></a></li>
+                <li class="list-inline-item"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/github.svg" alt="" /></a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Products</h6>
+              <ul class="list-unstyled text-muted mb-md-4 mb-lg-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Page Builder</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Styleguide</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Services</h6>
+              <ul class="list-unstyled text-muted mb-6 mb-md-4 mb-lg-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Pagebuilder</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+              <h6 class="font-weight-bold footer-nav">Connect</h6>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Page Builder</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Styleguide</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Legal</h6>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Pagebuilder</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/lib/is/is.min.js"></script>
+    <script src="../assets/lib/stickyfilljs/stickyfill.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics-->
+    <script src="../assets/lib/prismjs/prism.js"></script>
+    <script src="../assets/js/theme.js"></script>
+  </body>
+
+</html>

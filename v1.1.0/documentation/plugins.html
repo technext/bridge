@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ===============================================-->
+    <!--    Document Title-->
+    <!-- ===============================================-->
+    <title>Bridge</title>
+
+    <!-- ===============================================-->
+    <!--    Favicons-->
+    <!-- ===============================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="../assets/img/favicons/manifest.json">
+    <meta name="msapplication-TileImage" content="../assets/img/favicons/mstile-150x150.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- ===============================================-->
+    <!--    Stylesheets-->
+    <!-- ===============================================-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,300&amp;display=swap" rel="stylesheet">
+    <link href="../assets/lib/prismjs/prism-okaidia.css" rel="stylesheet">
+    <link href="../assets/css/theme.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- ===============================================-->
+    <!--    Main Content-->
+    <!-- ===============================================-->
+    <main class="main" id="top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 pl-0">
+        <div class="container"><a class="navbar-brand text-primary font-weight-bold" href="../index.html"> Bridge </a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item text-muted"><a class="nav-link active" aria-current="page" href="#">Landing</a></li>
+              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Pages</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#feature">Feature</a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#about">About </a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#testimonial">Testimonilas</a></li>
+                  <li><a class="dropdown-item text-secondary p-3 border-bottom" href="#pricing">Pricing</a></li>
+                  <li><a class="dropdown-item text-secondary p-3" href="#faq">FAQ </a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Account</a></li>
+              <li class="nav-item dropdown"><a class="nav-link" id="navbarDropdowndoc" href="#" role="button" data-toggle="dropdown" aria-expanded="false">Documentation</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdowndoc">
+                  <div class="list-group list-group-flush"><a class="list-group-item" href="#"><img src="../assets/img/gallery/document.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Documentation</span>
+                        <p class="text-secondary mb-0">Customizing and building</p>
+                      </div>
+                    </a><a class="list-group-item" href="#"><img src="../assets/img/gallery/components.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Components</span>
+                        <p class="text-secondary mb-0">Full list of components</p>
+                      </div>
+                    </a><a class="list-group-item" href="#"><img src="../assets/img/gallery/bar_chart.png" alt="" />
+                      <div class="ml-3"><span class="font-weight-bold text-uppercase text-primary">Changelog <span class="badge badge-secondary bg-light text-primary">1.1.3</span></span>
+                        <p class="text-secondary mb-0">Keep track of changes</p>
+                      </div>
+                    </a></div>
+                </div>
+              </li>
+            </ul><a class="btn btn-primary ml-auto hover-top-shadow" href="!#">Buy now</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-lg-9 col-xxl-10">
+            <div class="card shadow-sm mb-3">
+              <div class="card-body">
+                <h3 class="mb-0">Plugins</h3>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-0 contains-anchor" id="adding-new-plugin">Adding new plugins<a href="#adding-new-plugin" data-fancyscroll data-offset="96">#</a></h5>
+              </div>
+              <div class="card-body bg-light">
+                <p class="mb-0">Adding a new plugin to your theme is simple.Here are two ways you can do that.</p>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-0">Simple approach</h5>
+              </div>
+              <div class="card-body bg-light">
+                <p class="mb-0">Place your new plugin in <code>pages/assets/lib</code> folder. Eg: to add the <code>typed.js</code> plugin, we will download it from <a href="https://mattboldt.com/demos/typed-js/">here,</a> unzip it and place the <code>typed.js-master</code> folder in <code>pages/assets/lib</code> folder.</p>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-0">Using NPM</h5>
+              </div>
+              <div class="card-body bg-light">
+                <p>Suppose we are installing the <code>typed.js</code> plugin. Here are the steps:</p>
+                <p class="font-weight-bold text-sans-serif mb-0">Step 1:</p><pre><code class="lang-js">Paths = {
+	... 
+	DEPENDENCIES: {
+		...
+		'typed.js': {
+			FROM: 'node_modules/typed.js/lib/*.*',
+			TO: lib,
+		},
+	},
+	...
+},</code></pre>
+                <p>Here, <code>lib</code> refers to <code>pages/assets/lib</code>, where gulp will copy files from the <code>typed.js</code> plugin. We actually use the <code>lib</code> folder to store neccassary plugins</p>
+                <p class="font-weight-bold text-sans-serif mb-0 mt-3">Step 3:</p>
+                <p>Run the following command:</p><pre><code class="lang-js">gulp copy:dependency</code></pre>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-body">
+                <h3 class="mb-0">Built-in plugins</h3>
+              </div>
+            </div>
+            <div class="card shadow-sm mb-3">
+              <div class="card-header">
+                <h5 class="mb-0 contains-anchor" id="semantic">Semantic UI (Accordion)<a href="#semantic" data-fancyscroll data-offset="96">#</a></h5>
+              </div>
+              <div class="card-body bg-light">
+                <p class="mb-0">An accordion allows users to toggle the display of sections of content.</p><a class="text-sans-serif" href="../plugins/accordion.html">Implementation in theme</a> - <a class="text-sans-serif" href="https://semantic-ui.com/modules/accordion.html" target="_blank">Full Documentation</a>
+              </div>
+            </div>
+            <!--.card.shadow-sm.mb-3.card-header
+  h5.mb-0.contains-anchor#chart-js Chart.js
+    a(href='#chart-js' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 Simple HTML5 Charts using the canvas element
+  a(href=`${CWD}plugins/charts.html`).text-sans-serif Implementation in theme  
+  |  - 
+  a(href='https://www.chartjs.org/docs/latest/' target='_blank').text-sans-serif Full Documentation
+-->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5.mb-0.contains-anchor#date-countdown Date countdown
+    a(href='#date-countdown' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 A simple and html agnostic date countdown plugin for jQuery
+  a(href=`${CWD}plugins/countdown.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='http://hilios.github.io/jQuery.countdown/' target='_blank').text-sans-serif Full Documentation
+-->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5.mb-0.contains-anchor#data-table Data Table
+    a(href='#data-table' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 DataTables is a plug-in for the jQuery Javascript library. It is a highly flexible tool, build upon the foundations of progressive enhancement, that adds all of these advanced features to any HTML table.
+  a(href=`${CWD}plugins/data-table.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://datatables.net/' target='_blank').text-sans-serif Full Documentation
+  -->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5.mb-0.contains-anchor#date-picker Date Picker
+    a(href='#date-picker' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 Lightweight, powerful javascript datetimepicker with no dependencies.
+  a(href=`${CWD}plugins/date-picker.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://flatpickr.js.org/' target='_blank').text-sans-serif Full Documentation
+ -->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5#fancybox.mb-0.contains-anchor FancyBox 3
+    a(href='#fancybox' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 JavaScript lightbox library for presenting various types of media. Responsive, touch-enabled and customizable. 
+  a(href=`${CWD}plugins/fancybox.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='http://fancyapps.com/fancybox/3/docs/' target='_blank').text-sans-serif Full Documentation
+-->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5#fontawesome.mb-0.contains-anchor FontAwesome 5
+    a(href='#fontawesome' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 Get vector icons and social logos on your website with Font Awesome, the web's most popular icon set and toolkit. 
+  a(href=`${CWD}plugins/fontawesome.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use' target='_blank').text-sans-serif Full Documentation
+-->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5#google-map.mb-0.contains-anchor Google Map
+    a(href='#google-map' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 Build customized, agile experiences that bring the real world to your users with static and dynamic maps, Street View imagery, and 360° views. 
+  a(href=`${CWD}plugins/google-map.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://developers.google.com/maps/documentation/javascript/tutorial' target='_blank').text-sans-serif Full Documentation
+  -->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5#plyr.mb-0.contains-anchor Plyr
+    a(href='#plyr' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 A simple, accessible and customisable media player for Video,  Audio, YouTube and Vimeo.
+  a(href=`${CWD}plugins/inline-player.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://plyr.io/' target='_blank').text-sans-serif Full Documentation
+-->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5#jqvmap.mb-0.contains-anchor jqvmap
+    a(href='#jqvmap' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 JQVMap is a jQuery plugin that renders 
+    strong Interactive, Clickable Vector Maps
+    | . It uses resizable Scalable Vector Graphics (SVG) for modern browsers like Firefox, Safari, Chrome, Opera and Internet Explorer 9.
+  a(href=`${CWD}plugins/jqvmap.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://www.10bestdesign.com/jqvmap/documentation/' target='_blank').text-sans-serif Full Documentation
+  -->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5#lightbox.mb-0.contains-anchor Lightbox 2
+    a(href='#lightbox' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 Lightbox is a JavaScript library that displays images and videos by filling the screen, and dimming out the rest of the web page.
+  a(href=`${CWD}plugins/lightbox.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://lokeshdhakar.com/projects/lightbox2/' target='_blank').text-sans-serif Full Documentation
+  -->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5.mb-0.contains-anchor#toastr Toastr
+    a(href='#toastr' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 A toastr is a Javascript library for Gnome / Growl type non-blocking notifications. jQuery is required. The goal is to create a simple core library that can be customized and extended.
+  a(href=`${CWD}plugins/notifications.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://codeseven.github.io/toastr/' target='_blank').text-sans-serif Full Documentation
+  -->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5#owl-carousel.pb-0.contains-anchor Owl carousel 2
+    a(href='#owl-carousel' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 Touch enabled jQuery plugin that lets you create a beautiful responsive carousel slider.
+  a(href=`${CWD}plugins/owl-carousel.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://owlcarousel2.github.io/OwlCarousel2/docs/api-options.html' target='_blank').text-sans-serif Full Documentation
+-->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5#progressbar.mb-0.contains-anchor ProgressBar.js
+    a(href='#progressbar' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 With 
+    code ProgressBar.js
+    | , it's easy to create responsive and stylish progress bars for the web. Animations perform well even on mobile devices. It provides a few built‑in shapes like 
+    code Line
+    | , 
+    code Circle
+    |  and 
+    code SemiCircle
+    |  but you can also create 
+    code custom
+    |  shaped progress bars with any vector graphic editor.
+
+  a(href=`${CWD}plugins/progressbar.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://kimmobrunfeldt.github.io/progressbar.js/' target='_blank').text-sans-serif Full Documentation
+-->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5#remodal.mb-0.contains-anchor Remodal
+    a(href='#remodal' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 Responsive, lightweight, fast, synchronized with CSS animations, fully customizable modal window plugin with declarative configuration and hash tracking.
+  a(href=`${CWD}plugins/remodal.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='http://vodkabears.github.io/remodal/' target='_blank').text-sans-serif Full Documentation
+  -->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5#select2-plugin.mb-0.contains-anchor Select2
+    a(href='#select2-plugin' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 Select2 gives you a customizable select box with support for searching, tagging, remote data sets, infinite scrolling, and many other highly used options. 
+  a(href=`${CWD}plugins/select2.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://select2.org/' target='_blank').text-sans-serif Full Documentation
+  -->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5#ytplayer.mb-0.contains-anchor jQuery.mb.YTPlayer
+    a(href='#ytplayer' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 An HTML5 Background player for YouTube video.
+  a(href=`${CWD}components/background.html#ytplayer`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://pupunzi.com/mb.components/mb.YTPlayer/demo/demo.html' target='_blank').text-sans-serif Full Documentation
+-->
+            <!--.card.shadow-sm.mb-3.card-header
+  h5.mb-0.contains-anchor#tinymce Tinymce
+    a(href='#tinymce' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 The world's most popular JavaScript library for rich text editing.
+
+  a(href=`${CWD}plugins/tinymce.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://www.tiny.cloud/docs/quick-start/' target='_blank').text-sans-serif Full Documentation
+-->
+            <!--.card.shadow-sm.card-header
+  h5#typed-text.mb-0.contains-anchor Typed text
+    a(href='#typed-text' data-fancyscroll data-offset=96) #
+.card-body.bg-light
+  p.mb-0 A JavaScript library that types out, deletes them, and then types again.
+  a(href=`${CWD}plugins/typed-text.html`).text-sans-serif Implementation in theme
+  |  - 
+  a(href='https://mattboldt.com/demos/typed-js/' target='_blank').text-sans-serif Full Documentation-->
+          </div>
+          <div class="col d-none d-lg-block">
+            <ul class="nav flex-column sticky-kit mt-6 accordion font-weight-semi-bold" id="sidebar-nav">
+              <li class="nav-item"><a class="nav-link text-info" data-toggle="collapse" href="#documentation" role="button" aria-expanded="true" aria-controls="documentation">Documentation</a>
+                <div class="nav collapse pl-3 show" id="documentation" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../documentation/getting-started.html">Getting started</a><a class="nav-link w-100 py-0 text-600" href="../documentation/file-structure.html">File structure</a><a class="nav-link w-100 py-0 text-600" href="../documentation/customization.html">Customization</a><a class="nav-link w-100 py-0 text-600" href="../documentation/gulp.html">Gulp</a><a class="nav-link w-100 py-0 text-600" href="../documentation/RTL.html">RTL</a><a class="nav-link w-100 py-0 text-info" href="../documentation/plugins.html">Plugins</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#components" role="button" aria-expanded="false" aria-controls="components">Components</a>
+                <div class="nav collapse pl-3" id="components" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../components/alerts.html">Alerts</a><a class="nav-link w-100 py-0 text-600" href="../components/background.html">Background</a><a class="nav-link w-100 py-0 text-600" href="../components/badges.html">Badges</a><a class="nav-link w-100 py-0 text-600" href="../components/breadcrumb.html">Breadcrumb</a><a class="nav-link w-100 py-0 text-600" href="../components/buttons.html">Buttons</a><a class="nav-link w-100 py-0 text-600" href="../components/cards.html">Cards</a><a class="nav-link w-100 py-0 text-600" href="../components/carousel.html">Carousel</a><a class="nav-link w-100 py-0 text-600" href="../components/collapse.html">Collapse</a><a class="nav-link w-100 py-0 text-600" href="../components/dropdowns.html">Dropdowns</a><a class="nav-link w-100 py-0 text-600" href="../components/fancyscroll.html">Fancyscroll</a><a class="nav-link w-100 py-0 text-600" href="../components/forms.html">Forms</a><a class="nav-link w-100 py-0 text-600" href="../components/hoverbox.html">Hoverbox</a><a class="nav-link w-100 py-0 text-600" href="../components/list-group.html">List group</a><a class="nav-link w-100 py-0 text-600" href="../components/modals.html">Modals</a><a class="nav-link w-100 py-0 text-600" href="../components/media-object.html">Media object</a><a class="nav-link w-100 py-0 text-600" href="../components/navs.html">Navs</a><a class="nav-link w-100 py-0 text-600" href="../components/navbar.html">Navbar</a><a class="nav-link w-100 py-0 text-600" href="../components/page-headers.html">Page headers</a><a class="nav-link w-100 py-0 text-600" href="../components/pagination.html">Pagination</a><a class="nav-link w-100 py-0 text-600" href="../components/popovers.html">Popovers</a><a class="nav-link w-100 py-0 text-600" href="../components/progress.html">Progress</a><a class="nav-link w-100 py-0 text-600" href="../components/scrollspy.html">Scrollspy</a><a class="nav-link w-100 py-0 text-600" href="../components/spinners.html">Spinners</a><a class="nav-link w-100 py-0 text-600" href="../components/tables.html">Tables</a><a class="nav-link w-100 py-0 text-600" href="../components/tabs.html">Tabs</a><a class="nav-link w-100 py-0 text-600" href="../components/tooltips.html">Tooltips</a><a class="nav-link w-100 py-0 text-600" href="../components/toasts.html">Toasts</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#utilities" role="button" aria-expanded="false" aria-controls="utilities">Utilities</a>
+                <div class="nav collapse pl-3" id="utilities" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../utilities/borders.html">Borders</a><a class="nav-link w-100 py-0 text-600" href="../utilities/clearfix.html">Clearfix</a><a class="nav-link w-100 py-0 text-600" href="../utilities/close-icon.html">Close icon</a><a class="nav-link w-100 py-0 text-600" href="../utilities/colors.html">Colors</a><a class="nav-link w-100 py-0 text-600" href="../utilities/display.html">Display</a><a class="nav-link w-100 py-0 text-600" href="../utilities/embed.html">Embed</a><a class="nav-link w-100 py-0 text-600" href="../utilities/flex.html">Flex</a><a class="nav-link w-100 py-0 text-600" href="../utilities/figures.html">Figures</a><a class="nav-link w-100 py-0 text-600" href="../utilities/grid.html">Grid</a><a class="nav-link w-100 py-0 text-600" href="../utilities/sizing.html">Sizing</a><a class="nav-link w-100 py-0 text-600" href="../utilities/stretched-link.html">Stretched link</a><a class="nav-link w-100 py-0 text-600" href="../utilities/spacing.html">Spacing</a><a class="nav-link w-100 py-0 text-600" href="../utilities/typography.html">Typography</a><a class="nav-link w-100 py-0 text-600" href="../utilities/vertical-align.html">Vertical align</a><a class="nav-link w-100 py-0 text-600" href="../utilities/visibility.html">Visibility</a></div>
+              </li>
+              <li class="nav-item"><a class="nav-link text-600 collapsed" data-toggle="collapse" href="#plugins" role="button" aria-expanded="false" aria-controls="plugins">Plugins</a>
+                <div class="nav collapse pl-3" id="plugins" data-parent="#sidebar-nav"><a class="nav-link w-100 py-0 text-600" href="../plugins/accordion.html">Accordion</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <footer class="py-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-lg-3">
+              <h4 class="text-primary font-weight-bold">Bridge</h4>
+              <p class="mb-2 text-muted">Where design connects <br> with excellence.</p>
+              <ul class="list-unstyled list-inline mb-6 mb-md-0">
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/facebook.svg" alt="" /></a></li>
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/linkedin.svg" alt="" /></a></li>
+                <li class="list-inline-item mr-3"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/instagram.svg" alt="" /></a></li>
+                <li class="list-inline-item"><a class="text-decoration-none" href="#!"><img class="list-social-icon" src="../assets/img/gallery/github.svg" alt="" /></a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Products</h6>
+              <ul class="list-unstyled text-muted mb-md-4 mb-lg-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Page Builder</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Styleguide</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Services</h6>
+              <ul class="list-unstyled text-muted mb-6 mb-md-4 mb-lg-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Pagebuilder</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 offset-md-4 col-lg-2 offset-lg-0">
+              <h6 class="font-weight-bold footer-nav">Connect</h6>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Page Builder</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">UI Kit</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Styleguide</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <h6 class="font-weight-bold footer-nav">Legal</h6>
+              <ul class="list-unstyled text-muted mb-0">
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Documentation</a></li>
+                <li class="mb-2 mb-lg-2"><a class="text-reset text-decoration-none" href="#!">Changelog</a></li>
+                <li><a class="text-reset text-decoration-none" href="#!">Pagebuilder</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main><!-- ===============================================-->
+    <!--    End of Main Content-->
+    <!-- ===============================================-->
+
+
+
+    <!-- ===============================================-->
+    <!--    JavaScripts-->
+    <!-- ===============================================-->
+    <!-- JavaScript and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/lib/is/is.min.js"></script>
+    <script src="../assets/lib/stickyfilljs/stickyfill.min.js"></script><!-- Global site tag (gtag.js) - Google Analytics-->
+    <script src="../assets/lib/prismjs/prism.js"></script>
+    <script src="../assets/js/theme.js"></script>
+  </body>
+
+</html>
